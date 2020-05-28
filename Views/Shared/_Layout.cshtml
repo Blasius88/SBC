@@ -1,45 +1,95 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MySite.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Заголовок -->
+    <div class="header-strip">
+        <!--Панель аутентификации-->
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <div class="nav navbar-right">
+                <a href="#" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Войти</a>
+                <a href="#" class="navbar-link"><span class="glyphicon glyphicon-plus-sign"></span>Зарегистрироваться</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Информация", "About", "Home")</li>
-                    <li>@Html.ActionLink("Связаться", "Contact", "Home")</li>
+        </div> <!--Панель аутентификации (конец)-->
+        <!-- панель навигации-->
+        <div class="container">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">70325-2 Долбик-Воробей</a>
+                </div>
+                <ul class="nav nav-pills">
+                    <li>
+                        @Html.ActionLink("Домой", "Index", "Home")
+                    </li>
+                    <li class="active">
+                        @Html.ActionLink("Каталог", "List", "Product")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Администрирование", "Index", "Admin")
+                    </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+            </div>
+        </div><!--панель навигации (конец)-->
+    </div><!--Заголовок (конец)-->
+    <!--Содержимое сайта-->
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-2">
+                    <h2>@ViewBag.MyText</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Левая боковая панель-->
+                <div class="col-md-3">
+                    <div class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Все категории</a></li>
+                            <li class="active"><a href="#">Кино</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/Левая боковая панель (конец)-->
+                <!--Основная панель-->
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+                <!--/Основная панель (конец)-->
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
-        </footer>
+    <!--Содержимое сайта (конец)-->
+    <!--Подвал страницы-->
+    <div class="footer-strip">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Kарта сайта</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Каталог</a></li>
+                        <li><a href="#">Администрирование</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                    <h6>Социальные сети</h6>
+                    <a href="http://vk.com" class="social-icon vk"></a>
+                    <a href="http://twitter.com" class="social-icon twitter"></a>
+                    <a href="http://facebook.com" class="social-icon facebook"></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!--Подвал страницы (конец)-->
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
 </body>
 </html>
