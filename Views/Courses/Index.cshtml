@@ -2,6 +2,13 @@
 @{
     ViewBag.Title = "Курсы";
 }
+
+@section SidePanel
+{
+    <div class="alert-success">
+        @Html.Action("Side", "Menu")
+    </div>
+    }
     <div class="Images_courses">
         <div class="container">
             <div class="row">

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<SBC.Models.MenuItem>
+
+<div class="col-md-3">
+    <h6>Kарта сайта</h6>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Name, item.Action, item.Controller)
+            </li>
+        }
+    </ul>
+</div>
+<div class="col-md-6">
+
+</div>
+<div class="col-md-3">
+    <h6>Социальные сети</h6>
+    <a href="http://vk.com" class="social-icon vk"></a>
+    <a href="http://twitter.com" class="social-icon twitter"></a>
+    <a href="http://facebook.com" class="social-icon facebook"></a>
+</div>

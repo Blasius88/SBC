@@ -12,27 +12,16 @@
     <div class="header-strip">
         <!--Панель аутентификации-->
         <div class="container">
-            <div class="nav navbar-right">
-                <a href="~/Views/Account/Login.cshtml" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Войти</a>
-                <a href="#" class="navbar-link"><span class="glyphicon glyphicon-plus-sign"></span>Зарегистрироваться</a>
-            </div>
+            @Html.Action("UserInfo", "Menu")
         </div> <!--Панель аутентификации (конец)-->
         <!-- панель навигации-->
         <div class="container">
             <div class="navbar navbar-inverse" role="navigation">
-                <div class="logo">
-                    <a class="navbar-brand" href="index.html">70325-2 Долбик-Воробей</a>
-                </div>
                 <ul class="nav nav-pills">
-                    <li>
-                        @Html.ActionLink("Домой", "Index", "Home")
-                    </li>
-                    <li class="active">
-                        @Html.ActionLink("Каталог", "List", "Product")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Администрирование", "Index", "Admin")
-                    </li>
+                    @Html.Action("Main", "Menu", new
+                    {
+               c = Request.RequestContext.RouteData.Values["conoteoller"]
+               })
                 </ul>
             </div>
         </div><!--панель навигации (конец)-->
@@ -47,19 +36,12 @@
             </div>
             <div class="row">
                 <!--Левая боковая панель-->
-                <div class="col-md-2">
-                    <div class="navbar navbar-default">
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a href="#">Все категории</a></li>
-                            <li class="nav-item active"><a href="#">Кино</a></li>
-                            <li class="nav-item"><a href="#">Книги</a></li>
-                            <li class="nav-item"><a href="#">Инструмент</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-3">
+                    @RenderSection("SidePanel", required: false)
                 </div>
                 <!--/Левая боковая панель (конец)-->
                 <!--Основная панель-->
-                <div class="col-md-10">
+                <div class="col-md-8">
                     @RenderBody()
                 </div>
                 <!--/Основная панель (конец)-->
@@ -71,20 +53,7 @@
     <div class="footer-strip">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h6>Kарта сайта</h6>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="active"><a href="#">Каталог</a></li>
-                        <li><a href="#">Администрирование</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-md-offset-6">
-                    <h6>Социальные сети</h6>
-                    <a href="http://vk.com" class="social-icon vk"></a>
-                    <a href="http://twitter.com" class="social-icon twitter"></a>
-                    <a href="http://facebook.com" class="social-icon facebook"></a>
-                </div>
+                @Html.Action("Map", "Menu")
             </div>
         </div>
     </div>

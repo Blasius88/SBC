@@ -180,6 +180,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -350,12 +351,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Menu\Main.cshtml" />
+    <Content Include="Views\Menu\UserInfo.cshtml" />
+    <Content Include="Views\Menu\Side.cshtml" />
+    <Content Include="Views\Menu\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Courses\Biologia\" />
     <Folder Include="Views\Courses\Chemisty\" />
-    <Folder Include="Views\Menu\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

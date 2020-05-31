@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SBC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,30 +9,32 @@ namespace SBC.Controllers
 {
     public class MenuController : Controller
     {
-        // GET: Menu
-        public ActionResult Index()
+        public PartialViewResult Main(string a = "Index", string c = "Home")
         {
-            return View();
+            items.First(m => m.Controller == c).Active = "active";
+            return PartialView(items);
         }
 
-        public string Main()
+        public PartialViewResult UserInfo()
         {
-            return "<span>Главное меню</span>";
+            return PartialView();
         }
 
-        public string UserInfo()
+        public PartialViewResult Side()
         {
-            return "<span>Меню пользователя</span>";
+            return PartialView();
         }
 
-        public string Side()
+        public PartialViewResult Map()
         {
-            return "<span>боковая панель</span>";
+            return PartialView(items);
         }
 
-        public string Map()
+        List<MenuItem> items = new List<MenuItem>()
         {
-            return "<span>Карта сайта</span>";
-        }
+            new MenuItem{Name ="Домой", Controller="Home", Action="Index", Active=string.Empty},
+            new MenuItem{Name="Наши курсы", Controller="Courses", Action="Index", Active=string.Empty},
+            new MenuItem{Name="Администрирование", Controller="Admin",Action="Index", Active=string.Empty},
+        };
     }
 }
