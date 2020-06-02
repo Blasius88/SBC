@@ -1,46 +1,41 @@
 ﻿@model IEnumerable<SBC.DAL.Courses>
+@using System.Text
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Наши курсы </h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NameCourses)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MineType)
-        </th>
-        <th></th>
-    </tr>
+@{
+    //объкт для собирания разметки
+    StringBuilder result = new StringBuilder();
+    // счетчик эскизов в строке
+    var i = 0;
+    TagBuilder row = new TagBuilder("div");
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NameCourses)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MineType)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
+    foreach (var item in Model)
+    {
+        i++;
+        if (i == 1) // для первого элемента в строке создаем новую строку
+        {
+            row = new TagBuilder("div");
+            row.AddCssClass("row");
+            row.AddCssClass("item-row");
+        }
+        row.InnerHtml += Html.Partial("ItemViewPartial", item);
+
+        if (i == 3) // есди строка закончена
+        {
+            result.Append(row.ToString());
+        }
+        if (i != 3) // если последняя строка не закончина
+        {
+            result.Append(row.ToString());
+            //обнулить счетчик  элементов строке
+            i = 0;
+        }
+    }
 }
-
-</table>
+<!--получить готовую разметку-->
+@MvcHtmlString.Create(result.ToString())
