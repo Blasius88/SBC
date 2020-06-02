@@ -1,25 +1,46 @@
-﻿
+﻿@model IEnumerable<SBC.DAL.Courses>
+
 @{
-    ViewBag.Title = "Курсы";
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@section SidePanel
-{
-    <div class="alert-success">
-        @Html.Action("Side", "Menu")
-    </div>
-    }
-    <div class="Images_courses">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-4">
-                    <img src="~/Images/биология.jpg" alt="биология" />
-                    <h2>Биология</h2>
-                </div>
-                <div class="col-md-4 col-md-4">
-                    <img src="~/Images/химия.jpg" />
-                    <h2>Химия</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameCourses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MineType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameCourses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MineType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
