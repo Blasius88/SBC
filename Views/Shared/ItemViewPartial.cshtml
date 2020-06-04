@@ -4,10 +4,7 @@
     <div class='thumbnail'>
         <img height="200"
              src="@Url.Action("getImage",
-                 new
-                 {
-                     id = Model.id
-                 })"
+                 @Model.MineType)"
              alt='NoImage'
              class="img-thumbnail" />
         <div class="caption">
@@ -18,12 +15,8 @@
                 @Model.Description
             </div>
             <div class="centered">
-                <a href=@Url.Action("AddToCart",
-                      "Cart",
-                      new
-                      {
-                          id =Model.id, returnUrl=Request.Path
-                      } )
+                <a href=@Url.Action("",
+                      "Courses")
                    class="btn btn-primary">
                     <span class="glyphicon glyphicon-shoppingcart">
                     </span>

@@ -21,15 +21,30 @@ namespace SBC.Controllers
             {
                 id =1,
                 NameCourses ="Биология",
-                Description = ""
+                Description = "",
+                Action = "Biologia", 
+                
             },
             new Courses
             {
                 id = 2,
                 NameCourses = "Химия",
-                Description = ""
+                Description = "",
+                Action = "Chemistry",
             }
 
         };
+
+        public PartialViewResult Biologia()
+        {
+            return PartialView();
+
+        }
+
+        public PartialViewResult Сhemistry()
+        {
+            return PartialView();
+
+        }
     }
 }
