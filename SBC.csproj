@@ -540,8 +540,8 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\ItemViewPartial.cshtml" />
-    <Content Include="Views\Courses\Biologia.cshtml" />
     <Content Include="Views\Courses\Сhemistry.cshtml" />
+    <Content Include="Views\Courses\Biologia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

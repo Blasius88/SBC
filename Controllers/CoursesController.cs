@@ -35,15 +35,15 @@ namespace SBC.Controllers
 
         };
 
-        public PartialViewResult Biologia()
+        public ActionResult Biologia()
         {
-            return PartialView();
+            return View();
 
         }
 
-        public PartialViewResult Сhemistry()
+        public ActionResult Сhemistry()
         {
-            return PartialView();
+            return View();
 
         }
     }

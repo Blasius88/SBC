@@ -4,7 +4,7 @@
 
 
 .header-strip {
-    height: 150px;
+    height: auto;
     background-color: #222222;
     padding:5px;
     border-bottom:3px solid #428bca;
@@ -31,11 +31,14 @@
     float:left;
     width:50%;
 }
-.footer-strip{
+.footer-strip {
     height: 120px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
     background-color: #222222;
-    padding:5px;
-    color:#428bca; 
+    border-top: 3px solid #428bca;
+    border-bottom: 3px solid #428bca;
 }
 
 .footer-strip li{    
@@ -71,8 +74,7 @@
 }
 
 .main-body{
-    height: 700px;
-    border-bottom: 3px solid #428bca;
+    height: auto;
 }
 
 .item-row{
@@ -95,13 +97,12 @@
 
 .banner {
     position: relative;
-    display: block;
     text-align: left;
 }
 
 
 .banner-back{
-    position:absolute;
+    position:relative;
     top:0;
     left:100px;
     width:100%;
@@ -119,8 +120,7 @@
 
 
 .Images_courses{
-    position:absolute;
-    display:block;
+    position:relative;
     height:250px;
     width:250px;
 }

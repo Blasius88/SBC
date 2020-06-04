@@ -1,10 +1,13 @@
 ﻿@model SBC.DAL.Courses
 
-<div class='col-md-4'>
+<div class='col-md-3'>
     <div class='thumbnail'>
-        <img height="200"
+        <img height="150" width="150"
              src="@Url.Action("getImage",
-                 @Model.MineType)"
+                 new
+                 {
+                     id = Model.id
+                 })"
              alt='NoImage'
              class="img-thumbnail" />
         <div class="caption">
@@ -15,7 +18,7 @@
                 @Model.Description
             </div>
             <div class="centered">
-                <a href=@Url.Action("",
+                <a href=@Url.Action("Biologia",
                       "Courses")
                    class="btn btn-primary">
                     <span class="glyphicon glyphicon-shoppingcart">
