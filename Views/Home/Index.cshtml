@@ -1,41 +1,106 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-<div class="container-md">
-    <div class="banner">
-        <div class="row">
-            <div class="col-md-2 col-md-6 col-sm-5">
-                <div class="banner-cont">
-                    <div class="title-box">
-                        <h1 class="h1_main"> Подготовка к ЦТ</h1>
-                        <div class="main_desk">
-                            <h2 class="h2_main">
-                                Экспресс-курсы подготовки онлайн
-                                <br />на 80-100 баллов!
-                            </h2>
-                            <br />- Видео уроки 20-30 мин + материалы
-                            <br />-Тесты и задание на ЦТ с автопроверкой
-                            <br />-Решение и ответы
-                            <br />-Преподаватель со стажем от 10 лет
-                            <br />
-                            <div class="centered">
-                                <a href=@Url.Action("Index","Courses")
-                                   class="btn btn-primary">
-                                    <span class="glyphicon glyphicon-shoppingcart">
-                                    </span>
-                                    Наши курсы
-                                </a>
+    <div class="container-md">
+        <div class="banner">
+            <div class="banner-back">
+                <img src="~/Images/Banner.jpg" />
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-6 col-sm-5">
+                    <div class="banner-cont">
+                        <div class="title-box">
+                            <h1 class="h1_main"> Подготовка к ЦТ</h1>
+                            <div class="main_desk">
+                                <h2 class="h2_main">
+                                    Экспресс-курсы подготовки онлайн
+                                    <br />на 80-100 баллов!
+                                </h2>
+                                <br />- Видео уроки 20-30 мин + материалы
+                                <br />-Тесты и задание на ЦТ с автопроверкой
+                                <br />-Решение и ответы
+                                <br />-Преподаватель со стажем от 10 лет
+                                <br />
+                                <div class="centered">
+                                    <a href=@Url.Action("Index","Courses")
+                                       class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-shoppingcart">
+                                        </span>
+                                        Наши курсы
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="banner-back">
-                    <img src="~/Images/Banner.jpg" />
+        </div>
+        <!--Отзывы-->
+        <div class="reviews">
+            <h2>Что о нас говорят - Отзывы учеников</h2>
+            <br />
+            <p>
+                Мы собрали отзывы учеников, прошедших подгтовку на ...<br />
+                Об онлайн курсах подготовки к экзаменам ЦТ от ... уже более 115 отзывов и оценок!<br />
+                Пройдите онлайн обучение и разместите свой отзыв к любому курсу — поделитесь своими результатами и достижениями!<br />
+            </p>
+            <div class="row">
+                <div class="reviews-box">
+                    <div class="reviews-cont">
+                        <div class="reviews-internal">
+                            <div class="reviews-info">
+                                <div class="reviews-info__img">
+                                    <span>
+                                        <img />
+                                    </span>
+                                </div>
+                                <div class="reviews-info__cont">
+                                    <span class="reviews-name">Дмитрий Шестак</span>
+                                </div>
+                            </div>
+                            <div class="reviews-subject">
+                                <span class="reviews-subject__title">Подготовка к ЦТ Биология</span>
+                                <span class="reviews-subject__link">отзыв о курсе</span>
+                            </div>
+                            <div class="reviews-text">
+                                <p>
+                                    Я сам учитель обществознания и истории, рекомендую курс Андрея Александровича Пучкова всем ученикам, сдающим ЕГЭ по обществознанию - лучший курс в своей категории. Материал соответствует требованиям кодификатора и специализации ФИПИ, структурирован и логически продуман.
+                                    Автор доступно и подробно разъясняет вопросы, проверяемые на ЕГЭ: человек и общество, политическая, экономическая, социальная и духовная сфера.
+                                    Показывает, как правильно писать эссе и решать задачи всех уровней сложности.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-box">
+                    <div class="reviews-cont">
+                        <div class="reviews-internal">
+                            <div class="reviews-info">
+                                <div class="reviews-info__img">
+                                    <span>
+                                        <img />
+                                    </span>
+                                </div>
+                                <div class="reviews-info__cont">
+                                    <span class="reviews-name">Дмитрий Шестак</span>
+                                </div>
+                            </div>
+                            <div class="reviews-subject">
+                                <span class="reviews-subject__title">Подготовка к ЦТ Биология</span>
+                                <span class="reviews-subject__link">отзыв о курсе</span>
+                            </div>
+                            <div class="reviews-text">
+                                <p>
+                                    Я сам учитель обществознания и истории, рекомендую курс Андрея Александровича Пучкова всем ученикам, сдающим ЕГЭ по обществознанию - лучший курс в своей категории. Материал соответствует требованиям кодификатора и специализации ФИПИ, структурирован и логически продуман.
+                                    Автор доступно и подробно разъясняет вопросы, проверяемые на ЕГЭ: человек и общество, политическая, экономическая, социальная и духовная сфера.
+                                    Показывает, как правильно писать эссе и решать задачи всех уровней сложности.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-</div>

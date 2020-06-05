@@ -55,17 +55,19 @@
 .banner-back {
     position: relative;
     top: 0;
-    left: 100px;
+    right: 0;
     width: 100%;
     height: 100%;
+    margin-left:550px;
 }
 
-.banner, .banner-cont {
-    position: relative;
+.banner-cont {
+    position: absolute;
     display: block;
     text-align: center;
-    top: 0;
+    top: -350px;
     padding: 0px;
+    margin:-150px auto, auto, auto;
 }
 
 .Images_courses {
