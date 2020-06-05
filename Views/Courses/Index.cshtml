@@ -1,41 +1,35 @@
-﻿@model IEnumerable<SBC.DAL.Courses>
-@using System.Text
-
-@{
+﻿@{
     ViewBag.Title = "Наши курсы";
 }
 
 <h2>Наши курсы </h2>
-
-@{
-    //объкт для собирания разметки
-    StringBuilder result = new StringBuilder();
-    // счетчик эскизов в строке
-    var i = 0;
-    TagBuilder row = new TagBuilder("div");
-
-    foreach (var item in Model)
-    {
-        i++;
-        if (i == 1) // для первого элемента в строке создаем новую строку
-        {
-            row = new TagBuilder("div");
-            row.AddCssClass("row");
-            row.AddCssClass("item-row");
-        }
-        row.InnerHtml += Html.Partial("ItemViewPartial", item);
-
-        if (i == 3) // есди строка закончена
-        {
-            result.Append(row.ToString());
-        }
-        if (i != 3) // если последняя строка не закончина
-        {
-            result.Append(row.ToString());
-            //обнулить счетчик  элементов строке
-            i = 0;
-        }
-    }
-}
-<!--получить готовую разметку-->
-@MvcHtmlString.Create(result.ToString())
+<div class="card-group">
+    <div class="card">
+            <img src="~/Images/биология.jpg" class="card-img-top" alt="Биология">
+            <div class="card-body">
+                <h5 class="card-title">Биология</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=@Url.Action("Biologia",
+                      "Courses")
+                   class="btn btn-primary">
+                    <span class="glyphicon glyphicon-shoppingcart">
+                    </span>
+                    Перейти на курс
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/Images/химия.jpg" class="card-img-top" alt="Химия">
+            <div class="card-body">
+                <h5 class="card-title">Химия</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=@Url.Action("Сhemistry",
+                      "Courses")
+                   class="btn btn-primary">
+                    <span class="glyphicon glyphicon-shoppingcart">
+                    </span>
+                    Перейти на курс
+                </a>
+            </div>
+        </div>
+</div>

@@ -12,39 +12,17 @@ namespace SBC.Controllers
         // GET: Courses
         public ActionResult Index()
         {
-            return View(courses);
+            return View();
         }
-
-        List<Courses> courses = new List<Courses>
-        {
-            new Courses
-            {
-                id =1,
-                NameCourses ="Биология",
-                Description = "",
-                Action = "Biologia", 
-                
-            },
-            new Courses
-            {
-                id = 2,
-                NameCourses = "Химия",
-                Description = "",
-                Action = "Chemistry",
-            }
-
-        };
 
         public ActionResult Biologia()
         {
             return View();
-
         }
 
         public ActionResult Сhemistry()
         {
             return View();
-
         }
     }
 }
