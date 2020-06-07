@@ -65,6 +65,11 @@ namespace SBC.Models
     public class RegisterViewModel
     {
         [Required]
+        [MaxLength(20, ErrorMessage = "Не более 20 символов")]
+        [Display(Name = "Ваш НИК")]
+        public string NickName { get; set; }
+        
+        [Required]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }

@@ -23,8 +23,8 @@
                 <ul class="nav nav-pills">
                     @Html.Action("Main", "Menu", new
                     {
-               c = Request.RequestContext.RouteData.Values["conoteoller"]
-               })
+                   c = Request.RequestContext.RouteData.Values["conoteoller"]
+                    })
                 </ul>
             </div>
         </div><!--панель навигации (конец)-->
@@ -63,5 +63,7 @@
         </div>
     </div>
     <!--Подвал страницы (конец)-->
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("Scripts", false)
 </body>
 </html>

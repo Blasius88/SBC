@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SBC.DAL;
 
 namespace SBC.Controllers
 {
@@ -11,13 +12,15 @@ namespace SBC.Controllers
     {
         public PartialViewResult Main(string a = "Index", string c = "Home")
         {
-            items.First(m => m.Controller == c).Active = "active";
+            var mi = items.FirstOrDefault(m => m.Controller == c);
+            if (mi != null)
+                mi.Active = "active";
             return PartialView(items);
         }
 
         public PartialViewResult UserInfo()
         {
-            return PartialView();
+            return PartialView(items);
         }
 
         public PartialViewResult Side()
