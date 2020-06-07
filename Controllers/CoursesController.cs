@@ -14,12 +14,13 @@ namespace SBC.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public ActionResult Biologia()
         {
             return View();
         }
 
+        [Authorize]
         public ActionResult Сhemistry()
         {
             return View();
