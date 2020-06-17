@@ -14,7 +14,8 @@ namespace SBC.Controllers
         {
             return View();
         }
-        [Authorize]
+        
+        //[Authorize]
         public ActionResult Biologia()
         {
             return View();

@@ -244,9 +244,13 @@
     <Content Include="Images\9B6iBKH1j6c.jpg" />
     <Content Include="Images\Banner.jpg" />
     <Content Include="Images\FB.png" />
+    <Content Include="Images\NB1.png" />
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\VK.png" />
     <Content Include="Images\биология.jpg" />
+    <Content Include="Images\Основные формы жизни.png" />
+    <Content Include="Images\паразитизм.png" />
+    <Content Include="Images\Строение вариана.png" />
     <Content Include="Images\химия.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
