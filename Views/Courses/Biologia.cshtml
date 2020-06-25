@@ -3,7 +3,7 @@
 }
 
 <h2>Программа подготовки к ЦТ по биологии.</h2>
-<div class="main-card">
+<div class="main-card" onmousedown="return false;" onclick="return true;" oncontextmenu="return false;">
     <div class="overflow-auto">
         <div class="accordion" id="accordionExample">
             <div class="card">
@@ -15,7 +15,6 @@
                         </button>
                     </h5>
                 </div>
-
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                         <h3 class="text-center"><em><u>Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.</u></em></h3>
@@ -105,7 +104,12 @@
                         <p>
                             &nbsp;&nbsp;&nbsp;&nbsp;Царство Протисты относительно других царств выделено сравнительно недавно, в современном мире к нему относят все одноклеточные и колониальные организмы, вне зависимости от типа питания, строения, способа размножения и т.д. В результате царство Протисты объединяет чрезвычайно разнородную группу организмов, часть из которых ранее относили к царству Животные (напр. инфузория-туфелька), царству Растения (напр. эвглена зеленая), царству Грибы (напр. фитофтора).
                         </p>
-                        <a href=""> Ссылка на контрольный тест</a>
+                        <a href=@Url.Action("Test1","Courses")
+                           class="btn btn-primary">
+                            <span class="glyphicon glyphicon-shoppingcart">
+                            </span>
+                            Задания для самоконтроля
+                        </a>
                         <br />
                         <br />
                         <h3 class="text-center"><em><u>Вирусы, бактериофаги: строение и жизнедеятельность. Роль вирусов в природе, медицине и жизни человека. Основные заболевания, вызываемые вирусами.</u></em></h3>
@@ -172,7 +176,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-6">
-                                    <img src="~/Images/Строение вариана.png" alt="строение вариана" height="300" width="600" />
+                                    <img src="~/Images/Строение вариана.png" alt="строение вариана" height="300" width="600" title="(рисунок из учебника «Биология» 7 класс)"> />
                                     <p><cite title="(рисунок из учебника «Биология» 7 класс)">Рис. Строение фага кишечной палочки. </cite></p>
                                 </div>
                             </div>
@@ -217,11 +221,11 @@
                             <li>Вызывают заболевания домашних животных (ящур, чума свиней и птиц, инфекционная анемия лошадей).</li>
                             <li>Вызывают заболевания человека<strong>(оспа (черная и ветряная), эпидемический паротит (свинка), краснуха, корь, полиомиелит, грипп, гепатит, бешенство, герпес, ВИЧ).</strong></li>
                         </ol>
-                        <a href="#" >Ссылка на контрольный тест</a>
+                        <a href="#">Ссылка на контрольный тест</a>
                     </div>
                 </div>
             </div>
-          
+
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
@@ -233,415 +237,599 @@
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <h3 class="text-center"><em><u>Надцарство прокариоты: бактерии, цианобактерии. Строение и жизнедеятельность. Роль бактерий в природе, медицине и жизни человека. Основные заболевания, вызываемые бактериями.</u></em></h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Бактерии относятся к империи Клеточные, надцарство Прокариоты, т.е они имеют клеточное строение, но <u>клетка не содержит ядра</u>. К царству бактерии относятся примерно 3000 видов. Размеры бактериальных клеток колеблются в пределах 0,1-30 мкм. Открыл бактерии А. ван Левенгук в 1675 г. Наука, изучающая бактерии, называется <strong>микробиология (бактериология).</strong>
+                        </p>
+                        <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;Формы бактериальной клетки:</strong></p>
+                        <ol type="1">
+                            <li>
+                                Кокки – шаровидные бактерии
+                                <ol type="a">
+                                    <li>диплококки – 2 шаровидных клетки, объединенные одной капсулой;</li>
+                                    <li>тетракокки - 4 шаровидных клетки, объединенные одной капсулой;</li>
+                                    <li>стрептококки – бактерии соединены в виде цепочки;</li>
+                                    <li>стафилококки – бактерии, соединенные в виде грозди винограда.</li>
+                                </ol>
+                            </li>
+                            <li>Бациллы – палочковидные бактерии (кишечная палочка, микробактерия туберкулеза).</li>
+                            <li>Сарцины – пакеты, содержащие от 8 до 54 бактерий.</li>
+                            <li>Вибрионы – бактерии в форме запятой (холерный вибрион).</li>
+                            <li>
+                                Извитые формы:
+                                <ol type="a">
+                                    <li>спириллы – спирально извитые;</li>
+                                    <li>спирохеты – винтообразно закрученные (бледная трепонема – возбудитель сифилиса).</li>
+                                </ol>
+                            </li>
+                            <li>Нитевидные, жгутиковые и реснитчатые формы.</li>
+                        </ol>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <img src="~/Images/форма бактерий.png" alt="Форма бактерий" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center"><strong>Среда обитания:</strong></h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Бактерии – виды-космополиты (виды, распространенные повсеместно). Особенно много бактерий встречается в почве (до 100 млн в 1г), из продуктов питания наибольшее количество бактерий содержит свежее парное молоко. Также бактерии встречаются и на дне океана, и на вершинах снежных гор, некоторые виды бактерий живут в желудочно-кишечном тракте человека, в теле человека весом 70 кг может находиться до 5 кг бактерий.</p>
+                        <h3 class="text-center"><strong>Строение бактериальной клетки:</strong></h3>
+                        <ol type="1">
+                            <li>
+                                <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Оболочка </strong>бактериальной клетки выполняет защитную функцию, определяет форму бактериальной клетки, а также препятствует разрушению клетки в гипотонической среде и участвует в осмотическом питании бактерии.
+                                <u>Компоненты оболочки клетки (изнутри кнаружи):</u>
+                                <ol type="a">
+                                    <li>
+                                        <em>Цитоплазматическая мембрана:</em> обеспечивает избирательную проницаемость и выделение из клетки продуктов обмена, а также формирует<strong>мезосомы</strong> - впячивания цитоплазматической мембраны внутрь клетки, которые выполняют функции отсутствующих органелл (комплекса Гольджи, эндоплазматической сети, митохондрий и пластид).
+                                        <br /><strong>N.B!!!</strong> В бактериальной клетке световая фаза фотосинтеза протекает в мезосомах, темновая - в цитоплазме (основной пигмент – бактериохлорофилл, выделения кислорода не происходит!!!).
+                                    </li>
+                                    <li>
+                                        <em>Клеточная стенка</em>, содержащая в своем составе пептидогликан (сложный углевод) – <strong>муреин.</strong> Функции: формообразующая, защитная, участвует в транспорте веществ.
+                                    </li>
+                                    <li>
+                                        <em>Слизистая капсула</em> – необязательный компонент оболочки, состоит из белков или полисахаридов. Функции: защита клетки от высыхания, участие в образовании колоний.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Цитоплазм</strong> -– внутренняя среда бактериальной клетки, в которой расположен генетический аппарат бактерии, органоиды и включения.
+                                <p>
+                                    Генетический аппарат бактерии представлен<strong> нуклеоидом и плазмидами</strong> (необязательный компонент). <strong>Нуклеоид («бактериальная хромосома»)</strong> – кольцевая двухцепочечная молекула ДНК, не связанная с белками-гистонами. <strong>Плазмиды</strong> – короткие кольцевые молекулы ДНК, расположенные в цитоплазме и обуславливающие отдельные признаки бактерии (лекарственная устойчивость, участие в коньюгации.)
+                                </p>
+                                <p>
+                                    Органоиды: единственными органоидами бактериальной клетки являются <strong>рибосомы </strong>(функция – биосинтез белка).
+                                </p>
+                                <p>
+                                    <strong>Включения</strong> – непостоянный компонент клетки, который представляет собой гранулы запасных питательных веществ (гликогена, белка, жира).
+                                </p>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-6">
+                                            <img class="img-fluid" src="~/Images/включение.png" alt="Включение" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <h3 class="text-center"><strong>Подвижность бактерии:</strong></h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Среди бактерий встречаются как неподвижные формы, так и подвижные, которые имеют специальные приспособления для передвижения:
+                            <ol type="1">
+                                <li>
+                                    жгутики – длинные тонкие отростки, в состав которых входит белок – <strong>флагеллин.</strong> Жгутик одним концом встроен в цитоплазматическую мембрану. Основание жгутика вращается так, что жгутик как бы ввинчивается в среду, не совершая беспорядочных движений, тем самым продвигая клетку вперед (принцип колеса);
+                                </li>
+                                <li>
+                                    реснички;
+                                </li>
+                                <li>
+                                    реактивным способом: выбрасывая слизь или при участии газовых вакуолей (у почвенных бактерий);
+                                </li>
+                                <li>
+                                    с помощью ритмичного сокращения клетки;
+                                </li>
+                                <li>
+                                    скользящим типом движения.
+                                </li>
+                            </ol>
+                        </p>
+                        <h3 class="text-center"><strong>Раздражимость:</strong></h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Бактерии отвечают на раздражители при помощи <strong>таксисов</strong> – движений к раздражителю или от него. Положительный таксис- движение к раздражителю, отрицательный таксис – движение от раздражителя. Аэробные бактерии обладают <strong>положительным аэротаксисом</strong> (движение в сторону среды, богатой кислородом), фотосинтезирующие бактерии – <strong>положительным фототаксисом</strong> (движение в сторону света).
+                        </p>
+                        <h3 class="text-center"><strong>Типы питания (типы ассимиляции):</strong></h3>
+                        <p>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;N.B.!!!</strong> В биологии существует 2 типа питания: автотрофный и гетеротрофный, все остальное способы (фотосинтез, фагоцитоз и др.).
+                            <ol type="1">
+                                <li>
+                                    <strong><em><u>Автотрофы</u></em></strong> – организмы, синтезирующие для питания органические вещества из неорганических.
+                                    <ol type="a">
+                                        <li><strong>фототрофы</strong> – синтезируют из неорганических веществ органические, используя энергию солнечного света. В основе жизнедеятельности таких организмов лежит процесс фотосинтеза (зеленые и пурпурные бактерии содержат пигмент бактериохлорофилл)</li>
+                                        <li><strong>хемотрофы</strong>– синтезируют из неорганических веществ органические, используя энергию окислительно-восстановительных реакций. В основе жизнедеятельности таких организмов лежит процесс хемосинтеза (нитрифицирующие бактерии окисляют аммиак до нитратов, железобактерии – Fe<sub>2+</sub> до Fe<sub>3+</sub>, серобактерии – сероводород и серу до сульфатов и др.).</li>
+                                    </ol>
+                                    <br />
+                                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;Азотфиксация</strong> – усвоение молекулярного азота воздуха некоторыми бактериями и образование соединений, доступных для использования другими организмами (цианобактерии, азотобактерии и клубеньковые бактерии). Клубеньковые бактерии поселяются на корнях гороха, фасоли, люпина. Клетки корней растений в месте проникновения бактерии разрастаются и образуют клубеньки, в которых живут бактерии. Клубеньковые бактерии усваивают азот из воздуха и обеспечивают растения этим важным питательным веществом. От растений в качестве «ответной услуги» они получают необходимые для жизни вещества, например углеводы. Таким образом, клубеньковые бактерии находятся в симбиотических отношениях с растениями.
+                                    <br />
+                                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;Симбиоз</strong>(от греч. син — вместе и биос — жизнь) — сожительство. На данном этапе мы рассматриваем только 2 варианта симбиоза, необходимые для понимания биологических процессов:<strong> мутуализм</strong> (взаимовыгодное сожительство) и <strong>паразитизм</strong>  (польза-вред).
+                                </li>
+                                <li>
+                                    <strong><u><em>Гетеротрофы</em></u></strong>  – организмы, питающиеся готовыми органическими веществами.
+                                    <ol type="a">
+                                        <li>
+                                            <strong>сапротрофы</strong> – организмы, питающиеся органическими веществами отмерших организмов или выделениями живых.<strong>Бактерии гниения </strong>(минерализация удобрений (навоз, компост) с образованием перегноя путем расщепления азотсодержащих соединений до аммиака). <strong>Бактерии брожения</strong> (<em>молочнокислые</em> (образование молочнокислых продуктов, закваска капусты и др. овощей),<em>маслянокислые </em>(приготовление сыров, масла), уксуснокислые (образование уксусной, лимонной кислот, спиртов)).
+                                        </li>
+                                        <li>
+                                            <strong>паразиты</strong> – организмы, питающиеся органическими веществами живых организмов (болезнетворные бактерии).
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </p>
+                        <h3 class="text-center"><strong>Типы дыхания (типы диссимиляции):</strong></h3>
+                        <p>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;Аэробные организмы </strong>– организмы, обитающие в условиях свободного доступа кислорода, энергию получают в процессе дыхания.
+                        </p>
+                        <p>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;Анаэробные организмы</strong> – организмы, кислород, для жизнедеятельности которых, не нужен или даже вреден, энергию получают в результате процессов гниения и брожения.
+                        </p>
+                        <p>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;Факультативные анаэробы</strong> – организмы, которые могут существовать и в кислородной, и бескислородной среде.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;При наступлении неблагоприятных условий большинство бактерий способны образовывать<strong> спору (микроцисту).</strong>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Функции споры: перенесение неблагоприятных условий и распространение бактерий.
+                        </p>
+                        <p>
+                            Спора образуется внутри бактериальной клетки. Большая часть воды (примерно 60%) переходит в связанное состояние, ферментативная активность снижается, протопласт сжимается и покрывается очень плотной оболочкой. В споре бактерия может существовать до нескольких лет и обладает повышенной устойчивостью к действию температур, излучения и т.д. При наступлении благоприятных условий спора набухает, оболочка разрывается и бактерия выходит наружу.
+                        </p>
+                        <h3 class="text-center"><strong>Размножение:</strong></h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Основным способом размножения бактерий является <strong>простое (бинарное) деление</strong> клетки надвое. В благоприятных условиях бактерия делится каждые 20-30 минут. Крайне редко может встречаться <strong>почкование </strong>-  тип бесполого размножения, при котором дочерние особи формируются из выростов тела материнского организма (почек).
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Делению клетки может предшествовать половой процесс – <strong>коньюгация</strong>  – однонаправленный обмен плазмидами или частями нуклеоида между двумя бактериями.
+                        </p>
+                        <p>
+                            <strong>N.B.!!!</strong> Не путайся понятия «способ размножения» и «половой процесс». Во время размножения ВСЕГДА происходит увеличение числа особей, а во время полового процесса число особей либо остается постоянным (коньюгация) либо даже уменьшается (копуляция).
+                        </p>
+                        <h3 class="text-center"><strong>Значение бактерий:</strong></h3>
+                        <ol type="1">
+                            <li>Являются звеном цепи питания (редуценты), участвуют в круговороте веществ;</li>
+                            <li>Участвуют в почвообразовании (бактерии гниения, образуя перегной, повышают плодородие почвы);</li>
+                            <li>Связывают атмосферный азот, обогащая почву азотными удобрениями;</li>
+                            <li>Участвуют в образовании полезных ископаемых (железорудные, торфо- и угольные месторождения);</li>
+                            <li>В симбиозе с жвачными животными кишечная палочка разлагает целлюлозу, в кишечнике млекопитающих синтезируют витамины группы В и витамин К.</li>
+                            <li>Вызывают инфекционные заболевания человека<strong><u>(тиф, паратиф, дизентерия, бруцеллез, холера, чума, сибирская язва, коклюш, туберкулез, дифтерия, скарлатина, столбняк, сифилис, гонорея).</u></strong></li>
+                        </ol>
+                        <h3 class="text-center"><strong>Болезнетворные бактерии и способы борьбы с ними.</strong></h3>
+                        <p>
+                            <em>&nbsp;&nbsp;&nbsp;&nbsp;Пути попадания бактерий в организм человека: </em>
+                            <ol type="1">
+                                <li>Воздушно-капельный;</li>
+                                <li>Контактно-бытовой;</li>
+                                <li>Алиментарный (через воду и продукты питания);</li>
+                                <li>Половой;</li>
+                                <li>Трансплацентарный (через плаценту от матери к ребенку);</li>
+                                <li>Вертикальный (от матери к ребенку во время родов);</li>
+                                <li>Трансмиссионный (через укусы насекомых).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <em>&nbsp;&nbsp;&nbsp;&nbsp;Меры борьбы:</em>
+                            <ol type="1">
+                                <li><strong>Пастеризация</strong> -  процесс уничтожения основных болезнетворных в жидких средах, пищевых продуктах путём однократного и непродолжительного их нагрева до температур ниже 100 °C,[1] обычно путём нагревания до 60-70° в течение 20-30 минут.</li>
+                                <li>
+                                    <strong>Стерилизация</strong> - полное освобождение различных веществ, предметов, пищевых продуктов от бактерий.
+                                </li>
+                                <li>
+                                    <strong>Автоклавирование</strong>  – обработка хирургических инструментов, перевязочного материала, химической посуды и других материалов горячим паром при повышенном давлении. Автоклавирование – частный случай стерилизации.
+                                </li>
+                                <li>
+                                    <strong>Дезинфекция</strong> – уничтожение бактерий с помощью различных химических веществ (формалин, перекись водорода, спирт, йод и др.).
+                                </li>
+                                <li>
+                                    Проведение медикаментозного лечения, используя <strong>нтибиотики, вакцины, сыворотки.</strong>
+                                </li>
+                                <li>
+                                    Ликвидация очагов заболевания, соблюдение правил гигиены и проведение санитарно-просветительской работы среди населения.
+                                </li>
+                            </ol>
+                        </p>
+                        <h3 class="text-center"><strong><u><em>Цианобактерии (оксифотобактерии).</em></u></strong></h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Древнейшая группа фотосинтезирующий прокариот, окрашенных в сине-зеленый цвет. <strong>Среда обитания: </strong> пресные и соленые водоемы, горячие источники, поверхность почвы, скалы.
+                        </p>
+                        <p>
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;Представители: </strong>носток, анабена, ривулярия, микроцистис, лингбия, хроококк, осциллятория, глеокапса.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<em>Отличия от настоящих бактерий:</em>
+                                                    <ol type="1">
+                                                        <li>Не имеют жгутиков;</li>
+                                                        <li>Имеют хлорофилл, каротиноиды (пигменты желто-оранжевого цвета) и фикобилины (красный пигмент фикоэритрин и синий пигмент фикоцианин) и способны выделять кислород в процессе фотосинтеза;</li>
+                                                        <li>Есть колониальные и многоклеточные (нитчатые) формы.</li>
+                                                    </ol>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;У нитчатых форм есть специализированные клетки <strong>гетероцисты</strong> – клетки с сильно утолщенными, бесцветными, двухслойными оболочками. Функции: участвуют в фиксации атмосферного азота, участвуют в размножении. Цианобактерии, обитающие в поверхностных слоях воды имеют в клетках <strong>газовые вакуоли </strong>(функция: регулируют плавучесть), а при потере плавучести всплывают и окрашивают воду в сине-зеленый цвет («цветение воды»), при этом выделяя в большом количестве токсичные вещества, вызывая массовую гибель других организмов («замор рыбы»).
+                        </p>
+                        <h3 class="text-center"><strong>Размножение:</strong></h3>
+                        <p>
+                            Основными способами размножения являются<strong> деление клетки надвое</strong> (одноклеточные и колониальные формы), <strong>деление нити надвое</strong> (нитчатые формы).
+                        </p>
+                        <h3 class="text-center"><strong>Значение цианобактерий:</strong></h3>
+                        <p>
+                            <ol type="1">
+                                <li>Источники стоматолитов – слоистых меловых отложений, образующихся при поглощении цианобактериями кальция.</li>
+                                <li>Являются компонентами лишайников (в симбиозе с грибами).</li>
+                                <li>Вызывают «цветение воды».</li>
+                                <li>Выделяют в процессе фотосинтеза кислород.</li>
+                                <li>Носток и спирулина используются в пищу животными и человеком.</li>
+                                <li>Фиксируют атмосферный азот и обогащают им почву.</li>
+                                <li>Корм для зоопланктона и рыб.</li>
+                                <li>Используются для получения аминокислот и витамина В<sub>12</sub></li>
+                            </ol>
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            3. Царство Протисты.
-                            Строение и жизнедеятельность протистов (амеба обыкновенная, инфузория туфелька, фитофтора, малярийный плазмодий, эвглена зеленая, хламидомонада, хлорелла, вольвокс).
-                            Основные заболевания, вызываемые протистами.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                <!--Пропали с 3 - по 6 темы -->
+                <div class="card">
+                    <div class="card-header" id="heading6">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                6. Подцарство Водоросли. Строение и жизнедеятельность. Основные отделы водорослей, представители. Особенности различных отделов водорослей.
+                                Значение в природе и жизни человека.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            4. Царство Грибы. Общая характеристика: строение и жизнедеятельность. Роль грибов в природе, медицине и жизни человека. Мутуалистические взаимодействия грибов.
-                            Семейства паразитических грибов и основные заболевания, ими вызываемые. Шляпочные грибы. Плесневые грибы (мукор, пеницилл, аспергилл).
-                            Дрожжи.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading7">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                7. Ткань: определение. Виды тканей высших растений. Сложные ткани (ксилема, флоэма, перидерма). Органы высших растений.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading5">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            5. Общая характеристика растений. Основные разделы ботаники. Отличия низших и высших растений. Жизненные формы высших растений.
-                            Формы раздражимости. Значение в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading8">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                8. Отдел Моховидные, общая характеристика, основные представители. Чередование поколений, основные принципы.
+                                Чередование поколений у мхов. Сравнительная характеристика кукушкина льна и сфагнума. Значение моховидных в природе и жизни человека.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading6">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                            6. Подцарство Водоросли. Строение и жизнедеятельность. Основные отделы водорослей, представители. Особенности различных отделов водорослей.
-                            Значение в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading9">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                9. Отдел Папоротниковидные: общая характеристика, основные представители, чередование поколений.
+                                Отдел Плауновидные: общая характеристика, основные представители, чередование поколений.
+                                Отдел Хвощевидные: общая характеристика, основные представители, чередование поколений.
+                                Значение плауновидных, хвощевидных и папоротниковидных в природе и жизни человека.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading7">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                            7. Ткань: определение. Виды тканей высших растений. Сложные ткани (ксилема, флоэма, перидерма). Органы высших растений.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading10">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                10. Отдел Голосеменные: общая характеристика, основные представители, чередование поколений.
+                                Значение голосеменных в природе и жизни человека.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading8">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                            8. Отдел Моховидные, общая характеристика, основные представители. Чередование поколений, основные принципы.
-                            Чередование поколений у мхов. Сравнительная характеристика кукушкина льна и сфагнума. Значение моховидных в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading11">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                11. Вегетативные органы растений: корень. Виды корней. Корневая система. Видоизменения корней. Зоны корня. Поперечный срез корня. Основные виды удобрений.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading9">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                            9. Отдел Папоротниковидные: общая характеристика, основные представители, чередование поколений.
-                            Отдел Плауновидные: общая характеристика, основные представители, чередование поколений.
-                            Отдел Хвощевидные: общая характеристика, основные представители, чередование поколений.
-                            Значение плауновидных, хвощевидных и папоротниковидных в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading12">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                12. Вегетативные органы растений: побег. Почка: определение, основные классификации. Стебель: виды стеблей. Варианты ветвления стебля. Поперечный срез стебля. Особенности строения стеблей травянистых растений. Видоизменения побегов: подземные и надземные.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading10">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                            10. Отдел Голосеменные: общая характеристика, основные представители, чередование поколений.
-                            Значение голосеменных в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading13">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                13. Вегетативные органы растений: лист. Строения, основные классификации. Поперечный срез листа. Значение листопада. Вегетативное размножение растений: естественное и искусственное.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading11">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                            11. Вегетативные органы растений: корень. Виды корней. Корневая система. Видоизменения корней. Зоны корня. Поперечный срез корня. Основные виды удобрений.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading14">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                14. Генеративные органы растений: цветок. Строение цветка. Соцветия, их биологическое значение.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading12">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                            12. Вегетативные органы растений: побег. Почка: определение, основные классификации. Стебель: виды стеблей. Варианты ветвления стебля. Поперечный срез стебля. Особенности строения стеблей травянистых растений. Видоизменения побегов: подземные и надземные.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading15">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                15. Опыление, виды опыления. Особенности ветроопыляемых и насекомоопыляемых цветков. Двойное оплодотворение. Образование семени и плода.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading13">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                            13. Вегетативные органы растений: лист. Строения, основные классификации. Поперечный срез листа. Значение листопада. Вегетативное размножение растений: естественное и искусственное.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading16">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                16. Плод, виды плодов. Семя, различия семян однодольных и двудольных растений. Состав семян, условия их прорастания.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading14">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                            14. Генеративные органы растений: цветок. Строение цветка. Соцветия, их биологическое значение.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading17">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                17. Отдел Покрытосеменные: общая характеристика. Классы Однодольные и двудольные: их отличия, основные семейства.
+                                Значение различных семейств покрытосеменных в природе и жизни человека.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading15">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                            15. Опыление, виды опыления. Особенности ветроопыляемых и насекомоопыляемых цветков. Двойное оплодотворение. Образование семени и плода.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading18">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                18. Зоология: основые разделы зоологии. Сходства и отличия растений и животных. Основные классификации животных.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading16">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                            16. Плод, виды плодов. Семя, различия семян однодольных и двудольных растений. Состав семян, условия их прорастания.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading19">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                19. Тип Кишечнополостные: основные ароморфозы, общая характеристика. Многообразие кишечнополостных. Значение кишечнополостных.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading17">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                            17. Отдел Покрытосеменные: общая характеристика. Классы Однодольные и двудольные: их отличия, основные семейства.
-                            Значение различных семейств покрытосеменных в природе и жизни человека.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading20">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                20. Тип Плоские черви: основные ароморфозы, общая характеристика. Многообразие плоских червей. Циклы развития основных паразитических червей. Значение плоских червей.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading18">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-                            18. Зоология: основые разделы зоологии. Сходства и отличия растений и животных. Основные классификации животных.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading21">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                21. Тип Круглые черви: основные ароморфозы, общая характеристика. Многообразие круглых червей. Миграция личинки аскариды по организму. Значение круглых червей.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading19">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
-                            19. Тип Кишечнополостные: основные ароморфозы, общая характеристика. Многообразие кишечнополостных. Значение кишечнополостных.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading22">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                22. Тип Кольчатые черви: основные ароморфозы, общая характеристика. Многообразие кольчатых червей. Дождевой червь. Значение кольчатых червей.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header" id="heading20">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-                            20. Тип Плоские черви: основные ароморфозы, общая характеристика. Многообразие плоских червей. Циклы развития основных паразитических червей. Значение плоских червей.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card">
+                    <div class="card-header" id="heading23">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                23. Тип Моллюски: основные ароморфозы, общая характеристика. Многообразие моллюсков, их значение.
+                            </button>
+                        </h5>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading21">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-                            21. Тип Круглые черви: основные ароморфозы, общая характеристика. Многообразие круглых червей. Миграция личинки аскариды по организму. Значение круглых червей.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading22">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
-                            22. Тип Кольчатые черви: основные ароморфозы, общая характеристика. Многообразие кольчатых червей. Дождевой червь. Значение кольчатых червей.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading23">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
-                            23. Тип Моллюски: основные ароморфозы, общая характеристика. Многообразие моллюсков, их значение.
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
-@*24. Тип Членистоногие: основные ароморфозы, общая характеристика. Класс Ракообразные: основные ароморфозы, общая характеристика. Многообразие ракообразных, их значение. Класс Паукообразные: основные ароморфозы, общая характеристика. Многообразие паукообразных, их значение. Класс Насекомые: основные ароморфозы, общая характеристика. Многообразие насекомых, их значение. Основные отряды насекомых: их характеристика.
+    @*24. Тип Членистоногие: основные ароморфозы, общая характеристика. Класс Ракообразные: основные ароморфозы, общая характеристика. Многообразие ракообразных, их значение. Класс Паукообразные: основные ароморфозы, общая характеристика. Многообразие паукообразных, их значение. Класс Насекомые: основные ароморфозы, общая характеристика. Многообразие насекомых, их значение. Основные отряды насекомых: их характеристика.
 
-    25. Тип Хордовые: основные ароморфозы, общая характеристика. Классификация типа хордовые. Класс Ланцентики: общая характеристика. Общая характеристика подтипа Позвоночные.
+        25. Тип Хордовые: основные ароморфозы, общая характеристика. Классификация типа хордовые. Класс Ланцентики: общая характеристика. Общая характеристика подтипа Позвоночные.
 
-    26. Надкласс Рыбы: основные ароморфозы, общая характеристика. Хрящевые и костные рыбы: основные отряды, их значение.
+        26. Надкласс Рыбы: основные ароморфозы, общая характеристика. Хрящевые и костные рыбы: основные отряды, их значение.
 
-    27. Класс Земноводные: основные ароморфозы, общая характеристика. Многообразие земноводных: основные отряды, их значение.
+        27. Класс Земноводные: основные ароморфозы, общая характеристика. Многообразие земноводных: основные отряды, их значение.
 
-    28. Класс Пресмыкающиеся: основные ароморфозы, общая характеристика. Многообразие пресмыкающихся: основные отряды, их значение.
+        28. Класс Пресмыкающиеся: основные ароморфозы, общая характеристика. Многообразие пресмыкающихся: основные отряды, их значение.
 
-    29. Класс Птицы: основные ароморфозы, общая характеристика. Многообразие птиц: основные отряды, их значение. Виды птенцов: особенности выводковых и гнездовых птенцов. Экологические группы птиц.
+        29. Класс Птицы: основные ароморфозы, общая характеристика. Многообразие птиц: основные отряды, их значение. Виды птенцов: особенности выводковых и гнездовых птенцов. Экологические группы птиц.
 
-    30 Класс Млекопитающие: основные ароморфозы, общая характеристика. Подкласс Первозвери: особенности. Основные отряды подкласса Настоящие звери: их характеристика и значение.
+        30 Класс Млекопитающие: основные ароморфозы, общая характеристика. Подкласс Первозвери: особенности. Основные отряды подкласса Настоящие звери: их характеристика и значение.
 
-    9 класс
+        9 класс
 
-    31. Основные науки, изучающие человека. Анатомия человека: определение, основные разделы и методы изучения. Физиология человека: определение, основные разделы и методы изучения. Гигиена человека: определение, основные разделы и методы изучения.
+        31. Основные науки, изучающие человека. Анатомия человека: определение, основные разделы и методы изучения. Физиология человека: определение, основные разделы и методы изучения. Гигиена человека: определение, основные разделы и методы изучения.
 
-    32. Клетка и ее производные. Ткани: основные виды. Органы, системы органов и аппараты.
+        32. Клетка и ее производные. Ткани: основные виды. Органы, системы органов и аппараты.
 
-    33. Нервная система: центральная и периферическая. Спинной мозг: анатомическая и физиологическая характеристика. Головной мозг:
+        33. Нервная система: центральная и периферическая. Спинной мозг: анатомическая и физиологическая характеристика. Головной мозг:
 
-    анатомическая и физиологическая характеристика. Вегетативная нервная система: анатомия, эффекты симпатического и парасимпатического отделов.
+        анатомическая и физиологическая характеристика. Вегетативная нервная система: анатомия, эффекты симпатического и парасимпатического отделов.
 
-    34. Высшая нервная деятельность: безусловные и условные. Понятие доминанты. Сон: фазы сна. Память, виды памяти. Сознание.
+        34. Высшая нервная деятельность: безусловные и условные. Понятие доминанты. Сон: фазы сна. Память, виды памяти. Сознание.
 
-    35. Анализаторы: строение зрительного и слухового анализаторов.
+        35. Анализаторы: строение зрительного и слухового анализаторов.
 
-    36. Опорно-двигательная система.
+        36. Опорно-двигательная система.
 
-    37. Кровь
+        37. Кровь
 
-    38. Кровообращение.
+        38. Кровообращение.
 
-    39. Дыхательная система.
+        39. Дыхательная система.
 
-    40. Выделительная система.
+        40. Выделительная система.
 
-    41. Кожа:
+        41. Кожа:
 
-    42. Эндокринная система
+        42. Эндокринная система
 
-    43. Половая система
+        43. Половая система
 
-    44. Общая биология. Химический состав клетки.
+        44. Общая биология. Химический состав клетки.
 
-    45. Строение клетки.
+        45. Строение клетки.
 
-    46. Обмен веществ и энергии.
+        46. Обмен веществ и энергии.
 
-    47. Митотический цикл.
+        47. Митотический цикл.
 
-    48. Размножение организмов.
+        48. Размножение организмов.
 
-    49. Основы наследственности
+        49. Основы наследственности
 
-    50 Кроссинговер.
+        50 Кроссинговер.
 
-    51. Сцепление с полом.
+        51. Сцепление с полом.
 
-    52. Изменчивость
+        52. Изменчивость
 
-    53. Эволюция 1.
+        53. Эволюция 1.
 
-    54. Эволюция 2.
+        54. Эволюция 2.
 
-    55. Экология.
+        55. Экология.
 
-    56. Популяция.
+        56. Популяция.
 
-    57. Биосфера.
+        57. Биосфера.
 
-    58. Вспомогательный раздел.
+        58. Вспомогательный раздел.
 
-    59. Примеры тестов.*@
+        59. Примеры тестов.*@

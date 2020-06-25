@@ -94,7 +94,18 @@
     padding: 10px;
 }
 
-.card-header, .card-header mb-0, .btn-link {
+.card-body-reviews {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.main-card {
+    font-family: 'Times New Roman';
+    font-size: 16pt;
+}
+
+.main-card, .card-header, .btn-link {
     font-family: 'Times New Roman';
     font-size: 16pt;
 }

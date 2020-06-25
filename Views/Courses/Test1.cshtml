@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Проверочный тест &#171;Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.&#187";
+}
+
+<h2>Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.</h2>
+<h3 class="text-center">Часть А.</h3>
+@using (Html.BeginForm("Test1", "Courses", FormMethod.Post))
+{
+<div class="TestOne">
+    <div class="container">
+        1. Основная единица систематики живых организмов это:
+        <ol type="1">
+            <li>@Html.CheckBox("question1", false)Вид</li>
+            <li>@Html.CheckBox("question1", false)Род</li>
+            <li>@Html.CheckBox("question1", false)Класс</li>
+            <li>@Html.CheckBox("question1", false)Царство</li>
+            <li>@Html.CheckBox("question1", false)Империя</li>
+        </ol>
+    </div>
+    <div class="container">
+        2.  К империи доклеточные относится царство:
+        <ol type="1">
+            <li>@Html.CheckBox("question2", false)Бактерии</li>
+            <li>@Html.CheckBox("question2", false)Животные</li>
+            <li>@Html.CheckBox("question2", false)Вирусы</li>
+            <li>@Html.CheckBox("question2", false)Протисты</li>
+            <li>@Html.CheckBox("question2", false)Грибы</li>
+        </ol>
+    </div>
+    <div class="container">
+        3. Империя Клеточные включает надцарства: а) Прокариоты, б) Животные, в) Растения, г) Эукариоты, д) Грибы.
+        <ol type="1">
+            <li>@Html.CheckBox("question3", false)б,в,д</li>
+            <li>@Html.CheckBox("question3", false)а,б,в</li>
+            <li>@Html.CheckBox("question3", false)а,г</li>
+            <li>@Html.CheckBox("question3", false)а,д</li>
+            <li>@Html.CheckBox("question3", false)только а</li>
+        </ol>
+    </div>
+    <div class="container">
+        4. Все одноклеточные эукариотические организмы независимо от типа питания относятся к царству:
+        <ol type="1">
+            <li>@Html.CheckBox("question4", false)Бактерии</li>
+            <li>@Html.CheckBox("question4", false)Животные</li>
+            <li>@Html.CheckBox("question4", false)Вирусы</li>
+            <li>@Html.CheckBox("question4", false)Протисты</li>
+            <li>@Html.CheckBox("question4", false)Грибы</li>
+        </ol>
+    </div>
+    <div class="container">
+        5. Укажите названия таксонов, которые соответствуют царствам Эукариот: а) Грибы, б) Вирусы, в) Растения, г) Бактерии, д) Животные.
+        <ol type="1">
+            <li>@Html.CheckBox("question5", false)а,б,д</li>
+            <li>@Html.CheckBox("question5", false)а,в,д</li>
+            <li>@Html.CheckBox("question5", false)б,г</li>
+            <li>@Html.CheckBox("question5", false)в,д</li>
+            <li>@Html.CheckBox("question5", false)а,г</li>
+        </ol>
+    </div>
+    <div class="container">
+        6. Какие принципы положены К.Линнеем в основу систематики?
+        a) бинарная номенклатура, б) борьба за существование, в) иерархичность, г) конкуренция, д) естественный отбор.
+        <ol type="1">
+            <li>@Html.CheckBox("question6", false)а,в</li>
+            <li>@Html.CheckBox("question6", false)а,б,г</li>
+            <li>@Html.CheckBox("question6", false)б,д</li>
+            <li>@Html.CheckBox("question6", false)а,б,д</li>
+            <li>@Html.CheckBox("question6", false)а,б,в,д</li>
+        </ol>
+    </div>
+    <div class="container">
+        7. Организм, изображенный на рисунке, относится к царству:
+        <img src="~/Images/Гриб.png" height="300" width="300" />
+        <ol type="1">
+            <li>@Html.CheckBox("question7", false)Эукариоты</li>
+            <li>@Html.CheckBox("question7", false)Прокариоты</li>
+            <li>@Html.CheckBox("question7", false)Грибы</li>
+            <li>@Html.CheckBox("question7", false)Животные</li>
+            <li>@Html.CheckBox("question7", false)Растения</li>
+        </ol>
+    </div>
+    <div class="container">
+        8. Организм, изображенный на рисунке, относится к надцарству:
+        <img src="~/Images/Лев.png" />
+        <ol type="1">
+            <li>@Html.CheckBox("question8", false)Эукариоты</li>
+            <li>@Html.CheckBox("question8", false)Прокариоты</li>
+            <li>@Html.CheckBox("question8", false)Грибы</li>
+            <li>@Html.CheckBox("question8", false)Животные</li>
+            <li>@Html.CheckBox("question8", false)Растения</li>
+        </ol>
+    </div>
+    <div class="container">
+        9. Классификацию живых организмов изучает:
+        <ol type="1">
+            <li>@Html.CheckBox("question9", false)Ботаника</li>
+            <li>@Html.CheckBox("question9", false)Анатомия</li>
+            <li>@Html.CheckBox("question9", false)Физиология</li>
+            <li>@Html.CheckBox("question9", false)Систематика</li>
+            <li>@Html.CheckBox("question9", false)Экология</li>
+        </ol>
+    </div>
+    <div class="container">
+        10. Главными задачами систематики как науки являются:
+        <ol type="1">
+            <li>@Html.CheckBox("question10", false)Определение и описание видов живых организмов</li>
+            <li>@Html.CheckBox("question10", false)Проведение классификации живых организмов</li>
+            <li>@Html.CheckBox("question10", false)Создание эволюционной (филогенетической) системы органического мира</li>
+            <li>@Html.CheckBox("question10", false)Все перечисленное верно</li>
+            <li>@Html.CheckBox("question10", false)Все перечисленное неверно</li>
+        </ol>
+    </div>
+    <h3 class="text-center">Часть В.</h3>
+</div>
+}
