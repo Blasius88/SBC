@@ -115,6 +115,12 @@
     font-size: 16pt;
 }
 
+/*тест 1*/
+.TestOne{
+    font-family:'Times New Roman';
+    font-size: 16pt;
+}
+
 /*подвал*/
 .footer-strip {
     height: auto;

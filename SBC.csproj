@@ -221,14 +221,31 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Entities\ApplicationDbContext.cs" />
+    <Compile Include="Entities\Courses.cs" />
+    <Compile Include="Entities\IdentityModels.cs" />
+    <Compile Include="Entities\Test.cs" />
+    <Compile Include="Entities\Test1.cs" />
+    <Compile Include="Entities\Test2.cs" />
+    <Compile Include="Entities\Test3.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Migrations\202006211446000_first.cs" />
+    <Compile Include="Migrations\202006211446000_first.Designer.cs">
+      <DependentUpon>202006211446000_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006211457312_two.cs" />
+    <Compile Include="Migrations\202006211457312_two.Designer.cs">
+      <DependentUpon>202006211457312_two.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MenuItem.cs" />
-    <Compile Include="Models\Test1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\FakeRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -599,6 +616,7 @@
     <Content Include="Views\Menu\UserInfo.cshtml" />
     <Content Include="Views\Courses\Test1.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
+    <Content Include="Views\Courses\Test2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -613,10 +631,15 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SBC.DAL\SBC.DAL.csproj">
-      <Project>{56cb5f4b-4936-4da3-b2dc-3458cb6c4817}</Project>
-      <Name>SBC.DAL</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006211446000_first.resx">
+      <DependentUpon>202006211446000_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006211457312_two.resx">
+      <DependentUpon>202006211457312_two.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

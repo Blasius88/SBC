@@ -1,0 +1,352 @@
+﻿@model SBC.DAL.Test2
+@{
+    ViewBag.Title = "Вирусы";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Вирусы</h2>
+<h3 class="text-center">Часть А.</h3>
+<h3 style="color: red">@ViewBag.Result</h3>
+@using (Html.BeginForm("Test2", "Courses", FormMethod.Post))
+{
+    <div class="TestOne">
+        <div class="form-group">
+            <div class="container">
+                1.К доклеточным формам жизни относятся:
+                <ol type="1">
+                    <li>@Html.RadioButton("question1", "1")протисты и болезнетворные бактерии</li>
+                    <li>@Html.RadioButton("question1", "2")вирусы и бактериофаги</li>
+                    <li>@Html.RadioButton("question1", "3")бактерии и водоросли</li>
+                    <li>@Html.RadioButton("question1", "4")плесневые и шляпочные грибы</li>
+                    <li>@Html.RadioButton("question1", "5")фаги и бактерии</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer1</h3>
+            </div>
+            <div class="container">
+                2. Бактериофаг имеет:
+                <ol type="1">
+                    <li>@Html.RadioButton("question2", "1")цитоплазму и кариоплазму</li>
+                    <li>@Html.RadioButton("question2", "2")генетический аппарат</li>
+                    <li>@Html.RadioButton("question2", "3")клеточную стенку</li>
+                    <li>@Html.RadioButton("question2", "4")жгутики и реснички</li>
+                    <li>@Html.RadioButton("question2", "5")мезосомы</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer2</h3>
+            </div>
+            <div class="container">
+                3. Вирус содержит:
+                <ol type="1">
+                    <li>@Html.RadioButton("question3", "1")нуклеотид и хромосому</li>
+                    <li>@Html.RadioButton("question3", "2")клеточную стенку</li>
+                    <li>@Html.RadioButton("question3", "3")капсид</li>
+                    <li>@Html.RadioButton("question3", "4")плазмалемму</li>
+                    <li>@Html.RadioButton("question3", "5")органоиды движения</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer3</h3>
+            </div>
+            <div class="container">
+                4. Геном вируса представлен:
+                <ol type="1">
+                    <li>@Html.RadioButton("question4", "1")ДНК или РН</li>
+                    <li>@Html.RadioButton("question4", "2")хромосомой</li>
+                    <li>@Html.RadioButton("question4", "3")нуклеоидом</li>
+                    <li>@Html.RadioButton("question4", "4")мезосомой</li>
+                    <li>@Html.RadioButton("question4", "5")плазмидами</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer4</h3>
+            </div>
+            <div class="container">
+                5. Заболевания человека вызывают вирусы:
+                <ol type="1">
+                    <li>@Html.RadioButton("question5", "1")табачной мозаики</li>
+                    <li>@Html.RadioButton("question5", "2")чумы и бешенства</li>
+                    <li>@Html.RadioButton("question5", "3")чумы кур дизентерии и туберкулезамезосомой</li>
+                    <li>@Html.RadioButton("question5", "4")дизентерии и туберкулеза</li>
+                    <li>@Html.RadioButton("question5", "5")гепатита и гриппа</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer5</h3>
+            </div>
+            <div class="container">
+                6. Вирусы открыл:
+                <ol type="1">
+                    <li>@Html.RadioButton("question6", "1")Э. Геккель</li>
+                    <li>@Html.RadioButton("question6", "2")Э. Зюсс</li>
+                    <li>@Html.RadioButton("question6", "3")Д. Ивановский</li>
+                    <li>@Html.RadioButton("question6", "4")В. Вернадский</li>
+                    <li>@Html.RadioButton("question6", "5")А. ван Левенгук</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer6</h3>
+            </div>
+            <div class="container">
+                7. Оболочка вируса образована…
+                <ol type="1">
+                    <li>@Html.RadioButton("question7", "1")белками</li>
+                    <li>@Html.RadioButton("question7", "2")гликокаликсом</li>
+                    <li>@Html.RadioButton("question7", "3")клеточной стенкой, содержащей хитин</li>
+                    <li>@Html.RadioButton("question7", "4")клеточной стенкой, содержащей целлюлозой</li>
+                    <li>@Html.RadioButton("question7", "5")клеточной стенкой, содержащей муреин</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer7</h3>
+            </div>
+            <div class="container">
+                8. Генетический материал вирусов может быть представлен: а) липидами, б) ДНК, в) углеводами, г) РНК, д) белками.
+                <ol type="1">
+                    <li>@Html.RadioButton("question8", "1")а, в</li>
+                    <li>@Html.RadioButton("question8", "2")б, г</li>
+                    <li>@Html.RadioButton("question8", "3")б, д</li>
+                    <li>@Html.RadioButton("question8", "4")а, д</li>
+                    <li>@Html.RadioButton("question8", "5")б, в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer8</h3>
+            </div>
+            <div class="container">
+                9. Вирусы, поражающие цианобактерии, называются:
+                <ol type="1">
+                    <li>@Html.RadioButton("question9", "1")капсиды</li>
+                    <li>@Html.RadioButton("question9", "2")цианофаги</li>
+                    <li>@Html.RadioButton("question9", "3")вироиды</li>
+                    <li>@Html.RadioButton("question9", "4")бактериофаги</li>
+                    <li>@Html.RadioButton("question9", "5")профаги</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer9</h3>
+            </div>
+            <div class="container">
+                10. Вирусы поражающие бактерии, называются:
+                <ol type="1">
+                    <li>@Html.RadioButton("question10", "1")капсиды</li>
+                    <li>@Html.RadioButton("question10", "2")цианофаги</li>
+                    <li>@Html.RadioButton("question10", "3")вироиды</li>
+                    <li>@Html.RadioButton("question10", "4")бактериофаги</li>
+                    <li>@Html.RadioButton("question10", "5")профаги</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer10</h3>
+            </div>
+            <div class="container">
+                11. Белковая оболочка вирусов носит название:
+                <ol type="1">
+                    <li>@Html.RadioButton("question11", "1")суперкапсид</li>
+                    <li>@Html.RadioButton("question11", "2")вирион</li>
+                    <li>@Html.RadioButton("question11", "3")вироид</li>
+                    <li>@Html.RadioButton("question11", "4")нуклеоид</li>
+                    <li>@Html.RadioButton("question11", "5")капсид</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer11</h3>
+            </div>
+            <div class="container">
+                12. Внеклеточная полностью сформированная вирусная частица – это
+                <ol type="1">
+                    <li>@Html.RadioButton("question12", "1")висмут</li>
+                    <li>@Html.RadioButton("question12", "2")вирион</li>
+                    <li>@Html.RadioButton("question12", "3")вироид</li>
+                    <li>@Html.RadioButton("question12", "4")вибрион</li>
+                    <li>@Html.RadioButton("question12", "5")профаг</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer12</h3>
+            </div>
+            <div class="container">
+                13. По форме взаимодействия с бактериальной клеткой бактериофаги делят на: а) спонтанные, б) умеренные, в) вирулентные, г) прокариотические, д) индуцированные
+                <ol type="1">
+                    <li>@Html.RadioButton("question13", "1")а, в</li>
+                    <li>@Html.RadioButton("question13", "2")б, в</li>
+                    <li>@Html.RadioButton("question13", "3")г, д</li>
+                    <li>@Html.RadioButton("question13", "4")а, д</li>
+                    <li>@Html.RadioButton("question13", "5")б, д</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer13</h3>
+            </div>
+            <div class="container">
+                14. Бактериофаги, вызывающие лизис пораженной клетки:
+                <ol type="1">
+                    <li>@Html.RadioButton("question14", "1")вироиды</li>
+                    <li>@Html.RadioButton("question14", "2")умеренные фаги</li>
+                    <li>@Html.RadioButton("question14", "3")капсиды</li>
+                    <li>@Html.RadioButton("question14", "4")вирулентные фаги</li>
+                    <li>@Html.RadioButton("question14", "5")профаги</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer14</h3>
+            </div>
+            <div class="container">
+                15. Профаги – это:
+                <ol type="1">
+                    <li>@Html.RadioButton("question15", "1")вироиды</li>
+                    <li>@Html.RadioButton("question15", "2")бактерии</li>
+                    <li>@Html.RadioButton("question15", "3")умеренные фаги</li>
+                    <li>@Html.RadioButton("question15", "4")вирулентные фаги</li>
+                    <li>@Html.RadioButton("question15", "5")бактериофаги</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer15</h3>
+            </div>
+            <div class="container">
+                16. Короткая одноцепочечная молекула РНК, лишенная капсида:
+                <ol type="1">
+                    <li>@Html.RadioButton("question16", "1")висмут</li>
+                    <li>@Html.RadioButton("question16", "2")вирион</li>
+                    <li>@Html.RadioButton("question16", "3")вироид</li>
+                    <li>@Html.RadioButton("question16", "4")вибрион</li>
+                    <li>@Html.RadioButton("question16", "5")профаг</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer16</h3>
+            </div>
+            <div class="container">
+                17. Какие из перечисленных болезней, вызываются вирусами:
+                <ol type="1">
+                    <li>@Html.RadioButton("question17", "1")туберкулез и дифтерия</li>
+                    <li>@Html.RadioButton("question17", "2")спид и грипп</li>
+                    <li>@Html.RadioButton("question17", "3")чума и холера/li>
+                    <li>@Html.RadioButton("question17", "4")сифилис и гонорея</li>
+                    <li>@Html.RadioButton("question17", "5")герпес и бруцеллез</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer17</h3>
+            </div>
+            <div class="container">
+                18. Вирус иммунодефицита человека НЕ передаётся:
+                <ol type="1">
+                    <li>@Html.RadioButton("question18", "1")через нестерильные медицинские инструменты</li>
+                    <li>@Html.RadioButton("question18", "2")при переливании инфицированной крови</li>
+                    <li>@Html.RadioButton("question18", "3")при половом контакте</li>
+                    <li>@Html.RadioButton("question18", "4")при рукопожатии</li>
+                    <li>@Html.RadioButton("question18", "5")к плоду во время беременности</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer18</h3>
+            </div>
+            <div class="container">
+                19. Укажите, какие заболевания вызываются вирусами: а) мозаичная болезнь табака, б) бруцеллез, в) столбняк, г) сифилис, д) ящур, е) грипп
+                <ol type="1">
+                    <li>@Html.RadioButton("question19", "1")а, г, е</li>
+                    <li>@Html.RadioButton("question19", "2")б, г, д</li>
+                    <li>@Html.RadioButton("question19", "3")б, д, е</li>
+                    <li>@Html.RadioButton("question19", "4")а, в, е</li>
+                    <li>@Html.RadioButton("question19", "5")а, д, е</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer19</h3>
+            </div>
+            <div class="container">
+                20. Установите соответствие между вирусами – возбудителями заболеваний человека и поражаемыми ими органами
+                <div class="container">
+                    <table class="table table-bordered text-center">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th scope="col">Возбудитель</th>
+                                <th scope="col">Орган</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Вирус гепатита</td>
+                                <td>А. печень</td>
+                            </tr>
+                            <tr>
+                                <td>2. ВИЧ</td>
+                                <td>Б. Органы иммунной системы</td>
+                            </tr>
+                            <tr>
+                                <td>3. Вирус паротита</td>
+                                <td>В. Нервная система</td>
+                            </tr>
+                            <tr>
+                                <td>4. Вирус полиомиелита</td>
+                                <td>Г. Слюнные железы</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ol type="1">
+                    <li>@Html.RadioButton("question20", "1")1А, 2Б, 3Г, 4В</li>
+                    <li>@Html.RadioButton("question20", "2")1В, 2А, 3Г, 4Б</li>
+                    <li>@Html.RadioButton("question20", "3")1Б, 2А, 3В, 4Г</li>
+                    <li>@Html.RadioButton("question20", "4")1Б, 2В, 3А, 4Г</li>
+                    <li>@Html.RadioButton("question20", "5")1А, 2Б, 3В, 4Г</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer20</h3>
+            </div>
+
+        </div>
+        <h3 class="text-center">Часть В.</h3>
+        <div class="container">
+            <ol type="1">
+                <li>
+                    К доклеточным формам жизни относятся
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question21")
+                        <h3 style="color:red">@ViewBag.Answer21</h3>
+                    </div>
+                </li>
+                <li>
+                    Бактериофаги открыл
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question22")
+                        <h3 style="color:red">@ViewBag.Answer22</h3>
+                    </div>
+                </li>
+                <li>
+                    Ввел термин «вирус» в биологию…
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question23")
+                        <h3 style="color:red">@ViewBag.Answer22</h3>
+                    </div>
+                </li>
+                <li>
+                    Описаны 2 формы существования вирусов:….. и репродуцирующаяся.
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question24")
+                        <h3 style="color:red">@ViewBag.Answer24</h3>
+                    </div>
+                </li>
+                <li>
+                    Одним из свойств живого, проявляющихся при попадании вируса к клетку-хозяина, является ….
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question25")
+                        <h3 style="color:red">@ViewBag.Answer25</h3>
+                    </div>
+                </li>
+                <li>
+                    Типичный вирус имеет …. и хвост.
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question26")
+                        <h3 style="color:red">@ViewBag.Answer26</h3>
+                    </div>
+                </li>
+                <li>
+                    Белковая капсула, покрывающая головку вируса, называется ….
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question27")
+                        <h3 style="color:red">@ViewBag.Answer27</h3>
+                    </div>
+                </li>
+                <li>
+                    Вирусы, паразитирующие только в бактериях, называются ….
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question28")
+                        <h3 style="color:red">@ViewBag.Answer28</h3>
+                    </div>
+                </li>
+                <li>
+                    Внеклеточная, полностью сформированная вирусная частица – это …
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question29")
+                        <h3 style="color:red">@ViewBag.Answer29</h3>
+                    </div>
+                </li>
+                <li>
+                    Вирус, вызывающий лизис пораженной клетки, называется ….
+                    <div class="container">
+                        Ответ:
+                        @Html.TextBox("question30")
+                        <h3 style="color:red">@ViewBag.Answer30</h3>
+                    </div>
+                </li>
+            </ol>
+            <input class="btn btn-success" type="submit" value="проверить результат" />
+        </div>
+    </div>
+}
