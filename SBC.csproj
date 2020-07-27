@@ -617,6 +617,7 @@
     <Content Include="Views\Courses\Test1.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
     <Content Include="Views\Courses\Test2.cshtml" />
+    <Content Include="Views\Courses\Test3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

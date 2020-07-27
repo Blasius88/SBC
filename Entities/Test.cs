@@ -322,10 +322,310 @@ namespace SBC.DAL
             return sum;
         }
 
-        public static int Test3(Test3 test3)
+        public static int Test3(Test3 test)
         {
             int sum = 0;
+            if (test.question1 == "1")
+            {
+                test.check1 = true;
+                sum++;
+            }
+            //вопрос 2
+            if (test.question2 == "2")
+            {
+                test.check2 = true;
+                sum++;
+            }
+            //Вопрос3 
+            if (test.question3 == "5")
+            {
+                test.check3 = true;
+                sum++;
+            }
+            //Вопрос 4
+            if (test.question4 == "1")
+            {
+                test.check4 = true;
+                sum++;
+            }
+            //Вопрос 5
+            if (test.question5 == "2")
+            {
+                test.check5 = true;
+                sum++;
+            }
+            //вопрос 6
+            if (test.question6 == "5")
+            {
+                test.check6 = true;
+                sum++;
+            }
+            //Вопрос 7
+            if (test.question7 == "2")
+            {
+                test.check7 = true;
+                sum++;
+            }
+            //Вопрос 8
+            if (test.question8 == "3")
+            {
+                test.check8 = true;
+                sum++;
+            }
+            //Вопрос 9
+            if (test.question9 == "4")
+            {
+                test.check9 = true;
+                sum++;
+            }
+            //Вопрос10
+            if (test.question10 == "2")
+            {
+                test.check10 = true;
+                sum++;
+            }
+            //Вопрос11
+            if (test.question11 == "5")
+            {
+                test.check11 = true;
+                sum++;
+            }
+            //Вопрос12
+            if (test.question12 == "1")
+            {
+                test.check12 = true;
+                sum++;
+            }
+            //Вопрос13
+            if (test.question13 == "3")
+            {
+                test.check13 = true;
+                sum++;
+            }
+            //Вопрос14
+            if (test.question14 == "2")
+            {
+                test.check14 = true;
+                sum++;
+            }
+            //Вопрос15
+            if (test.question15 == "4")
+            {
+                test.check15 = true;
+                sum++;
+            }
+            //Вопрос16
+            if (test.question16 == "1")
+            {
+                test.check16 = true;
+                sum++;
+            }
+            //Вопрос17
+            if (test.question17 == "3")
+            {
+                test.check17 = true;
+                sum++;
+            }
+            //Вопрос18
+            if (test.question18 == "3")
+            {
+                test.check18 = true;
+                sum++;
+            }
+            //Вопрос19
+            if (test.question19 == "5")
+            {
+                test.check19 = true;
+                sum++;
+            }
+            //Вопрос20
+            if (test.question20 == "2")
+            {
+                test.check20 = true;
+                sum++;
+            }
+            //Вопрос21
+            if (test.question21 == "1")
+            {
+                test.check21 = true;
+                sum++;
+            }
+            //Вопрос22
+            if (test.question22 == "3")
+            {
+                test.check22 = true;
+                sum++;
+            }
+            //Вопрос23
+            if (test.question23 == "3")
+            {
+                test.check23 = true;
+                sum++;
+            }
+            //Вопрос24
+            if (test.question24 == "2")
+            {
+                test.check24 = true;
+                sum++;
+            }
+            //Вопрос25
+            if (test.question25 == "3")
+            {
+                test.check25 = true;
+                sum++;
+            }
+            //Вопрос26
+            if (test.question26 == "5")
+            {
+                test.check26 = true;
+                sum++;
+            }
+            //Вопрос27
+            if (test.question27 == "1")
+            {
+                test.check27 = true;
+                sum++;
+            }
+            //Вопрос28
+            if (test.question28 == "5")
+            {
+                test.check28 = true;
+                sum++;
+            }
+            //Вопрос29
+            if (test.question29 == "2")
+            {
+                test.check29 = true;
+                sum++;
+            }
+            //Вопрос30
+            if (test.question30 == "4")
+            {
+                test.check30 = true;
+                sum++;
+            }
+            //Вопрос31
+            if (test.question31 == "Цианобактерии"|| test.question31 == "цианобактерии")
+            {
+                test.check31 = true;
+                sum++;
+            }
+            //Вопрос32
+            if (test.question32 == "Муреин" || test.question32 == "муреин")
+            {
+                test.check32 = true;
+                sum++;
+            }
+            //Вопрос33
+            if (test.question33 == "Стрептококки" || test.question33 == "стрептококки")
+            {
+                test.check33 = true;
+                sum++;
+            }
+            //Вопрос34
+            if (test.question34 == "Нуклеоид" || test.question34 == "нуклеоид")
+            {
+                test.check34 = true;
+                sum++;
+            }
+            //Вопрос35
+            if (test.question35 == "ДНК")
+            {
+                test.check35 = true;
+                sum++;
+            }
+            //Вопрос36
+            if (test.question36 == "Мезосомы" || test.question36 == "мезосомы")
+            {
+                test.check36 = true;
+                sum++;
+            }
+            //Вопрос37
+            if (test.question37 == "Бактериохлорофилл" || test.question37 == "бактериохлорофилл")
+            {
+                test.check37 = true;
+                sum++;
+            }
+            //Вопрос38
+            if (test.question38 == "Автотрофные и Гетеротрофные" || test.question38 == "автотрофные и гетеротрофные" || test.question38 == "автотрофные, гетеротрофные" || test.question38 == "Автотрофные, Гетеротрофные" || test.question38 == "автотрофные , гетеротрофные" || test.question38 == "Автотрофные , Гетеротрофные")
+            {
+                test.check38 = true;
+                sum++;
+            }
+            //Вопрос39
+            if (test.question39 == "Хемотрофы" || test.question39 == "хемотрофы")
+            {
+                test.check39 = true;
+                sum++;
+            }
+            //Вопрос40
+            if (test.question40 == "Азотобактерии и Цианобактерии" || test.question30 == "азотобактерии и цианобактерии")
+            {
+                test.check40 = true;
+                sum++;
+            }
+            //Вопрос41
+            if (test.question41 == "Нитрифицирующие" || test.question41 == "нитрифицирующие")
+            {
+                test.check41 = true;
+                sum++;
+            }
+            //Вопрос42
+            if (test.question42 == "Сапротрофы" || test.question42 == "сапротрофы")
+            {
+                test.check42 = true;
+                sum++;
+            }
+            //Вопрос43
+            if (test.question43 == "Молочнокислые" || test.question44 == "молочнокислые")
+            {
+                test.check43 = true;
+                sum++;
+            }
+            //Вопрос44
+            if (test.question44 == "Болезнетворные" || test.question44 == "Паразитические"|| test.question44 == "болезнетворные" || test.question44 == "паразитические" || test.question44 == "Болезнетворные/Паразитические" || test.question44 == "болезнетворные/паразитические" || test.question44 == "Болезнетворные/паразитические" || test.question44 == "болезнетворные/Паразитические" || test.question44 == "паразитические/болезнетворные" || test.question44 == "Паразитические/болезнетворные" || test.question44 == "Паразитические/Болезнетворные" || test.question44 == "паразитические/Болезнетворные")
+            {
+                test.check44 = true;
+                sum++;
+            }
+            //Вопрос45
+            if (test.question45 == "Факультативными анаэробами" || test.question45 == "факультативными Анаэробами" || test.question45 == "факультативными анаэробам")
+            {
+                test.check45 = true;
+                sum++;
+            }
+            //Вопрос46
+            if (test.question46 == "Коньюгация" || test.question46 == "коньюгация")
+            {
+                test.check46 = true;
+                sum++;
+            }
+            //Вопрос47
+            if (test.question47 == "Споры" || test.question47 == "споры")
+            {
+                test.check47 = true;
+                sum++;
+            }
+            //Вопрос48
+            if (test.question48 == "Стерилизация" || test.question48 == "стерилизация")
+            {
+                test.check48 = true;
+                sum++;
+            }
+            //Вопрос49
+            if (test.question49 == "Паразиты" || test.question49 == "паразиты")
+            {
+                test.check49 = true;
+                sum++;
+            }
+            //Вопрос50
+            if (test.question50 == "Сапротрофные" || test.question50 == "сапротрофные")
+            {
+                test.check50 = true;
+                sum++; 
+            }
             return sum;
+
         }
     }
 }

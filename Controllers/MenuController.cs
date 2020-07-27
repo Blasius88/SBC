@@ -38,6 +38,5 @@ namespace SBC.Controllers
             new MenuItem{Name ="Домой", Controller="Home", Action="Index", Active=string.Empty},
             new MenuItem{Name="Наши курсы", Controller="Courses", Action="Index", Active=string.Empty},
         };
-
     }
 }
