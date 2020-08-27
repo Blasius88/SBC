@@ -4,6 +4,8 @@ using System.Web.Routing;
 using Ninject;
 using Ninject.Web.Common.WebHost;
 using SBC.DAL;
+using SBC.Models;
+using SBC.Repositories;
 
 namespace SBC
 {
@@ -31,7 +33,10 @@ namespace SBC
         protected override IKernel CreateKernel()
         {
             IKernel kernel = new StandardKernel();
-            kernel.Bind<IRepository<Courses>>().To<FakeRepository>();
+            kernel.Bind<IRepository<Courses>>().To<CoursesRepository>();
+            kernel.Bind<IRepository<CoursesTest>>().To<EFCoursesTestRepository>();
+            kernel.Bind<IRepository<Test>>().To<EFTestRepository>();
+            kernel.Bind<IRepository<Question>>().To<EFQuestionRepository>();
             return kernel;
         }
     }

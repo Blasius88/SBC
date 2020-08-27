@@ -37,7 +37,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test1(Test1 test1) 
         {
-            double res = Test.Test1(test1);
+            double res = TestCourses.Test1(test1);
             double persentAnswer = Convert.ToDouble(res/24*100); 
             if (res != 0)
             {
@@ -155,7 +155,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test2(Test2 test)
         {
-            double res = Test.Test2(test);
+            double res = TestCourses.Test2(test);
             double persentAnswer = Convert.ToDouble(res / 30 * 100);
             if (res != 0)
             {
@@ -297,7 +297,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test3(Test3 test)
         {
-            double res = Test.Test3(test);
+            double res = TestCourses.Test3(test);
             double persentAnswer = Convert.ToDouble(res / 50 * 100);
             if (res != 0)
             {
@@ -427,6 +427,18 @@ namespace SBC.Controllers
                 ViewBag.Answer30 = "Ваш ответ неверный. Верный ответ: 4";
             else
                 ViewBag.Answer30 = "Ваш ответ верный.";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Test4()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Test4(Test4 test)
+        {
             return View();
         }
     }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SBC.DAL
 {
-    public class FakeRepository : IRepository<Courses>
+    public class CoursesRepository : IRepository<Courses>
     {
         public void Create(Courses t)
         {
@@ -31,13 +31,13 @@ namespace SBC.DAL
         {
             return new List<Courses>
             {
-                new Courses 
+                new Courses
                 {
-                    id = 1, 
+                    id = 1,
                     NameCourses = "Биология",
                     Description =""
                 },
-                new Courses 
+                new Courses
                 {
                     id = 2,
                     NameCourses ="Химия",

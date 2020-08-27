@@ -1,0 +1,83 @@
+﻿@model SBC.Models.Question
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Question</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.question)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.question)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.possibleAnswerOne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.possibleAnswerOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.possibleAnswerTwo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.possibleAnswerTwo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.possibleAnswerThree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.possibleAnswerThree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.possibleAnswerFour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.possibleAnswerFour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.possibleAnswerFive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.possibleAnswerFive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Answer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imageBool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imageBool)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idQuestion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

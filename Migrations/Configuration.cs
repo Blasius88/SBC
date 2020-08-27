@@ -1,4 +1,4 @@
-namespace SBC.DAL.Migrations
+namespace SBC.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -9,7 +9,7 @@ namespace SBC.DAL.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(SBC.DAL.ApplicationDbContext context)

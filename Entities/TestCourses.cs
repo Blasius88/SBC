@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SBC.DAL
 {
-    public class Test
+    public class TestCourses
     {
         public static int Test1(Test1 test1)
         {

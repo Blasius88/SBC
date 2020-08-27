@@ -1,0 +1,455 @@
+﻿@model SBC.DAL.Test4
+
+@{
+    ViewBag.Title = "Контрольный тест (протисты).";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Контрольный тест (протисты).</h2>
+<h3 class="text-center">Часть А.</h3>
+<h3 style="color: red">@ViewBag.Result</h3>
+@using (Html.BeginForm("Test4", "Courses", FormMethod.Post))
+{
+    <div class="TestOne">
+        <div class="form-group">
+            <div class="container">
+                1. К автогетеротрофным протистам относятся: а) инфузория-туфелька; б) амеба обыкновенная; в) вольвокс; г) хламидомонада; д) зеленая эвглена:
+                <ol type="1">
+                    <li>@Html.RadioButton("question1", "1")а,в</li>
+                    <li>@Html.RadioButton("question1", "2")б,в</li>
+                    <li>@Html.RadioButton("question1", "3")г,д</li>
+                    <li>@Html.RadioButton("question1", "4")а,д</li>
+                    <li>@Html.RadioButton("question1", "5")а,б</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer1</h3>
+            </div>
+            <div class="container">
+                2. Места обитания свободноживущих протистов:
+                <ol type="1">
+                    <li>@Html.RadioButton("question2", "1")стволы деревьев</li>
+                    <li>@Html.RadioButton("question2", "2")ледники</li>
+                    <li>@Html.RadioButton("question2", "3")жерла вулканов</li>
+                    <li>@Html.RadioButton("question2", "4")влажная почва</li>
+                    <li>@Html.RadioButton("question2", "5")скалы</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer2</h3>
+            </div>
+            <div class="container">
+                3. Органами движения у протистов являются: а) псевдоподии; б) плавники; в) параподии; г) реснички; д) жгутики:
+                <ol type="1">
+                    <li>@Html.RadioButton("question3", "1")а,б,в </li>
+                    <li>@Html.RadioButton("question3", "2")б,в,д</li>
+                    <li>@Html.RadioButton("question3", "3")б,г,д</li>
+                    <li>@Html.RadioButton("question3", "4")а,г,д</li>
+                    <li>@Html.RadioButton("question3", "5")а,б,г</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer3</h3>
+            </div>
+            <div class="container">
+                4. Способы питания, характерные для протистов: а) фагоцитоз; б) всасывание веществ поверхностью тела; в) синтез органических веществ из неорганических; г) пиноцитоз; д) заглатывание пищевых частиц:
+                <ol type="1">
+                    <li>@Html.RadioButton("question4", "1")а,б,в,д </li>
+                    <li>@Html.RadioButton("question4", "2")б,в,д</li>
+                    <li>@Html.RadioButton("question4", "3")только в</li>
+                    <li>@Html.RadioButton("question4", "4")а,г,д</li>
+                    <li>@Html.RadioButton("question4", "5")все ответы верны</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer4</h3>
+            </div>
+            <div class="container">
+                5. Пелликулу в составе оболочки клетки имеет:
+                <ol type="1">
+                    <li>@Html.RadioButton("question5", "1")хлорелла</li>
+                    <li>@Html.RadioButton("question5", "2")инфузория-туфелька</li>
+                    <li>@Html.RadioButton("question5", "3")хламидомонада</li>
+                    <li>@Html.RadioButton("question5", "4")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question5", "5")вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer5</h3>
+            </div>
+            <div class="container">
+                6. Покровы тела представлены только цитоплазматической мембраной у:
+                <ol type="1">
+                    <li>@Html.RadioButton("question6", "1")хлорелла</li>
+                    <li>@Html.RadioButton("question6", "2")инфузория-туфелька</li>
+                    <li>@Html.RadioButton("question6", "3")хламидомонада</li>
+                    <li>@Html.RadioButton("question6", "4")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question6", "5")вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer6</h3>
+            </div>
+            <div class="container">
+                7. Амеба обыкновенная передвигается при помощи:
+                <ol type="1">
+                    <li>@Html.RadioButton("question7", "1")ложноножек</li>
+                    <li>@Html.RadioButton("question7", "2")жгутиков</li>
+                    <li>@Html.RadioButton("question7", "3")параподий</li>
+                    <li>@Html.RadioButton("question7", "4")ресничек</li>
+                    <li>@Html.RadioButton("question7", "5")органоидов движения нет</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer7</h3>
+            </div>
+            <div class="container">
+                8. Какой способ питания характерен для амебы:
+                <ol type="1">
+                    <li>@Html.RadioButton("question8", "1")фагоцитоз </li>
+                    <li>@Html.RadioButton("question8", "2")хемотрофный</li>
+                    <li>@Html.RadioButton("question8", "3")сапротрофный</li>
+                    <li>@Html.RadioButton("question8", "4")голозойный</li>
+                    <li>@Html.RadioButton("question8", "5")фотосинтез</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer8</h3>
+            </div>
+            <div class="container">
+                9. Непереваренные остатки пищи у амебы удаляются из организма через:
+                <ol type="1">
+                    <li>@Html.RadioButton("question9", "1")порошицу</li>
+                    <li>@Html.RadioButton("question9", "2")любой участок поверхности тела</li>
+                    <li>@Html.RadioButton("question9", "3")сократительную вакуоль</li>
+                    <li>@Html.RadioButton("question9", "4")клеточный рот</li>
+                    <li>@Html.RadioButton("question9", "5")пищеварительную вакуоль</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer9</h3>
+            </div>
+            <div class="container">
+                10. Избыток воды у пресноводных протистов удаляются из организма через:
+                <ol type="1">
+                    <li>@Html.RadioButton("question10", "1")порошицу</li>
+                    <li>@Html.RadioButton("question10", "2")любой участок поверхности тела</li>
+                    <li>@Html.RadioButton("question10", "3")сократительную вакуоль</li>
+                    <li>@Html.RadioButton("question10", "4")клеточный рот</li>
+                    <li>@Html.RadioButton("question10", "5")пищеварительную вакуоль</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer10</h3>
+            </div>
+            <div class="container">
+                11. Наличие стигмы (светочувствительного глазка) характерно для:
+                <ol type="1">
+                    <li>@Html.RadioButton("question11", "1")эвглены зеленой</li>
+                    <li>@Html.RadioButton("question11", "2")инфузории – туфельки </li>
+                    <li>@Html.RadioButton("question11", "3")амебы обыкновенной</li>
+                    <li>@Html.RadioButton("question11", "4")малярийного плазмодия </li>
+                    <li>@Html.RadioButton("question11", "5")вольвокса</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer11</h3>
+            </div>
+            <div class="container">
+                12. Образование цисты у амебы обыкновенной служит для: а) бесполого размножения; б) перенесения подсыхания водоема; в) расселения; г) перенесения холодов; д) полового размножения:
+                <ol type="1">
+                    <li>@Html.RadioButton("question12", "1")а,б,в,д</li>
+                    <li>@Html.RadioButton("question12", "2")б,в</li>
+                    <li>@Html.RadioButton("question12", "3")б,г</li>
+                    <li>@Html.RadioButton("question12", "4")а,г,д </li>
+                    <li>@Html.RadioButton("question12", "5")б,в,г</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer12</h3>
+            </div>
+            <div class="container">
+                13. Характерные черты амебы обыкновенной:
+                <ol type="1">
+                    <li>@Html.RadioButton("question13", "1")непостоянная форма тела, органоиды движения ложноножки</li>
+                    <li>@Html.RadioButton("question13", "2")трихоцисты и реснички</li>
+                    <li>@Html.RadioButton("question13", "3")клеточный рот и сократительные вакуоли</li>
+                    <li>@Html.RadioButton("question13", "4")жгутики и ложноножки</li>
+                    <li>@Html.RadioButton("question13", "5")наличие стигмы</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer13</h3>
+            </div>
+            <div class="container">
+                14. Характерные черты инфузории-туфельки:
+                <ol type="1">
+                    <li>@Html.RadioButton("question14", "1")непостоянная форма тела, органоиды движения ложноножки</li>
+                    <li>@Html.RadioButton("question14", "2")трихоцисты и реснички</li>
+                    <li>@Html.RadioButton("question14", "3")клеточный рот и 1 ядро</li>
+                    <li>@Html.RadioButton("question14", "4")жгутики и ложноножки</li>
+                    <li>@Html.RadioButton("question14", "5")наличие стигмы</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer14</h3>
+            </div>
+            <div class="container">
+                15. Установите последовательность этапов питания у инфузории-туфельки: а) вокруг пищевого комочка формируется пищеварительная вакуоль; б) из клеточного рта пища поступает в клеточную глотку; в) пищевые частицы ресничками загоняются в клеточный рот; г) в цитоплазме формируется пищевой комочек; д) из клеточной глотки пищевые частицы поступают в цитоплазму:
+                <ol type="1">
+                    <li>@Html.RadioButton("question15", "1")б-а-д-в-г</li>
+                    <li>@Html.RadioButton("question15", "2")д-б-а-в-г</li>
+                    <li>@Html.RadioButton("question15", "3")б-а-в-г-д</li>
+                    <li>@Html.RadioButton("question15", "4")в-б-д-а-г</li>
+                    <li>@Html.RadioButton("question15", "5")в-б-д-г-а</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer15</h3>
+            </div>
+            <div class="container">
+                16. Гетеротрофные протисты могут размножаться следующими способами: а) шизогонией; б) копуляцией; в) спорами; г) делением клетки надвое; д) коньюгацией:
+                <ol type="1">
+                    <li>@Html.RadioButton("question16", "1")а,б,в,д</li>
+                    <li>@Html.RadioButton("question16", "2")а,б,в,г,д</li>
+                    <li>@Html.RadioButton("question16", "3")б,г</li>
+                    <li>@Html.RadioButton("question16", "4")а,г,д</li>
+                    <li>@Html.RadioButton("question16", "5")а,в,г</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer16</h3>
+            </div>
+            <div class="container">
+                17. Установите последовательность этапов процесса выделения у инфузории-туфельки: а) вакуоли сокращаются, и вода с растворенными продуктами жизнедеятельности выводится наружу; б) вода и растворенные в ней продукты жизнедеятельности поступают в приводящие каналы; в) вода и растворенные в ней продукты жизнедеятельности из приводящих каналов поступают в сократительную вакуоль:
+                <ol type="1">
+                    <li>@Html.RadioButton("question17", "1")б-в-а</li>
+                    <li>@Html.RadioButton("question17", "2")а-б-в</li>
+                    <li>@Html.RadioButton("question17", "3")б-а-в</li>
+                    <li>@Html.RadioButton("question17", "4")а-в-б</li>
+                    <li>@Html.RadioButton("question17", "5")в-б-а</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer17</h3>
+            </div>
+            <div class="container">
+                18. Выберите ответ, где правильно указаны соответствия между подписями к рисунку (а-г) и структурами эвглены зеленой (цифрами 1-7 на рисунке):
+                <div class="row">
+                    <div class="col">
+                        <ol type="a">
+                            <li>стигма (светочувствительный глазок)</li>
+                            <li>ядро</li>
+                            <li>сократительная вакуоль</li>
+                            <li>жгутик</li>
+                        </ol>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question18", "1")а-3; б-7; в-4; г-1</li>
+                            <li>@Html.RadioButton("question18", "2")а-4; б-7; в-3; г-1</li>
+                            <li>@Html.RadioButton("question18", "3")а-4; б-2; в-1; г-3</li>
+                            <li>@Html.RadioButton("question18", "4")а-6; б-7; в-1; г-3</li>
+                            <li>@Html.RadioButton("question18", "5")а-7; б-3; в-5; г-1</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <img src="~/Images/евглены зеленой.jpg" />
+                    </div>
+                </div>
+                <h3 style="color:red">@ViewBag.Answer18</h3>
+            </div>
+            <div class="container">
+                19. Ответная реакция на внешние воздействия у эвглены проявляется в виде:
+                <ol type="1">
+                    <li>@Html.RadioButton("question19", "1")рефлексов</li>
+                    <li>@Html.RadioButton("question19", "2")таксисов</li>
+                    <li>@Html.RadioButton("question19", "3")тропизмов</li>
+                    <li>@Html.RadioButton("question19", "4")настий</li>
+                    <li>@Html.RadioButton("question19", "5")отсутствует</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer19</h3>
+            </div>
+            <div class="container">
+                20. Какой протист имеет 2 ядра:
+                <ol type="1">
+                    <li>@Html.RadioButton("question20", "1")эвглена зеленая</li>
+                    <li>@Html.RadioButton("question20", "2")инфузория – туфелька</li>
+                    <li>@Html.RadioButton("question20", "3")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question20", "4")хлорелла</li>
+                    <li>@Html.RadioButton("question20", "5")вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer20</h3>
+            </div>
+            <div class="container">
+                21. Какой протист имеет клеточный рот и клеточную глотку:
+                <ol type="1">
+                    <li>@Html.RadioButton("question21", "1")эвглена зеленая</li>
+                    <li>@Html.RadioButton("question21", "2")инфузория – туфелька</li>
+                    <li>@Html.RadioButton("question21", "3")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question21", "4")малярийный плазмодий</li>
+                    <li>@Html.RadioButton("question21", "5")вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer21</h3>
+            </div>
+            <div class="container">
+                22. Органоидами движения инфузории – туфельки являются:
+                <ol type="1">
+                    <li>@Html.RadioButton("question22", "1")ложноножки</li>
+                    <li>@Html.RadioButton("question22", "2")жгутики</li>
+                    <li>@Html.RadioButton("question22", "3")параподии</li>
+                    <li>@Html.RadioButton("question22", "4")реснички</li>
+                    <li>@Html.RadioButton("question22", "5")органоиды движения отсутствуют</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer22</h3>
+            </div>
+            <div class="container">
+                23. Установите соответствие между подписями к рисунку (а-д) и структурами инфузории-туфельки (цифры 1-10 на рисунке):
+
+                <div class="row">
+                    <div class="col">
+                        <ol type="a">
+                            <li>макронуклеус</li>
+                            <li>сократительная вакуоль</li>
+                            <li>реснички</li>
+                            <li>порошица</li>
+                            <li>микронуклеус</li>
+                        </ol>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question23", "1")а-6; б-4; в-1; г-9; д-2</li>
+                            <li>@Html.RadioButton("question23", "2")а-8; б-7; в-2; г-1; д-3</li>
+                            <li>@Html.RadioButton("question23", "3")а-4; б-2; в-1; г-3; д-7</li>
+                            <li>@Html.RadioButton("question23", "4")а-2; б-4; в-1; г-9; д-6</li>
+                            <li>@Html.RadioButton("question23", "5")а-8; б-7; в-1; г-6; д-3</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <img src="~/Images/инфузория туфилька.jpg" height="300" />
+                    </div>
+                </div>
+                <h3 style="color:red">@ViewBag.Answer23</h3>
+            </div>
+            <div class="container">
+                24. При благоприятных условиях хламидомонада размножается путем:
+                <ol type="1">
+                    <li>@Html.RadioButton("question24", "1")образования зооспор</li>
+                    <li>@Html.RadioButton("question24", "2")шизогонии</li>
+                    <li>@Html.RadioButton("question24", "3")почкования</li>
+                    <li>@Html.RadioButton("question24", "4")образования апланоспор</li>
+                    <li>@Html.RadioButton("question24", "5")поперечным делением клетки надвое</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer24</h3>
+            </div>
+            <div class="container">
+                25. Наличие светочувствительного глазка характерно для:
+                <ol type="1">
+                    <li>@Html.RadioButton("question25", "1")хламидомонады</li>
+                    <li>@Html.RadioButton("question25", "2")инфузории – туфельки</li>
+                    <li>@Html.RadioButton("question25", "3")амебы обыкновенной</li>
+                    <li>@Html.RadioButton("question25", "4")хлореллы</li>
+                    <li>@Html.RadioButton("question25", "5")вольвокса</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer25</h3>
+            </div>
+            <div class="container">
+                26. Клеточную стенку имеет:
+                <ol type="1">
+                    <li>@Html.RadioButton("question26", "1")эвглена зеленая</li>
+                    <li>@Html.RadioButton("question26", "2")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question26", "3")инфузория – туфелька</li>
+                    <li>@Html.RadioButton("question26", "4")хламидомонада</li>
+                    <li>@Html.RadioButton("question26", "5")малярийный плазмодий</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer26</h3>
+            </div>
+            <div class="container">
+                27. Укажите признаки, характерные для хламидомонады: а) есть органы движения; б) может размножаться половым способом; в) формирует мицелий; г) может размножаться бесполым способом; д) паразитирует на томатах; е) нет жгутиков:
+                <ol type="1">
+                    <li>@Html.RadioButton("question27", "1")а,в,е</li>
+                    <li>@Html.RadioButton("question27", "2")б,г,д</li>
+                    <li>@Html.RadioButton("question27", "3")а,б,г</li>
+                    <li>@Html.RadioButton("question27", "4")б,г,д</li>
+                    <li>@Html.RadioButton("question27", "5")а,б,в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer27</h3>
+            </div>
+            <div class="container">
+                28. Установите соответствие между подписями к рисунку (а-г) и структурами амебы обыкновенной (цифры 1-7 на рисунке):
+                <div class="row">
+                    <div class="col">
+                        <ol type="a">
+                            <li>ядро;</li>
+                            <li>сократительная вакуоль;</li>
+                            <li>ложноножки;</li>
+                            <li>пищеварительная вакуоль</li>
+                        </ol>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question28", "1")а-5; б-3; в-7; г-6</li>
+                            <li>@Html.RadioButton("question28", "2")а-4; б-5; в-7; г-6</li>
+                            <li>@Html.RadioButton("question28", "3")а-5; б-4; в-7; г-6</li>
+                            <li>@Html.RadioButton("question28", "4")а-5; б-6; в-1; г-3</li>
+                            <li>@Html.RadioButton("question28", "5")а-7; б-5; в-1; г-4</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <img src="~/Images/амеба обыкновенная.jpg" height="300" />
+                    </div>
+                </div>
+                <h3 style="color:red">@ViewBag.Answer28</h3>
+            </div>
+            <div class="container">
+                29. Дизентерийная амеба попадает в организм человека при:
+                <ol type="1">
+                    <li>@Html.RadioButton("question29", "1")половом контакте</li>
+                    <li>@Html.RadioButton("question29", "2")укусе зараженного комара</li>
+                    <li>@Html.RadioButton("question29", "3")заглатывании цист с загрязнённой пищей или водой</li>
+                    <li>@Html.RadioButton("question29", "4")дыхании</li>
+                    <li>@Html.RadioButton("question29", "5")поцелуе</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer29</h3>
+            </div>
+            <div class="container">
+                30. Какой протист никогда не образует цист в окружающей среде:
+                <ol type="1">
+                    <li>@Html.RadioButton("question30", "1")эвглена зеленая </li>
+                    <li>@Html.RadioButton("question30", "2")инфузория – туфелька</li>
+                    <li>@Html.RadioButton("question30", "3")амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question30", "4")малярийный плазмодий</li>
+                    <li>@Html.RadioButton("question30", "5")хлорелла</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer30</h3>
+            </div>
+            <div class="container">
+                31. Окончательным хозяином малярийного плазмодия является:
+                <ol type="1">
+                    <li>@Html.RadioButton("question31", "1")муха цеце </li>
+                    <li>@Html.RadioButton("question31", "2")москит </li>
+                    <li>@Html.RadioButton("question31", "3")человек</li>
+                    <li>@Html.RadioButton("question31", "4")малярийный комар (самка)</li>
+                    <li>@Html.RadioButton("question31", "5")малярийный комар (самец)</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer31</h3>
+            </div>
+            <div class="container">
+                32. Укажите признаки, характерные для фитофторы: а) автотрофный тип питания; б) образует ложноножки; в) формирует мицелий; г) размножается спорами; д) гетеротрофный тип питания; е) имеет стигму:
+                <ol type="1">
+                    <li>@Html.RadioButton("question32", "1")а,г,е</li>
+                    <li>@Html.RadioButton("question32", "2")в,г,д</li>
+                    <li>@Html.RadioButton("question32", "3")а,в,г</li>
+                    <li>@Html.RadioButton("question32", "4")б,г,д</li>
+                    <li>@Html.RadioButton("question32", "5")а,б,в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer32</h3>
+            </div>
+            <div class="container">
+                33. Какой организм паразитирует на картофеле:
+                <ol type="1">
+                    <li>@Html.RadioButton("question33", "1")трутовик</li>
+                    <li>@Html.RadioButton("question33", "2")спорынья</li>
+                    <li>@Html.RadioButton("question33", "3")фитофтора</li>
+                    <li>@Html.RadioButton("question33", "4")головня</li>
+                    <li>@Html.RadioButton("question33", "5")амеба дизентерийная</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer33</h3>
+            </div>
+            <div class="container">
+                34. Укажите признаки, характерные для вольвокса: а) автотрофный тип питания; б) может размножаться половым способом; в) формирует мицелий; г) может размножаться бесполым способом; д) паразитирует на картофеле; е) нет жгутиков:
+                <ol type="1">
+                    <li>@Html.RadioButton("question34", "1")а,д,е</li>
+                    <li>@Html.RadioButton("question34", "2")б,г,д</li>
+                    <li>@Html.RadioButton("question34", "3")а,б,г</li>
+                    <li>@Html.RadioButton("question34", "4")в,г,д</li>
+                    <li>@Html.RadioButton("question34", "5")а,б,в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer34</h3>
+            </div>
+            <div class="container">
+                35. Хлоропласт у хлореллы:
+                <ol type="1">
+                    <li>@Html.RadioButton("question35", "1")отсутствует</li>
+                    <li>@Html.RadioButton("question35", "2")замкнут в кольцо</li>
+                    <li>@Html.RadioButton("question35", "3")закручен в спираль</li>
+                    <li>@Html.RadioButton("question35", "4")чашевидный</li>
+                    <li>@Html.RadioButton("question35", "5")лентовидный</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer35</h3>
+            </div>
+            <div class="container">
+                36. Укажите какие признаки характерны для хлореллы: а) автотрофный тип питания; б) может размножаться половым способом; в) формирует мицелий; г) может размножаться бесполым способам; д) паразитирует на картофеле; е) нет жгутиков:
+                <ol type="1">
+                    <li>@Html.RadioButton("question36", "1")а,г,е</li>
+                    <li>@Html.RadioButton("question36", "2")б,г,д</li>
+                    <li>@Html.RadioButton("question36", "3")а,в,г</li>
+                    <li>@Html.RadioButton("question36", "4")б,в,д</li>
+                    <li>@Html.RadioButton("question36", "5")а,б,в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer36</h3>
+            </div>
+
+        </div>
+    </div>
+}

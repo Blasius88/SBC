@@ -1,12 +1,54 @@
-namespace SBC.DAL.Migrations
+namespace SBC.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class first : DbMigration
+    public partial class _1 : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.CoursesTests",
+                c => new
+                    {
+                        id = c.Int(nullable: false, identity: true),
+                        NameCourses = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.id);
+            
+            CreateTable(
+                "dbo.Tests",
+                c => new
+                    {
+                        idTest = c.Int(nullable: false, identity: true),
+                        NameThema = c.String(nullable: false),
+                        CoursesTest_id = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.idTest)
+                .ForeignKey("dbo.CoursesTests", t => t.CoursesTest_id, cascadeDelete: true)
+                .Index(t => t.CoursesTest_id);
+            
+            CreateTable(
+                "dbo.Questions",
+                c => new
+                    {
+                        idQuestion = c.Int(nullable: false, identity: true),
+                        question = c.String(nullable: false),
+                        possibleAnswerOne = c.String(nullable: false),
+                        possibleAnswerTwo = c.String(nullable: false),
+                        possibleAnswerThree = c.String(nullable: false),
+                        possibleAnswerFour = c.String(nullable: false),
+                        possibleAnswerFive = c.String(nullable: false),
+                        Answer = c.String(nullable: false),
+                        imageBool = c.Boolean(nullable: false),
+                        image = c.Binary(),
+                        mimeType = c.String(),
+                        Test_idTest = c.Int(),
+                    })
+                .PrimaryKey(t => t.idQuestion)
+                .ForeignKey("dbo.Tests", t => t.Test_idTest)
+                .Index(t => t.Test_idTest);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -84,17 +126,24 @@ namespace SBC.DAL.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Questions", "Test_idTest", "dbo.Tests");
+            DropForeignKey("dbo.Tests", "CoursesTest_id", "dbo.CoursesTests");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Questions", new[] { "Test_idTest" });
+            DropIndex("dbo.Tests", new[] { "CoursesTest_id" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Questions");
+            DropTable("dbo.Tests");
+            DropTable("dbo.CoursesTests");
         }
     }
 }

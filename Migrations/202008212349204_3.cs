@@ -1,9 +1,9 @@
-namespace SBC.DAL.Migrations
+namespace SBC.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class two : DbMigration
+    public partial class _3 : DbMigration
     {
         public override void Up()
         {
