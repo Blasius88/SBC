@@ -9,10 +9,10 @@ using System.Web;
 
 namespace SBC.Repositories
 {
-    public class EFCoursesTestRepository : IRepository<CoursesTest>
+    public class EFCoursesTestRepository : IRepository<CoursesItem>
     {
         private ApplicationDbContext context;
-        private DbSet<CoursesTest> table;
+        private DbSet<CoursesItem> table;
 
         /// <summary>
         /// Конструктор класса
@@ -24,7 +24,7 @@ namespace SBC.Repositories
             table = context.coursesTest;
         }
 
-        public void Create(CoursesTest t)
+        public void Create(CoursesItem t)
         {
             table.Add(t);
             context.SaveChanges();
@@ -33,34 +33,43 @@ namespace SBC.Repositories
         public void Delete(int id)
         {
             context
-            .Entry(new CoursesTest { id = id })
+            .Entry(new CoursesItem { id = id })
             .State = EntityState.Deleted;
             context.SaveChanges();
         }
 
-        public IEnumerable<CoursesTest> Find(Func<CoursesTest, bool> predicate)
+        public IEnumerable<CoursesItem> Find(Func<CoursesItem, bool> predicate)
         {
             return table.Where(predicate).ToList();
         }
 
-        public CoursesTest Get(int id)
+        public CoursesItem Get(int id)
         {
             return table.Find(id);
         }
 
-        public IEnumerable<CoursesTest> GetAll()
+        public IEnumerable<CoursesItem> GetAll()
         {
             return table;
         }
 
-        public Task<CoursesTest> GetAsync(int id)
+        public Task<CoursesItem> GetAsync(int id)
         {
             return context.coursesTest.FindAsync(id);
         }
 
-        public void Update(CoursesTest t)
+        public void Update(CoursesItem t)
         {
-            context.Entry<CoursesTest>(t).State = EntityState.Modified;
+            if (t.Image == null)
+            {
+                var dish = context.coursesTest
+                    .AsNoTracking()
+                    .Where(d => d.id == t.id)
+                    .FirstOrDefault();
+                t.Image = dish.Image;
+                t.MineType = dish.MineType;
+            }
+            context.Entry<CoursesItem>(t).State = EntityState.Modified;
             context.SaveChanges();
         }
     }

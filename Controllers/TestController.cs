@@ -3,6 +3,7 @@ using SBC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 
@@ -10,37 +11,40 @@ namespace SBC.Controllers
 {
     public class TestController : Controller
     {
-        IRepository<Test> repository;
-        IRepository<Question> rep;
-
-        public TestController(IRepository<Test> repo)
+        IRepository<TestItem> repository;
+        IRepository<QuestionItem> rep;
+        public TestController(IRepository<TestItem> repo)
         {
             repository = repo;
 
         }
 
-        // GET: Test
-        public ActionResult Index(string id)
+        public ActionResult Index()
         {
-            List<Test> list = new List<Test>();
+            return View();
+        }
+
+        public ActionResult Index(CoursesItem coursesTest)
+        {
+            List<TestItem> list = new List<TestItem>();
             foreach (var t in repository.GetAll())
             {
-                if (Convert.ToInt32(id) == Convert.ToInt32(t.CoursesTest))
+                if (Convert.ToInt32(coursesTest.id) == Convert.ToInt32(t.Courses))
                 {
                     list.Add(t);
                 }
             }
-            return View();
+            return View(list);
         }
 
         [HttpGet]
         public ActionResult Create()
         {
-            return View(new Test());
+            return View(new TestItem());
         }
 
         [HttpPost]
-        public ActionResult Create(Test test)
+        public ActionResult Create(TestItem test)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +69,7 @@ namespace SBC.Controllers
 
         // POST: Admin/Edit/5
         [HttpPost]
-        public ActionResult Edit(Test test)
+        public ActionResult Edit(TestItem test)
         {
             if (ModelState.IsValid)
             {
@@ -87,8 +91,8 @@ namespace SBC.Controllers
         {
             try
             {
-                List<Question> list = new List<Question>();
-                List<Question> list2 = new List<Question>();
+                List<QuestionItem> list = new List<QuestionItem>();
+                List<QuestionItem> list2 = new List<QuestionItem>();
                 foreach (var item in rep.GetAll())
                 {
                     list.Add(item);

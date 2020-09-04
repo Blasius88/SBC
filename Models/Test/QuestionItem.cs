@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace SBC.Models
 {
-    public class Question
+    public class QuestionItem
     {
         [Key]
         [HiddenInput]
@@ -49,7 +49,9 @@ namespace SBC.Models
         [ScaffoldColumn(false)]
         public string mimeType { get; set; } // Mime - тип данных изображения
 
-        public Test Test { get; set; }
+        [HiddenInput]
+        [Required]
+        public TestItem Test { get; set; }
         
     }
 }
