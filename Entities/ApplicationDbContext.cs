@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Microsoft.AspNet.Identity;
@@ -9,25 +10,28 @@ namespace SBC.DAL
 {
     public partial class ApplicationDbContext
     {
-        public DbSet<CoursesTest> coursesTest { get; set; }
-        public DbSet<Test> test { get; set; }
-        public DbSet<Question> questions { get; set; }
+        public DbSet<CoursesItem> coursesTest { get; set; }
+        public DbSet<TestItem> test { get; set; }
+        public DbSet<QuestionItem> questions { get; set; }
 
+        public DbSet<LernenItem> lernens { get; set; }
         public void Populate()
         {
             if (!coursesTest.Any())
             {
-                List<CoursesTest> list = new List<CoursesTest> 
+                List<CoursesItem> list = new List<CoursesItem> 
                 {
-                    new CoursesTest
+                    new CoursesItem
                     {
                         id  =1,
-                        NameCourses = "Биология"
+                        NameCourses = "Биология", 
+                        Description = "This is courses biolodia"
                     },
-                     new CoursesTest
+                     new CoursesItem
                     {
                         id  =2,
-                        NameCourses = "Химия"
+                        NameCourses = "Химия", 
+                        Description = "Это курс по химии"
                     }
                 };
                 coursesTest.AddRange(list);

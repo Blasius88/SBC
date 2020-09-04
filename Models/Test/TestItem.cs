@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace SBC.Models
 {
-    public class Test
+    public class TestItem 
     {
         [Key]
         [HiddenInput]
@@ -19,8 +19,8 @@ namespace SBC.Models
 
         [HiddenInput]
         [Required]
-        public CoursesTest CoursesTest { get; set; }
+        public CoursesItem Courses { get; set; }
 
-        public List<Question> Questions { get; set; }
+        public List<QuestionItem> Questions { get; set; }
     }
 }

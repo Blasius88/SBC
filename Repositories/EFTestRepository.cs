@@ -9,10 +9,10 @@ using System.Web;
 
 namespace SBC.Repositories
 {
-    public class EFTestRepository : IRepository<Test>
+    public class EFTestRepository : IRepository<TestItem>
     {
         private ApplicationDbContext context;
-        private DbSet<Test> table;
+        private DbSet<TestItem> table;
 
         /// <summary>
         /// Конструктор класса
@@ -24,7 +24,7 @@ namespace SBC.Repositories
             table = context.test;
         }
 
-        public void Create(Test t)
+        public void Create(TestItem t)
         {
             table.Add(t);
             context.SaveChanges();
@@ -33,37 +33,37 @@ namespace SBC.Repositories
         public void Delete(int id)
         {
             context
-          .Entry(new Test { idTest = id })
+          .Entry(new TestItem { idTest = id })
           .State = EntityState.Deleted;
             context.SaveChanges();
         }
 
-        public IEnumerable<Test> Find(Func<Test, bool> predicate)
+        public IEnumerable<TestItem> Find(Func<TestItem, bool> predicate)
         {
             return table.Where(predicate).ToList();
         }
 
-        public Test Get(int id)
+        public TestItem Get(int id)
         {
             return table.Find(id);
         }
 
-        public IEnumerable<Test> GetAll()
+        public IEnumerable<TestItem> GetAll()
         {
             return table;
         }
 
-        public Task<Test> GetAsync(int id)
+        public Task<TestItem> GetAsync(int id)
         {
             return context.test.FindAsync(id);
         }
 
-        public Task<Test> GetFindCourses(int id)
+        public Task<TestItem> GetFindCourses(int id)
         {
             return context.test.FindAsync(id);
         }
 
-        public void Update(Test t)
+        public void Update(TestItem t)
         {
             throw new NotImplementedException();
         }

@@ -33,10 +33,9 @@ namespace SBC
         protected override IKernel CreateKernel()
         {
             IKernel kernel = new StandardKernel();
-            kernel.Bind<IRepository<Courses>>().To<CoursesRepository>();
-            kernel.Bind<IRepository<CoursesTest>>().To<EFCoursesTestRepository>();
-            kernel.Bind<IRepository<Test>>().To<EFTestRepository>();
-            kernel.Bind<IRepository<Question>>().To<EFQuestionRepository>();
+            kernel.Bind<IRepository<CoursesItem>>().To<EFCoursesTestRepository>();
+            kernel.Bind<IRepository<TestItem>>().To<EFTestRepository>();
+            kernel.Bind<IRepository<QuestionItem>>().To<EFQuestionRepository>();
             return kernel;
         }
     }

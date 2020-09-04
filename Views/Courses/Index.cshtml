@@ -1,35 +1,31 @@
-﻿@{
-    ViewBag.Title = "Наши курсы";
-}
+﻿@model IEnumerable<SBC.Models.CoursesItem>
 
-<h2>Наши курсы </h2>
-<div class="card-group">
-    <div class="card">
-            <img src="~/Images/биология.jpg" class="card-img-top" alt="Биология">
-            <div class="card-body">
-                <h5 class="card-title">Биология</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href=@Url.Action("Biologia",
-                      "Courses")
-                   class="btn btn-primary">
-                    <span class="glyphicon glyphicon-shoppingcart">
-                    </span>
-                    Перейти на курс
-                </a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="~/Images/химия.jpg" class="card-img-top" alt="Химия">
-            <div class="card-body">
-                <h5 class="card-title">Химия</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href=@Url.Action("Сhemistry",
-                      "Courses")
-                   class="btn btn-primary">
-                    <span class="glyphicon glyphicon-shoppingcart">
-                    </span>
-                    Перейти на курс
-                </a>
-            </div>
-        </div>
-</div>
+<p>
+    @Html.ActionLink("Создать", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameCourses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameCourses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Редактикование", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Удаление", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+</table>
