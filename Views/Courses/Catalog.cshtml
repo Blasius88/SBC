@@ -1,0 +1,24 @@
+﻿@model IEnumerable<SBC.Models.CoursesItem>
+
+@{
+    ViewBag.Title = "Наши курсы";
+}
+
+
+<h2>Наши курсы </h2>
+<div class="card-group">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <img src="@Url.Action("getImage", new { id = item.id })" alt='NoImage' class="card-img-top" height="500">
+            <div class="card-body">
+                <h5 class="card-title">@item.NameCourses</h5>
+                <p class="card-text">@item.Description</p>
+                <a href=@Url.Action("Courses" +item.id,"Lernen") class="btn btn-primary">
+                    <span class="glyphicon glyphicon-shoppingcart"></span>
+                    Перейти на курс
+                </a>
+            </div>
+        </div>
+    }
+</div>

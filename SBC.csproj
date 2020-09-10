@@ -222,6 +222,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\LernenController.cs" />
     <Compile Include="Controllers\OldTestController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -230,6 +231,15 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
+    <Compile Include="Migrations\202009031854232_InitialCreate.cs" />
+    <Compile Include="Migrations\202009031854232_InitialCreate.Designer.cs">
+      <DependentUpon>202009031854232_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009082200074_1.cs" />
+    <Compile Include="Migrations\202009082200074_1.Designer.cs">
+      <DependentUpon>202009082200074_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
     <Compile Include="Models\Test\1\TestCourses.cs" />
     <Compile Include="Models\Test\1\Test1.cs" />
@@ -248,6 +258,7 @@
     <Compile Include="Models\Test\TestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EFCoursesTestRepository.cs" />
+    <Compile Include="Repositories\EFLernenReposytory.cs" />
     <Compile Include="Repositories\EFQuestionRepository.cs" />
     <Compile Include="Repositories\EFTestRepository.cs" />
     <Compile Include="Startup.cs" />
@@ -609,7 +620,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Courses.cshtml" />
     <Content Include="Views\Menu\Main.cshtml" />
     <Content Include="Views\Menu\Map.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -622,23 +632,23 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Сhemistry.cshtml" />
-    <Content Include="Views\Home\Biologia.cshtml" />
+    <Content Include="Views\Lernen\Courses2.cshtml" />
+    <Content Include="Views\Lernen\Courses1.cshtml" />
     <Content Include="Views\Menu\UserInfo.cshtml" />
-    <Content Include="Views\Courses\Test1.cshtml" />
+    <Content Include="Views\CoursesTest\Test1.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
-    <Content Include="Views\Courses\Test2.cshtml" />
-    <Content Include="Views\Courses\Test3.cshtml" />
-    <Content Include="Views\Courses\Test4.cshtml" />
+    <Content Include="Views\CoursesTest\Test2.cshtml" />
+    <Content Include="Views\CoursesTest\Test3.cshtml" />
+    <Content Include="Views\CoursesTest\Test4.cshtml" />
     <Content Include="Views\CoursesTest\Index.cshtml" />
     <Content Include="Views\CoursesTest\Create.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Test\Details.cshtml" />
     <Content Include="Views\Test\Create.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
-    <Content Include="ViewPage1.cshtml" />
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Catalog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -654,6 +664,14 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009031854232_InitialCreate.resx">
+      <DependentUpon>202009031854232_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009082200074_1.resx">
+      <DependentUpon>202009082200074_1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

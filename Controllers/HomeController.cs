@@ -15,19 +15,5 @@ namespace SBC.Controllers
 
             return View();
         }
-
-        public ActionResult Courses()
-        {
-            return View();
-        }
-        public ActionResult Biologia() 
-        {
-            return View();
-        }
-
-        public ActionResult Chemistry()
-        {
-            return View();
-        }
     }
 }
