@@ -2,6 +2,7 @@
 using SBC.Models;
 using System;
 using System.Collections.Generic;
+using System.EnterpriseServices;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -13,24 +14,36 @@ namespace SBC.Controllers
     {
         IRepository<CoursesItem> repository;
 
+
         public CoursesController(IRepository<CoursesItem> repo)
         {
             repository = repo;
         }
 
-        // GET: Test
+        //[Authorize(Roles = "user")]
+        [HttpGet]
+        public ActionResult Catalog()
+        {
+            return View(repository.GetAll());
+        }
+
+
+        // GET: Courses
+        [Authorize(Roles = "admin")]
         public ActionResult Index()
         {
             return View(repository.GetAll());
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             return View(new CoursesItem());
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public ActionResult Create(CoursesItem coursesTest, HttpPostedFileBase imageUpload = null)
         {
             if (ModelState.IsValid)
@@ -84,6 +97,7 @@ namespace SBC.Controllers
             else return View(coursesTest);
         }
 
+        [Authorize(Roles = "admin")]
         public ActionResult Edit(int id)
         {
             return View(repository.Get(id));
@@ -91,7 +105,8 @@ namespace SBC.Controllers
 
         // POST: Admin/Edit/5
         [HttpPost]
-        public ActionResult Edit(CoursesItem test, HttpPostedFileBase imageUpload = null )
+        [Authorize(Roles = "admin")]
+        public ActionResult Edit(CoursesItem test, HttpPostedFileBase imageUpload = null)
         {
             if (ModelState.IsValid)
             {
@@ -118,8 +133,8 @@ namespace SBC.Controllers
             else return View(test);
         }
 
-        //[Authorize(Roles ="admin")]
         // GET: Admin/Delete/5
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int id)
         {
             try
@@ -133,9 +148,9 @@ namespace SBC.Controllers
             }
         }
 
-        //       [Authorize(Roles = "admin")]
         // POST: Admin/Delete/5
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int id, FormCollection collection)
         {
             try

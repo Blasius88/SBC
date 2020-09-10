@@ -16,13 +16,12 @@ namespace SBC
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional});
             routes.MapRoute(
-                name: "TestName",
+                name: "",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "TestController", action = "Index", id = UrlParameter.Optional }
-                );
+                defaults: new { id = UrlParameter.Optional});
+           
         }
     }
 }

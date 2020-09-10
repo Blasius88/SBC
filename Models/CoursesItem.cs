@@ -27,8 +27,14 @@ namespace SBC.Models
         [ScaffoldColumn(false)]
         public string MineType { get; set; } //тип данных изображения 
 
-        public List<TestItem> Test { get; set; }
+        public ICollection<TestItem> test { get; set; }
 
-        public List<LernenItem> lernens { get; set; }
+        public ICollection<LernenItem> lernens { get; set; }
+
+        public CoursesItem()
+        {
+            lernens = new List<LernenItem>();
+            test = new List<TestItem>();
+        }
     }
 }

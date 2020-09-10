@@ -17,6 +17,7 @@ namespace SBC.Models
         [Display(Name = "назание урока")]
         public string nameLernen { get; set; }
         
+        public int coursesItemId { get; set; }
         [HiddenInput]
         [Required]
         public CoursesItem Courses { get; set; }
