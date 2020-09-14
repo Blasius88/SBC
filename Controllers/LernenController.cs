@@ -3,9 +3,11 @@ using SBC.Models;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace SBC.Controllers
 {
+ [Authorize (Roles ="User, admin, theacher")]
     public class LernenController : Controller
     {
         IRepository<LernenItem> repository;
