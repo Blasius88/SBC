@@ -1,9 +1,6 @@
 ﻿using SBC.DAL;
 using SBC.Models;
-using System;
 using System.Collections.Generic;
-using System.EnterpriseServices;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -20,7 +17,7 @@ namespace SBC.Controllers
             repository = repo;
         }
 
-        //[Authorize(Roles = "user")]
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public ActionResult Catalog()
         {

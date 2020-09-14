@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace SBC.Models
@@ -40,7 +36,7 @@ namespace SBC.Models
         [Required(ErrorMessage = "Введите правильный ответ")]
         [Display(Name = "Правильный ответ")]
         public string Answer { get; set; }
-        
+
         public bool imageBool { get; set; } // проверка на добавление картинки 
 
         [ScaffoldColumn(false)]
@@ -52,6 +48,6 @@ namespace SBC.Models
         [HiddenInput]
         [Required]
         public TestItem Test { get; set; }
-        
+
     }
 }

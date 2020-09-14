@@ -1,8 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
-using System.ComponentModel.DataAnnotations;
-
-namespace SBC.DAL
+﻿namespace SBC.DAL
 {
     public class Test1
     {

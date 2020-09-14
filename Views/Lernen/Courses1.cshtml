@@ -5,10 +5,10 @@
 @section SidePanel
     {
     <div class="alert-success">
-
         @foreach (var item in Model)
         {
-            <a class="nav-link" href="#heading_@item.idLernen">@item.nameLernen</a>
+
+            <a class="nav-link" href="#heading_@item.idLernen">Тема @item.idLernen</a>
         }
     </div>
 }
@@ -25,13 +25,12 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_@item.idLernen" aria-expanded="true" aria-controls="collapse_@item.idLernen">
                                 @item.nameLernen
-                                colla @item.idLernen
                             </button>
                         </h5>
                     </div>
                     <div id="collapse_@item.idLernen" class="collapse" aria-labelledby="heading_@item.idLernen" data-parent="#accordionExample">
                         <div class="card-body">
-                            this is body lernen and is empty.
+                            @Html.Action("Tema" + item.idLernen, "Courses1")
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace SBC.DAL
+﻿namespace SBC.DAL
 {
     public class Test4
     {

@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace SBC.Repositories
 {
@@ -19,7 +18,7 @@ namespace SBC.Repositories
         /// </summary>
         /// <param name="ctx">Контекст базы данных</param>
         public EFCoursesTestRepository(ApplicationDbContext ctx)
-        {   
+        {
             context = ctx;
             table = context.coursesTest;
         }

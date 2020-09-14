@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using SBC.DAL;
+using System;
 using System.Web.Mvc;
-using SBC.DAL;
-using SBC.Models;
 
 namespace SBC.Controllers
 {
@@ -15,7 +11,7 @@ namespace SBC.Controllers
         {
             return View();
         }
-        
+
         //[Authorize]
         public ActionResult Biologia()
         {
@@ -35,13 +31,13 @@ namespace SBC.Controllers
         }
 
         [HttpPost]
-        public ActionResult Test1(Test1 test1) 
+        public ActionResult Test1(Test1 test1)
         {
             double res = TestCourses.Test1(test1);
-            double persentAnswer = Convert.ToDouble(res/24*100); 
+            double persentAnswer = Convert.ToDouble(res / 24 * 100);
             if (res != 0)
             {
-                ViewBag.Result = "Процент правильных ответов: " +Math.Round(persentAnswer,2) + " %";
+                ViewBag.Result = "Процент правильных ответов: " + Math.Round(persentAnswer, 2) + " %";
             }
             else
             {

@@ -1,11 +1,4 @@
-﻿using SBC.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SBC.DAL
+﻿namespace SBC.DAL
 {
     public class TestCourses
     {
@@ -505,7 +498,7 @@ namespace SBC.DAL
                 sum++;
             }
             //Вопрос31
-            if (test.question31 == "Цианобактерии"|| test.question31 == "цианобактерии")
+            if (test.question31 == "Цианобактерии" || test.question31 == "цианобактерии")
             {
                 test.check31 = true;
                 sum++;
@@ -583,7 +576,7 @@ namespace SBC.DAL
                 sum++;
             }
             //Вопрос44
-            if (test.question44 == "Болезнетворные" || test.question44 == "Паразитические"|| test.question44 == "болезнетворные" || test.question44 == "паразитические" || test.question44 == "Болезнетворные/Паразитические" || test.question44 == "болезнетворные/паразитические" || test.question44 == "Болезнетворные/паразитические" || test.question44 == "болезнетворные/Паразитические" || test.question44 == "паразитические/болезнетворные" || test.question44 == "Паразитические/болезнетворные" || test.question44 == "Паразитические/Болезнетворные" || test.question44 == "паразитические/Болезнетворные")
+            if (test.question44 == "Болезнетворные" || test.question44 == "Паразитические" || test.question44 == "болезнетворные" || test.question44 == "паразитические" || test.question44 == "Болезнетворные/Паразитические" || test.question44 == "болезнетворные/паразитические" || test.question44 == "Болезнетворные/паразитические" || test.question44 == "болезнетворные/Паразитические" || test.question44 == "паразитические/болезнетворные" || test.question44 == "Паразитические/болезнетворные" || test.question44 == "Паразитические/Болезнетворные" || test.question44 == "паразитические/Болезнетворные")
             {
                 test.check44 = true;
                 sum++;
@@ -622,7 +615,7 @@ namespace SBC.DAL
             if (test.question50 == "Сапротрофные" || test.question50 == "сапротрофные")
             {
                 test.check50 = true;
-                sum++; 
+                sum++;
             }
             return sum;
 
