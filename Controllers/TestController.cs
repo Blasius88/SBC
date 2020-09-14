@@ -2,9 +2,6 @@
 using SBC.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Web;
 using System.Web.Mvc;
 
 namespace SBC.Controllers
@@ -96,7 +93,7 @@ namespace SBC.Controllers
                 foreach (var item in rep.GetAll())
                 {
                     list.Add(item);
-                    
+
                 }
                 for (int i = 0; i <= list.Count; i++)
                 {

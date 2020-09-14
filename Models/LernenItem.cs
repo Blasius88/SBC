@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace SBC.Models
@@ -16,11 +12,9 @@ namespace SBC.Models
         [Required(ErrorMessage = "Введите название урока")]
         [Display(Name = "назание урока")]
         public string nameLernen { get; set; }
-        
-        public int coursesItemId { get; set; }
-        [HiddenInput]
-        [Required]
-        public CoursesItem Courses { get; set; }
 
+        [Required]
+        [HiddenInput]
+        public int coursesItemId { get; set; }
     }
 }

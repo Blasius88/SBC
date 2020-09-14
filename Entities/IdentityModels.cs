@@ -1,7 +1,7 @@
-﻿using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace SBC.DAL
 {
@@ -20,7 +20,7 @@ namespace SBC.DAL
     }
 
     public partial class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    { 
+    {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

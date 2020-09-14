@@ -5,11 +5,10 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace SBC.Repositories
 {
-    public class EFLernenReposytory: IRepository<LernenItem>
+    public class EFLernenReposytory : IRepository<LernenItem>
     {
         private ApplicationDbContext context;
         private DbSet<LernenItem> table;

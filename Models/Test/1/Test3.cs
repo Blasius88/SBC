@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SBC.DAL
+﻿namespace SBC.DAL
 {
     public class Test3
     {
-        
+
         public string question1 { get; set; }
         public bool check1 { get; set; }
         public string question2 { get; set; }

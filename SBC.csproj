@@ -69,32 +69,32 @@
       <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.4.1.1\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.4.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.4.1.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.4.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.4.1.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Cookies.4.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Cookies.4.1.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Facebook.4.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Facebook.4.1.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Google.4.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Google.4.1.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.MicrosoftAccount.4.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.MicrosoftAccount.4.1.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.OAuth.4.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.OAuth.4.1.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Twitter.4.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Twitter.4.1.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
     <Reference Include="Moq, Version=4.14.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>packages\Moq.4.14.5\lib\net45\Moq.dll</HintPath>
@@ -113,6 +113,9 @@
     </Reference>
     <Reference Include="Ninject.Web.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>packages\Ninject.MVC5.3.3.0\lib\net45\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.2.0\lib\net452\StarkbankEcdsa.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -136,6 +139,9 @@
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
@@ -143,6 +149,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -153,6 +160,9 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -221,6 +231,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Courses1Controller.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\LernenController.cs" />
     <Compile Include="Controllers\OldTestController.cs" />
@@ -231,13 +242,10 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
-    <Compile Include="Migrations\202009031854232_InitialCreate.cs" />
-    <Compile Include="Migrations\202009031854232_InitialCreate.Designer.cs">
-      <DependentUpon>202009031854232_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009082200074_1.cs" />
-    <Compile Include="Migrations\202009082200074_1.Designer.cs">
-      <DependentUpon>202009082200074_1.cs</DependentUpon>
+    <Compile Include="Error\ErrorMessage.cs" />
+    <Compile Include="Migrations\202009131915133_first.cs" />
+    <Compile Include="Migrations\202009131915133_first.Designer.cs">
+      <DependentUpon>202009131915133_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
@@ -649,6 +657,66 @@
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
     <Content Include="Views\Courses\Catalog.cshtml" />
+    <Content Include="Views\Courses1\Tema1.cshtml" />
+    <Content Include="Views\Courses1\Tema2.cshtml" />
+    <Content Include="Views\Courses1\Tema3.cshtml" />
+    <Content Include="Views\Courses1\Tema4.cshtml" />
+    <Content Include="Views\Courses1\Tema5.cshtml" />
+    <Content Include="Views\Courses1\Tema6.cshtml" />
+    <Content Include="Views\Courses1\Tema7.cshtml" />
+    <Content Include="Views\Courses1\Tema8.cshtml" />
+    <Content Include="Views\Courses1\Tema9.cshtml" />
+    <Content Include="Views\Courses1\Tema10.cshtml" />
+    <Content Include="Views\Courses1\Tema11.cshtml" />
+    <Content Include="Views\Courses1\Tema12.cshtml" />
+    <Content Include="Views\Courses1\Tema13.cshtml" />
+    <Content Include="Views\Courses1\Tema14.cshtml" />
+    <Content Include="Views\Courses1\Tema15.cshtml" />
+    <Content Include="Views\Courses1\Tema16.cshtml" />
+    <Content Include="Views\Courses1\Tema17.cshtml" />
+    <Content Include="Views\Courses1\Tema18.cshtml" />
+    <Content Include="Views\Courses1\Tema19.cshtml" />
+    <Content Include="Views\Courses1\Tema20.cshtml" />
+    <Content Include="Views\Error\ErrorDowloadPartial.cshtml" />
+    <Content Include="Views\Courses1\Tema21.cshtml" />
+    <Content Include="Views\Courses1\Tema22.cshtml" />
+    <Content Include="Views\Courses1\Tema23.cshtml" />
+    <Content Include="Views\Courses1\Tema24.cshtml" />
+    <Content Include="Views\Courses1\Tema25.cshtml" />
+    <Content Include="Views\Courses1\Tema26.cshtml" />
+    <Content Include="Views\Courses1\Tema27.cshtml" />
+    <Content Include="Views\Courses1\Tema28.cshtml" />
+    <Content Include="Views\Courses1\Tema29.cshtml" />
+    <Content Include="Views\Courses1\Tema30.cshtml" />
+    <Content Include="Views\Courses1\Tema31.cshtml" />
+    <Content Include="Views\Courses1\Tema32.cshtml" />
+    <Content Include="Views\Courses1\Tema33.cshtml" />
+    <Content Include="Views\Courses1\Tema34.cshtml" />
+    <Content Include="Views\Courses1\Tema35.cshtml" />
+    <Content Include="Views\Courses1\Tema36.cshtml" />
+    <Content Include="Views\Courses1\Tema37.cshtml" />
+    <Content Include="Views\Courses1\Tema38.cshtml" />
+    <Content Include="Views\Courses1\Tema39.cshtml" />
+    <Content Include="Views\Courses1\Tema40.cshtml" />
+    <Content Include="Views\Courses1\Tema41.cshtml" />
+    <Content Include="Views\Courses1\Tema42.cshtml" />
+    <Content Include="Views\Courses1\Tema43.cshtml" />
+    <Content Include="Views\Courses1\Tema44.cshtml" />
+    <Content Include="Views\Courses1\Tema45.cshtml" />
+    <Content Include="Views\Courses1\Tema46.cshtml" />
+    <Content Include="Views\Courses1\Tema47.cshtml" />
+    <Content Include="Views\Courses1\Tema48.cshtml" />
+    <Content Include="Views\Courses1\Tema49.cshtml" />
+    <Content Include="Views\Courses1\Tema50.cshtml" />
+    <Content Include="Views\Courses1\Tema51.cshtml" />
+    <Content Include="Views\Courses1\Tema52.cshtml" />
+    <Content Include="Views\Courses1\Tema53.cshtml" />
+    <Content Include="Views\Courses1\Tema54.cshtml" />
+    <Content Include="Views\Courses1\Tema55.cshtml" />
+    <Content Include="Views\Courses1\Tema56.cshtml" />
+    <Content Include="Views\Courses1\Tema57.cshtml" />
+    <Content Include="Views\Courses1\Tema58.cshtml" />
+    <Content Include="Views\Courses1\Tema59.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -666,11 +734,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009031854232_InitialCreate.resx">
-      <DependentUpon>202009031854232_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009082200074_1.resx">
-      <DependentUpon>202009082200074_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009131915133_first.resx">
+      <DependentUpon>202009131915133_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

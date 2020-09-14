@@ -1,12 +1,8 @@
-﻿using Ninject.Activation;
-using SBC.DAL;
+﻿using SBC.DAL;
 using SBC.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
 
 namespace SBC.Controllers
 {
@@ -30,8 +26,8 @@ namespace SBC.Controllers
             List<LernenItem> list = new List<LernenItem>();
             foreach (var item in repository.GetAll())
             {
-                int b = item.idLernen;
-                int a = item.coursesItemId;
+                int b = Convert.ToInt32(item.idLernen);
+                int a = Convert.ToInt32(item.coursesItemId);
                 if (Convert.ToInt32(item.coursesItemId) == i)
                 {
                     list.Add(item);
@@ -48,8 +44,8 @@ namespace SBC.Controllers
             List<LernenItem> list = new List<LernenItem>();
             foreach (var item in repository.GetAll())
             {
-                int b = item.idLernen;
-                int a = item.coursesItemId;
+                int b = Convert.ToInt32(item.idLernen);
+                int a = Convert.ToInt32(item.coursesItemId);
                 if (Convert.ToInt32(item.coursesItemId) == i)
                 {
                     list.Add(item);
