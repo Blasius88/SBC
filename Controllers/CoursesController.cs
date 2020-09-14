@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace SBC.Controllers
 {
+    [Authorize(Roles = "admin, user, theacher")]
     public class CoursesController : Controller
     {
         IRepository<CoursesItem> repository;
@@ -17,7 +18,6 @@ namespace SBC.Controllers
             repository = repo;
         }
 
-        [Authorize(Roles = "admin")]
         [HttpGet]
         public ActionResult Catalog()
         {

@@ -33,7 +33,7 @@ namespace SBC.Controllers
         List<MenuItem> items = new List<MenuItem>()
         {
             new MenuItem{Name ="Домой", Controller="Home", Action="Index", Active=string.Empty},
-            new MenuItem{Name="Наши курсы", Controller="Courses", Action="Index", Active=string.Empty},
+            new MenuItem{Name="Наши курсы", Controller="Courses", Action="Catalog", Active=string.Empty},
         };
     }
 }
