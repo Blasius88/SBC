@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SBC.Controllers
 {
- [Authorize (Roles ="User, admin, theacher")]
+    //[Authorize (Roles ="user, admin, theacher")]
     public class LernenController : Controller
     {
         IRepository<LernenItem> repository;
