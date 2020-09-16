@@ -2,6 +2,7 @@
 
 namespace SBC.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
         // GET: Home

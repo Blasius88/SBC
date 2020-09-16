@@ -12,7 +12,6 @@ namespace SBC.Controllers
     {
         IRepository<CoursesItem> repository;
 
-
         public CoursesController(IRepository<CoursesItem> repo)
         {
             repository = repo;
@@ -23,7 +22,6 @@ namespace SBC.Controllers
         {
             return View(repository.GetAll());
         }
-
 
         // GET: Courses
         [Authorize(Roles = "admin")]

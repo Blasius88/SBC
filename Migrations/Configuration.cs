@@ -10,6 +10,7 @@ namespace SBC.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "SBC.DAL.ApplicationDbContext";
         }
 
         protected override void Seed(SBC.DAL.ApplicationDbContext context)
