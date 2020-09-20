@@ -80,9 +80,9 @@ namespace SBC.Models
         public string LastName { get; set; }
 
         [Required]
-        [MaxLength(12, ErrorMessage = "Не более 12 символов")]
+        [MaxLength(13, ErrorMessage = "Не более 12 символов")]
         [Display(Name = "Ваш номер телефона")]
-        public string Phone { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required]
         [EmailAddress]

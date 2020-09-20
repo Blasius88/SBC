@@ -142,14 +142,8 @@
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -169,8 +163,8 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -252,13 +246,9 @@
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
-    <Compile Include="Migrations\202009161656246_InitialCreate.cs" />
-    <Compile Include="Migrations\202009161656246_InitialCreate.Designer.cs">
-      <DependentUpon>202009161656246_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009161659433_Init.cs" />
-    <Compile Include="Migrations\202009161659433_Init.Designer.cs">
-      <DependentUpon>202009161659433_Init.cs</DependentUpon>
+    <Compile Include="Migrations\202009162014130_Init.cs" />
+    <Compile Include="Migrations\202009162014130_Init.Designer.cs">
+      <DependentUpon>202009162014130_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
@@ -293,7 +283,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\MySite.css" />
-    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\1580647030_14-p-foni-na-temu-obrazovaniya-58.jpg" />
@@ -304,38 +293,53 @@
     <Content Include="Images\education-summit-background-turquoise-main-opt_3.png" />
     <Content Include="Images\FB.png" />
     <Content Include="Images\istockphoto-494617082-612x612.jpg" />
-    <Content Include="Images\NB1.png" />
+    <Content Include="Images\thema1\NB1.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
     <Content Include="Images\thema4\соредии и изидии.png" />
     <Content Include="Images\thema4\строение слоевища.png" />
+    <Content Include="Images\thema6\Thema6.1.png" />
+    <Content Include="Images\Thema7\гаметофит.png" />
+    <Content Include="Images\Thema7\жизненный цикл папоротника.png" />
+    <Content Include="Images\Thema7\плаун.png" />
+    <Content Include="Images\Thema7\спорофит.png" />
+    <Content Include="Images\Thema7\хвощ.png" />
+    <Content Include="Images\thema8\шишки голосеменных без подписей.png" />
+    <Content Include="Images\thema8\шишки с подписями 2.png" />
+    <Content Include="Images\thema8\шишки с подписями.png" />
+    <Content Include="Images\thema9\виды корней тест.png" />
+    <Content Include="Images\thema9\виды корней, типы корневых систем.png" />
+    <Content Include="Images\thema9\корнеклубни.png" />
+    <Content Include="Images\thema9\корнеплод.png" />
+    <Content Include="Images\thema9\поперечный срез корня.png" />
+    <Content Include="Images\thema9\продольный срез корня.png" />
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\VK.png" />
     <Content Include="Images\амеба обыкновенная.jpg" />
-    <Content Include="Images\амеба.png" />
+    <Content Include="Images\thema3\амеба.png" />
     <Content Include="Images\биология.jpg" />
-    <Content Include="Images\включение.png" />
-    <Content Include="Images\вольвокс.png" />
+    <Content Include="Images\thema2\включение.png" />
+    <Content Include="Images\thema3\вольвокс.png" />
     <Content Include="Images\Гриб.png" />
     <Content Include="Images\евглены зеленой.jpg" />
     <Content Include="Images\инфузория туфилька.jpg" />
-    <Content Include="Images\инфузория.png" />
+    <Content Include="Images\thema3\инфузория.png" />
     <Content Include="Images\Лев.png" />
-    <Content Include="Images\мал плазм.png" />
-    <Content Include="Images\Основные формы жизни.png" />
-    <Content Include="Images\паразитизм.png" />
-    <Content Include="Images\размножение хлореллы.png" />
-    <Content Include="Images\спирогира.png" />
-    <Content Include="Images\Строение вариана.png" />
-    <Content Include="Images\улотрикс.png" />
-    <Content Include="Images\фитофтора.png" />
-    <Content Include="Images\форма бактерий.png" />
-    <Content Include="Images\хара.png" />
+    <Content Include="Images\thema3\мал плазм.png" />
+    <Content Include="Images\thema1\Основные формы жизни.png" />
+    <Content Include="Images\thema1\паразитизм.png" />
+    <Content Include="Images\thema3\размножение хлореллы.png" />
+    <Content Include="Images\thema3\спирогира.png" />
+    <Content Include="Images\thema1\Строение вариана.png" />
+    <Content Include="Images\thema3\улотрикс.png" />
+    <Content Include="Images\thema3\фитофтора.png" />
+    <Content Include="Images\thema2\форма бактерий.png" />
+    <Content Include="Images\thema3\хара.png" />
     <Content Include="Images\химия.jpg" />
-    <Content Include="Images\хламидомонада.png" />
-    <Content Include="Images\хлорелла.png" />
-    <Content Include="Images\эвглена зеленая.png" />
+    <Content Include="Images\thema3\хламидомонада.png" />
+    <Content Include="Images\thema3\хлорелла.png" />
+    <Content Include="Images\thema3\эвглена зеленая.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -669,7 +673,6 @@
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
-    <Content Include="Views\Courses\Catalog.cshtml" />
     <Content Include="Views\Courses1\Tema1.cshtml" />
     <Content Include="Views\Courses1\Tema2.cshtml" />
     <Content Include="Views\Courses1\Tema3.cshtml" />
@@ -731,6 +734,7 @@
     <Content Include="Views\Courses1\Tema58.cshtml" />
     <Content Include="Views\Courses1\Tema59.cshtml" />
     <Content Include="Views\Shared\Info.cshtml" />
+    <Content Include="Views\Courses\Catalog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -748,11 +752,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009161656246_InitialCreate.resx">
-      <DependentUpon>202009161656246_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009161659433_Init.resx">
-      <DependentUpon>202009161659433_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009162014130_Init.resx">
+      <DependentUpon>202009162014130_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
