@@ -14,9 +14,13 @@ namespace SBC.DAL
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Здесь добавьте утверждения пользователя
             userIdentity.AddClaim(new Claim("nick", this.NickName));
+            userIdentity.AddClaim(new Claim("LastName", this.LastName));
+            userIdentity.AddClaim(new Claim("FirstName", this.FirstName));
             return userIdentity;
         }
         public string NickName { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
     }
 
     public partial class ApplicationDbContext : IdentityDbContext<ApplicationUser>

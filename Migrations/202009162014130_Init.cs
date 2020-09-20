@@ -3,7 +3,7 @@ namespace SBC.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class Init : DbMigration
     {
         public override void Up()
         {
@@ -93,6 +93,8 @@ namespace SBC.Migrations
                     {
                         Id = c.String(nullable: false, maxLength: 128),
                         NickName = c.String(),
+                        LastName = c.String(),
+                        FirstName = c.String(),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),

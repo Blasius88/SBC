@@ -182,7 +182,7 @@ namespace SBC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, NickName = model.NickName };
+                var user = new ApplicationUser { UserName = model.Email,LastName = model.LastName, FirstName = model.FirstName, PhoneNumber = model.PhoneNumber, Email = model.Email, NickName = model.NickName };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

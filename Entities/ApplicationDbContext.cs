@@ -31,19 +31,8 @@ namespace SBC.DAL
                     roleManager.Create(new IdentityRole("admin"));
                     roleManager.Create(new IdentityRole("user"));
                     roleManager.Create(new IdentityRole("teacher"));
-                    // Создаем пользователя
-                    var userAdmin = new ApplicationUser
-                    {
-                        Email = "admSBComp@gmail.com",
-                        UserName = "admin",
-                        NickName = "SuperHero", 
-                        EmailConfirmed = true
-                    };
-                    userManager.CreateAsync(userAdmin, "123").Wait();
-                    // Добавляем созданного пользователя в администраторы
-                    userManager.AddToRole(userAdmin.Id, "admin");
                 }
-                if (!coursesTest.Any())
+                    if (!coursesTest.Any())
                 {
                     List<CoursesItem> list = new List<CoursesItem>
                 {
