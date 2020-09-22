@@ -283,6 +283,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\MySite.css" />
+    <Content Include="Error\log.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\1580647030_14-p-foni-na-temu-obrazovaniya-58.jpg" />
@@ -340,12 +341,18 @@
     <Content Include="Images\thema4\паразиты.png" />
     <Content Include="Images\thema4\соредии и изидии.png" />
     <Content Include="Images\thema4\строение слоевища.png" />
+    <Content Include="Images\thema5\Безымянный.png" />
     <Content Include="Images\thema6\Thema6.1.png" />
+    <Content Include="Images\thema6\Жизненный цикл моховидных.png" />
     <Content Include="Images\Thema7\гаметофит.png" />
     <Content Include="Images\Thema7\жизненный цикл папоротника.png" />
     <Content Include="Images\Thema7\плаун.png" />
     <Content Include="Images\Thema7\спорофит.png" />
     <Content Include="Images\Thema7\хвощ.png" />
+    <Content Include="Images\Thema7\Цикл развития плауновидных..png" />
+    <Content Include="Images\Thema7\Цикл развития хвощ.png" />
+    <Content Include="Images\thema8\1.png" />
+    <Content Include="Images\thema8\2.png" />
     <Content Include="Images\thema8\шишки голосеменных без подписей.png" />
     <Content Include="Images\thema8\шишки с подписями 2.png" />
     <Content Include="Images\thema8\шишки с подписями.png" />
