@@ -292,7 +292,6 @@
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\books-apple-sized.jpg" />
     <Content Include="Images\education-summit-background-turquoise-main-opt_3.png" />
-    <Content Include="Images\FB.png" />
     <Content Include="Images\istockphoto-494617082-612x612.jpg" />
     <Content Include="Images\social\FB.png" />
     <Content Include="Images\social\Twitter.png" />
@@ -362,8 +361,6 @@
     <Content Include="Images\thema9\корнеплод.png" />
     <Content Include="Images\thema9\поперечный срез корня.png" />
     <Content Include="Images\thema9\продольный срез корня.png" />
-    <Content Include="Images\Twitter.png" />
-    <Content Include="Images\VK.png" />
     <Content Include="Images\амеба обыкновенная.jpg" />
     <Content Include="Images\thema3\амеба.png" />
     <Content Include="Images\биология.jpg" />
