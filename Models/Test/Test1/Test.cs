@@ -1,6 +1,7 @@
-﻿namespace SBC.DAL
+﻿
+namespace SBC.Models.Test.Test1
 {
-    public class Test1
+    public class Test
     {
         public string question1 { get; set; }
         public bool answer1 { get; set; }
@@ -50,5 +51,6 @@
         public bool answer23 { get; set; }
         public string question24 { get; set; }
         public bool answer24 { get; set; }
+        
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using SBC.DAL;
+using SBC.Entities;
 using SBC.Error;
 using SBC.Models;
 using System;

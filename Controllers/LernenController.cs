@@ -1,4 +1,4 @@
-﻿using SBC.DAL;
+﻿using SBC.Entities;
 using SBC.Models;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
 using Ninject;
 using Ninject.Web.Common.WebHost;
-using SBC.DAL;
+using SBC.Entities;
 using SBC.Models;
 using SBC.Repositories;
 using System.Web.Mvc;
