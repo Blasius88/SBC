@@ -245,13 +245,19 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
+    <Compile Include="Entities\TestCourses.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
+    <Compile Include="Migrations\202104252149553_first.cs" />
+    <Compile Include="Migrations\202104252149553_first.Designer.cs">
+      <DependentUpon>202104252149553_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
-    <Compile Include="Models\Test\1\TestCourses.cs" />
-    <Compile Include="Models\Test\1\Test1.cs" />
-    <Compile Include="Models\Test\1\Test2.cs" />
-    <Compile Include="Models\Test\1\Test3.cs" />
-    <Compile Include="Models\Test\1\Test4.cs" />
+    <Compile Include="Models\Test\Test1\Test.cs" />
+    <Compile Include="Models\Test\Test1\Test1.cs" />
+    <Compile Include="Models\Test\Test1\Test2.cs" />
+    <Compile Include="Models\Test\Test1\Test3.cs" />
+    <Compile Include="Models\Test\Test1\Test4.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -700,13 +706,10 @@
     <Content Include="Views\Lernen\Courses2.cshtml" />
     <Content Include="Views\Lernen\Courses1.cshtml" />
     <Content Include="Views\Menu\UserInfo.cshtml" />
-    <Content Include="Views\CoursesTest\Test1.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
-    <Content Include="Views\CoursesTest\Test2.cshtml" />
-    <Content Include="Views\CoursesTest\Test3.cshtml" />
-    <Content Include="Views\CoursesTest\Test4.cshtml" />
-    <Content Include="Views\CoursesTest\Index.cshtml" />
-    <Content Include="Views\CoursesTest\Create.cshtml" />
+    <Content Include="Views\Test\Test2.cshtml" />
+    <Content Include="Views\Test\Test3.cshtml" />
+    <Content Include="Views\Test\Test4.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Test\Details.cshtml" />
     <Content Include="Views\Test\Create.cshtml" />
@@ -775,6 +778,7 @@
     <Content Include="Views\Courses1\Tema59.cshtml" />
     <Content Include="Views\Shared\Info.cshtml" />
     <Content Include="Views\Courses\Catalog.cshtml" />
+    <Content Include="Views\Test\Test1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -790,6 +794,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104252149553_first.resx">
+      <DependentUpon>202104252149553_first.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

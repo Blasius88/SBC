@@ -8,12 +8,13 @@ using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
 
-namespace SBC.DAL
+
+namespace SBC.Entities
 {
     public partial class ApplicationDbContext
     {
         public string error;
-        public DbSet<CoursesItem> coursesTest { get; set; }
+        public DbSet<CoursesItem> Courses { get; set; }
         public DbSet<TestItem> test { get; set; }
         public DbSet<QuestionItem> questions { get; set; }
         public DbSet<LernenItem> lernens { get; set; }
@@ -32,7 +33,7 @@ namespace SBC.DAL
                     roleManager.Create(new IdentityRole("user"));
                     roleManager.Create(new IdentityRole("teacher"));
                 }
-                    if (!coursesTest.Any())
+                if (!Courses.Any())
                 {
                     List<CoursesItem> list = new List<CoursesItem>
                 {
@@ -49,7 +50,7 @@ namespace SBC.DAL
                         Description = "Это курс по химии"
                     }
                 };
-                    coursesTest.AddRange(list);
+                    Courses.AddRange(list);
                     SaveChanges();
                 }
                 if (!lernens.Any())
@@ -412,6 +413,189 @@ namespace SBC.DAL
                     }
                     };
                     lernens.AddRange(list);
+                    SaveChanges();
+                }
+                if (!test.Any())
+                {
+                    List<TestItem> tests = new List<TestItem>
+                    {
+                        new TestItem
+                        {
+                            idTest = 1,
+                            NameThema = "Проверочный тест: Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.",
+                            Courses = 1
+                        },
+                        new TestItem
+                        {
+                            idTest = 2,
+                            NameThema = "Вирусы",
+                            Courses = 1
+                        },
+                        new TestItem
+                        {
+                            idTest = 3,
+                            NameThema = "Надцарство прокариоты: бактерии, цианобактерии. Строение и жизнедеятельность. Роль бактерий в природе, медицине и жизни человека. Основные заболевания, вызываемые бактериями",
+                            Courses = 1
+                        },
+                        new TestItem
+                        {
+                            idTest = 4,
+                            NameThema = "Протисты",
+                            Courses = 1
+                        }
+                   };
+                    test.AddRange(tests);
+                    SaveChanges();
+                }
+                if (!questions.Any())
+                {
+                    List<QuestionItem> questionItems = new List<QuestionItem>
+                    {
+                        new QuestionItem
+                        {
+                            idQuestion = 1,
+                //            question = "1. Основная единица систематики живых организмов это:",
+                //            possibleAnswerOne = "Вид",
+                //            possibleAnswerTwo = "Род" ,
+                //            possibleAnswerThree = "Класс",
+                //            possibleAnswerFour = "Царство" ,
+                //            possibleAnswerFive = "Империя",
+                            Answer = "вид",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 2,
+                //            question = "К империи доклеточные относится царство:",
+                //            possibleAnswerOne = "Бактерии",
+                //            possibleAnswerTwo = "Животные" ,
+                //            possibleAnswerThree = "Вирусы",
+                //            possibleAnswerFour = "Протисты" ,
+                //            possibleAnswerFive = "Грибы",
+                            Answer = "Вирусы",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 3,
+                //            question = "3. Империя Клеточные включает надцарства: а) Прокариоты, б) Животные, в) Растения, г) Эукариоты, д) Грибы",
+                //            possibleAnswerOne = "б,в,д",
+                //            possibleAnswerTwo = "а,б,в" ,
+                //            possibleAnswerThree = "а,г",
+                //            possibleAnswerFour = "а,д" ,
+                //            possibleAnswerFive = "только а",
+                            Answer = "а,г",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 4,
+                //            question = "4. Все одноклеточные эукариотические организмы независимо от типа питания относятся к царству:",
+                //            possibleAnswerOne = "Вирусы",
+                //            possibleAnswerTwo = "Бактерии" ,
+                //            possibleAnswerThree = "Протисты",
+                //            possibleAnswerFour = "Грибы" ,
+                //            possibleAnswerFive = "Животные",
+                            Answer = "Протисты",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 5,
+                //            question = "5. Укажите названия таксонов, которые соответствуют царствам Эукариот: а) Грибы, б) Вирусы, в) Растения, г) Бактерии, д) Животные.",
+                //            possibleAnswerOne = "а,б,д",
+                //            possibleAnswerTwo = "а,в,д" ,
+                //            possibleAnswerThree = "б,г",
+                //            possibleAnswerFour = "в,д" ,
+                //            possibleAnswerFive = "а,г",
+                            Answer = "а,в,д",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 6,
+                //            question = "6. Какие принципы положены К.Линнеем в основу систематики? a) бинарная номенклатура, б) борьба за существование, в) иерархичность, г) конкуренция, д) естественный отбор",
+                //            possibleAnswerOne = "а,в",
+                //            possibleAnswerTwo = "а,б,г" ,
+                //            possibleAnswerThree = "б,д",
+                //            possibleAnswerFour = "а,б,д" ,
+                //            possibleAnswerFive = "а,б,в,д",
+                            Answer = "а,в",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 7,
+                //            question = "7. Организм, изображенный на рисунке, относится к царству: ",
+                //            possibleAnswerOne = "Эукариоты",
+                //            possibleAnswerTwo = "Прокариоты" ,
+                //            possibleAnswerThree = "Грибы",
+                //            possibleAnswerFour = "Животные" ,
+                //            possibleAnswerFive = "Растения",
+                            Answer = "Грибы",
+                //            imageBool = true,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 8,
+                //            question = "8. Организм, изображенный на рисунке, относится к надцарству:",
+                //            possibleAnswerOne = "Эукариоты",
+                //            possibleAnswerTwo = "Прокариоты" ,
+                //            possibleAnswerThree = "Грибы",
+                //            possibleAnswerFour = "Животные" ,
+                //            possibleAnswerFive = "Растения",
+                            Answer = "Эукариоты",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 9,
+                //            question = "9. Классификацию живых организмов изучает:",
+                //            possibleAnswerOne = "Ботаника",
+                //            possibleAnswerTwo = "Анатомия" ,
+                //            possibleAnswerThree = "Физиология",
+                //            possibleAnswerFour = "Систематика" ,
+                //            possibleAnswerFive = "Экология",
+                            Answer = "Систематика",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 10,
+                //            question = "10. Главными задачами систематики как науки являются:",
+                //            possibleAnswerOne = "Определение и описание видов живых организмов;",
+                //            possibleAnswerTwo = "Проведение классификации живых организмов;" ,
+                //            possibleAnswerThree = "Создание эволюционной (филогенетической) системы органического мира;",
+                //            possibleAnswerFour = "Все перечисленное верно." ,
+                //            possibleAnswerFive = "Все перечисленное неверно.",
+                            Answer = "Все перечисленное верно.",
+                //            imageBool = false,
+                            Test = 1
+                        },
+                        new QuestionItem
+                        {
+                            idQuestion = 10,
+                //            question = "10. Главными задачами систематики как науки являются:",
+                //            possibleAnswerOne = "Определение и описание видов живых организмов;",
+                //            possibleAnswerTwo = "Проведение классификации живых организмов;" ,
+                //            possibleAnswerThree = "Создание эволюционной (филогенетической) системы органического мира;",
+                //            possibleAnswerFour = "Все перечисленное верно." ,
+                //            possibleAnswerFive = "Все перечисленное неверно.",
+                            Answer = "Все перечисленное верно.",
+                //            imageBool = false,
+                           Test = 1, 
+                        },
+                    };
+                    questions.AddRange(questionItems);
                     SaveChanges();
                 }
             }

@@ -1,5 +1,5 @@
-﻿using SBC.DAL;
-using SBC.Models;
+﻿using SBC.Models;
+using SBC.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -20,7 +20,7 @@ namespace SBC.Repositories
         public EFCoursesTestRepository(ApplicationDbContext ctx)
         {
             context = ctx;
-            table = context.coursesTest;
+            table = context.Courses;
         }
 
         public void Create(CoursesItem t)
@@ -54,14 +54,14 @@ namespace SBC.Repositories
 
         public Task<CoursesItem> GetAsync(int id)
         {
-            return context.coursesTest.FindAsync(id);
+            return context.Courses.FindAsync(id);
         }
 
         public void Update(CoursesItem t)
         {
             if (t.Image == null)
             {
-                var dish = context.coursesTest
+                var dish = context.Courses
                     .AsNoTracking()
                     .Where(d => d.id == t.id)
                     .FirstOrDefault();

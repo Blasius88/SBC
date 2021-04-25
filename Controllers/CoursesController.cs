@@ -1,4 +1,4 @@
-﻿using SBC.DAL;
+﻿using SBC.Entities;
 using SBC.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace SBC.Controllers
 {
-    [Authorize(Roles = "admin, user, theacher")]
+    //[Authorize(Roles = "admin, user, theacher")]
     public class CoursesController : Controller
     {
         IRepository<CoursesItem> repository;
@@ -24,21 +24,21 @@ namespace SBC.Controllers
         }
 
         // GET: Courses
-        [Authorize(Roles = "admin")]
+      //  [Authorize(Roles = "admin")]
         public ActionResult Index()
         {
             return View(repository.GetAll());
         }
 
         [HttpGet]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             return View(new CoursesItem());
         }
 
         [HttpPost]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public ActionResult Create(CoursesItem coursesTest, HttpPostedFileBase imageUpload = null)
         {
             if (ModelState.IsValid)
@@ -92,7 +92,7 @@ namespace SBC.Controllers
             else return View(coursesTest);
         }
 
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public ActionResult Edit(int id)
         {
             return View(repository.Get(id));
@@ -100,7 +100,7 @@ namespace SBC.Controllers
 
         // POST: Admin/Edit/5
         [HttpPost]
-        [Authorize(Roles = "admin")]
+       // [Authorize(Roles = "admin")]
         public ActionResult Edit(CoursesItem test, HttpPostedFileBase imageUpload = null)
         {
             if (ModelState.IsValid)
@@ -129,7 +129,7 @@ namespace SBC.Controllers
         }
 
         // GET: Admin/Delete/5
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public ActionResult Delete(int id)
         {
             try
@@ -145,7 +145,7 @@ namespace SBC.Controllers
 
         // POST: Admin/Delete/5
         [HttpPost]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public ActionResult Delete(int id, FormCollection collection)
         {
             try
