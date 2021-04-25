@@ -246,11 +246,6 @@
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
-    <Compile Include="Migrations\202009162014130_Init.cs" />
-    <Compile Include="Migrations\202009162014130_Init.Designer.cs">
-      <DependentUpon>202009162014130_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
     <Compile Include="Models\Test\1\TestCourses.cs" />
     <Compile Include="Models\Test\1\Test1.cs" />
@@ -795,11 +790,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009162014130_Init.resx">
-      <DependentUpon>202009162014130_Init.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
