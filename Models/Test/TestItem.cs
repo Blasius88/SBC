@@ -17,7 +17,5 @@ namespace SBC.Models
         [HiddenInput]
         [Required]
         public int Courses { get; set; }
-
-        public List<QuestionItem> Questions { get; set; }
     }
 }

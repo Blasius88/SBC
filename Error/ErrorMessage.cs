@@ -9,7 +9,7 @@ namespace SBC.Error
         public static void ErrorWrite(string e)
         {
             i++;
-            FileStream fileStream1 = new FileStream(@"d:\SiteSBC\SBC\Error\log.txt", FileMode.Append);
+            FileStream fileStream1 = new FileStream(@"D:\SiteSBC\Error\log.txt", FileMode.Append);
             byte[] array = System.Text.Encoding.Default.GetBytes("\nCтрока " + i + " (" + DateTime.Now + ")" + "\n" + e + "\n");
             // запись массива байтов в файл
             fileStream1.Write(array, 0, array.Length);
