@@ -247,9 +247,13 @@
     <Compile Include="Entities\IdentityModels.cs" />
     <Compile Include="Entities\TestCourses.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
-    <Compile Include="Migrations\202104252149553_first.cs" />
-    <Compile Include="Migrations\202104252149553_first.Designer.cs">
-      <DependentUpon>202104252149553_first.cs</DependentUpon>
+    <Compile Include="Migrations\202104261828036_first.cs" />
+    <Compile Include="Migrations\202104261828036_first.Designer.cs">
+      <DependentUpon>202104261828036_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104261858397_second.cs" />
+    <Compile Include="Migrations\202104261858397_second.Designer.cs">
+      <DependentUpon>202104261858397_second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
@@ -276,6 +280,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SBC.mdf" />
+    <Content Include="App_Data\SBC_log.ldf">
+      <DependentUpon>SBC.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -781,7 +789,12 @@
     <Content Include="Views\Test\Test1.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <EmbeddedResource Include="Migrations\202104261828036_first.resx">
+      <DependentUpon>202104261828036_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104261858397_second.resx">
+      <DependentUpon>202104261858397_second.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -795,11 +808,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104252149553_first.resx">
-      <DependentUpon>202104252149553_first.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
