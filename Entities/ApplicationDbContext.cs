@@ -42,6 +42,7 @@ namespace SBC.Entities
                         id  =1,
                         NameCourses = "Биология",
                         Description = "This is courses biolodia"
+                        
                     },
                      new CoursesItem
                     {
