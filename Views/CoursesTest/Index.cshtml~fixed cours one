@@ -1,0 +1,35 @@
+﻿@model IEnumerable<SBC.Models.CoursesItem>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Предметы</h2>
+<p>
+    @Html.ActionLink("Добавить", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Наименование")
+        </th>
+        <th></th>
+    </tr>
+    @using (Html.BeginForm())
+    {
+        foreach (var t in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(@Html.DisplayFor(modelItem => t.NameCourses).ToString(), "Index", "TestController", new { id = t.id }, null)
+                </td>
+                <td>
+                    @Html.ActionLink("Удалить", "Delete", new { id = t.id })
+                </td>
+            </tr>
+        }
+    }
+</table>
+<div>
+    @Html.ActionLink("Назад", "Index")
+</div>
+
+
