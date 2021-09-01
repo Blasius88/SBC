@@ -66,9 +66,24 @@ namespace SBC.Models
     {
         [Required]
         [MaxLength(20, ErrorMessage = "Не более 20 символов")]
-        [Display(Name = "Ваш НИК")]
+        [Display(Name = "Ваш ник")]
         public string NickName { get; set; }
         
+        [Required]
+        [MaxLength(20, ErrorMessage = "Не более 20 символов")]
+        [Display(Name = "Ваше имя")]
+        public string FirstName { get; set; }
+        
+        [Required]
+        [MaxLength(20, ErrorMessage = "Не более 20 символов")]
+        [Display(Name = "Ваше фамилия")]
+        public string LastName { get; set; }
+
+        [Required]
+        [MaxLength(13, ErrorMessage = "Не более 12 символов")]
+        [Display(Name = "Ваш номер телефона")]
+        public string PhoneNumber { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]

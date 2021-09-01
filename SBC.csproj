@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -66,39 +65,42 @@
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.TelemetryCorrelation.1.0.8\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.4.1.1\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.4.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.4.1.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.4.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.4.1.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Cookies.4.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Cookies.4.1.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Facebook.4.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Facebook.4.1.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Google.4.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Google.4.1.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.MicrosoftAccount.4.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.MicrosoftAccount.4.1.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.OAuth.4.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.OAuth.4.1.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Twitter.4.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Twitter.4.1.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
     <Reference Include="Moq, Version=4.14.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>packages\Moq.4.14.1\lib\net45\Moq.dll</HintPath>
+      <HintPath>packages\Moq.4.14.5\lib\net45\Moq.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -115,12 +117,18 @@
     <Reference Include="Ninject.Web.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>packages\Ninject.MVC5.3.3.0\lib\net45\Ninject.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\starkbank-ecdsa.1.2.0\lib\net452\StarkbankEcdsa.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -134,6 +142,9 @@
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
@@ -141,6 +152,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -151,6 +163,9 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -219,56 +234,55 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CoursesTestController.cs" />
+    <Compile Include="Controllers\Courses1Controller.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\LernenController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Entities\ApplicationDbContext.cs" />
-    <Compile Include="Entities\Courses.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
     <Compile Include="Entities\TestCourses.cs" />
-    <Compile Include="Entities\Test1.cs" />
-    <Compile Include="Entities\Test2.cs" />
-    <Compile Include="Entities\Test3.cs" />
-    <Compile Include="Entities\Test4.cs" />
+    <Compile Include="Error\ErrorMessage.cs" />
+    <Compile Include="Migrations\202104261828036_first.cs" />
+    <Compile Include="Migrations\202104261828036_first.Designer.cs">
+      <DependentUpon>202104261828036_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104261858397_second.cs" />
+    <Compile Include="Migrations\202104261858397_second.Designer.cs">
+      <DependentUpon>202104261858397_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\LernenItem.cs" />
+    <Compile Include="Models\Test\Test1\Test.cs" />
+    <Compile Include="Models\Test\Test1\Test1.cs" />
+    <Compile Include="Models\Test\Test1\Test2.cs" />
+    <Compile Include="Models\Test\Test1\Test3.cs" />
+    <Compile Include="Models\Test\Test1\Test4.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Migrations\202008212327437_1.cs" />
-    <Compile Include="Migrations\202008212327437_1.Designer.cs">
-      <DependentUpon>202008212327437_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008212332101_2.cs" />
-    <Compile Include="Migrations\202008212332101_2.Designer.cs">
-      <DependentUpon>202008212332101_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008212349204_3.cs" />
-    <Compile Include="Migrations\202008212349204_3.Designer.cs">
-      <DependentUpon>202008212349204_3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008212356160_4.cs" />
-    <Compile Include="Migrations\202008212356160_4.Designer.cs">
-      <DependentUpon>202008212356160_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CoursesTest.cs" />
+    <Compile Include="Models\CoursesItem.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MenuItem.cs" />
-    <Compile Include="Models\Question.cs" />
-    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\Test\QuestionItem.cs" />
+    <Compile Include="Models\Test\TestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CoursesRepository.cs" />
     <Compile Include="Repositories\EFCoursesTestRepository.cs" />
+    <Compile Include="Repositories\EFLernenReposytory.cs" />
     <Compile Include="Repositories\EFQuestionRepository.cs" />
     <Compile Include="Repositories\EFTestRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SBC.mdf" />
+    <Content Include="App_Data\SBC_log.ldf">
+      <DependentUpon>SBC.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -277,49 +291,112 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\MySite.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Error\log.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\1580647030_14-p-foni-na-temu-obrazovaniya-58.jpg" />
-    <Content Include="Images\9B6iBKH1j6c.jpg" />
     <Content Include="Images\Banner.jpg" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\books-apple-sized.jpg" />
     <Content Include="Images\education-summit-background-turquoise-main-opt_3.png" />
-    <Content Include="Images\FB.png" />
     <Content Include="Images\istockphoto-494617082-612x612.jpg" />
-    <Content Include="Images\NB1.png" />
+    <Content Include="Images\social\FB.png" />
+    <Content Include="Images\social\Twitter.png" />
+    <Content Include="Images\social\VK.png" />
+    <Content Include="Images\thema10\ветвление.png" />
+    <Content Include="Images\thema10\виды побегов.png" />
+    <Content Include="Images\thema10\внутреннее строение.png" />
+    <Content Include="Images\thema10\клубень.png" />
+    <Content Include="Images\thema10\клубнелуковицаа.png" />
+    <Content Include="Images\thema10\корневище.png" />
+    <Content Include="Images\thema10\луковица.png" />
+    <Content Include="Images\thema10\побег внешнее строение.png" />
+    <Content Include="Images\thema10\почки.png" />
+    <Content Include="Images\thema11\виды листьев тест.png" />
+    <Content Include="Images\thema11\внешнее строение листа.png" />
+    <Content Include="Images\thema11\внутреннее строение.png" />
+    <Content Include="Images\thema11\лист тесты.png" />
+    <Content Include="Images\thema11\листорасположение.png" />
+    <Content Include="Images\thema11\по жилкованию.png" />
+    <Content Include="Images\thema11\по изрезанности.png" />
+    <Content Include="Images\thema11\по краю.png" />
+    <Content Include="Images\thema11\по прикреплению.png" />
+    <Content Include="Images\thema11\по степени сложности.png" />
+    <Content Include="Images\thema11\по форме.png" />
+    <Content Include="Images\thema12\головка.png" />
+    <Content Include="Images\thema12\завиток.png" />
+    <Content Include="Images\thema12\зонтик.png" />
+    <Content Include="Images\thema12\извилина.png" />
+    <Content Include="Images\thema12\кисть.png" />
+    <Content Include="Images\thema12\колос.png" />
+    <Content Include="Images\thema12\корзинка.png" />
+    <Content Include="Images\thema12\метелка.png" />
+    <Content Include="Images\thema12\початок.png" />
+    <Content Include="Images\thema12\развалинка.png" />
+    <Content Include="Images\thema12\сережка.png" />
+    <Content Include="Images\thema12\сложный зонтик.png" />
+    <Content Include="Images\thema12\сложный колос.png" />
+    <Content Include="Images\thema12\сложный щиток.png" />
+    <Content Include="Images\thema12\строение цветка.png" />
+    <Content Include="Images\thema12\тычинка.png" />
+    <Content Include="Images\thema12\цветок без подпичей.png" />
+    <Content Include="Images\thema12\щиток.png" />
+    <Content Include="Images\thema13\зарод мешок.png" />
+    <Content Include="Images\thema13\опыление.png" />
+    <Content Include="Images\thema13\семязачаток.png" />
+    <Content Include="Images\thema13\схема образования женского гемотофита и гамет.png" />
+    <Content Include="Images\thema13\схема образования мужского гемотофита и гамет.png" />
+    <Content Include="Images\thema1\NB1.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
     <Content Include="Images\thema4\соредии и изидии.png" />
     <Content Include="Images\thema4\строение слоевища.png" />
-    <Content Include="Images\Twitter.png" />
-    <Content Include="Images\VK.png" />
+    <Content Include="Images\thema5\Безымянный.png" />
+    <Content Include="Images\thema6\Thema6.1.png" />
+    <Content Include="Images\thema6\Жизненный цикл моховидных.png" />
+    <Content Include="Images\Thema7\гаметофит.png" />
+    <Content Include="Images\Thema7\жизненный цикл папоротника.png" />
+    <Content Include="Images\Thema7\плаун.png" />
+    <Content Include="Images\Thema7\спорофит.png" />
+    <Content Include="Images\Thema7\хвощ.png" />
+    <Content Include="Images\Thema7\Цикл развития плауновидных..png" />
+    <Content Include="Images\Thema7\Цикл развития хвощ.png" />
+    <Content Include="Images\thema8\1.png" />
+    <Content Include="Images\thema8\2.png" />
+    <Content Include="Images\thema8\шишки голосеменных без подписей.png" />
+    <Content Include="Images\thema8\шишки с подписями 2.png" />
+    <Content Include="Images\thema8\шишки с подписями.png" />
+    <Content Include="Images\thema9\виды корней тест.png" />
+    <Content Include="Images\thema9\виды корней, типы корневых систем.png" />
+    <Content Include="Images\thema9\корнеклубни.png" />
+    <Content Include="Images\thema9\корнеплод.png" />
+    <Content Include="Images\thema9\поперечный срез корня.png" />
+    <Content Include="Images\thema9\продольный срез корня.png" />
     <Content Include="Images\амеба обыкновенная.jpg" />
-    <Content Include="Images\амеба.png" />
+    <Content Include="Images\thema3\амеба.png" />
     <Content Include="Images\биология.jpg" />
-    <Content Include="Images\включение.png" />
-    <Content Include="Images\вольвокс.png" />
+    <Content Include="Images\thema2\включение.png" />
+    <Content Include="Images\thema3\вольвокс.png" />
     <Content Include="Images\Гриб.png" />
     <Content Include="Images\евглены зеленой.jpg" />
     <Content Include="Images\инфузория туфилька.jpg" />
-    <Content Include="Images\инфузория.png" />
+    <Content Include="Images\thema3\инфузория.png" />
     <Content Include="Images\Лев.png" />
-    <Content Include="Images\мал плазм.png" />
-    <Content Include="Images\Основные формы жизни.png" />
-    <Content Include="Images\паразитизм.png" />
-    <Content Include="Images\размножение хлореллы.png" />
-    <Content Include="Images\спирогира.png" />
-    <Content Include="Images\Строение вариана.png" />
-    <Content Include="Images\улотрикс.png" />
-    <Content Include="Images\фитофтора.png" />
-    <Content Include="Images\форма бактерий.png" />
-    <Content Include="Images\хара.png" />
+    <Content Include="Images\thema3\мал плазм.png" />
+    <Content Include="Images\thema1\Основные формы жизни.png" />
+    <Content Include="Images\thema1\паразитизм.png" />
+    <Content Include="Images\thema3\размножение хлореллы.png" />
+    <Content Include="Images\thema3\спирогира.png" />
+    <Content Include="Images\thema1\Строение вариана.png" />
+    <Content Include="Images\thema3\улотрикс.png" />
+    <Content Include="Images\thema3\фитофтора.png" />
+    <Content Include="Images\thema2\форма бактерий.png" />
+    <Content Include="Images\thema3\хара.png" />
     <Content Include="Images\химия.jpg" />
-    <Content Include="Images\хламидомонада.png" />
-    <Content Include="Images\хлорелла.png" />
-    <Content Include="Images\эвглена зеленая.png" />
+    <Content Include="Images\thema3\хламидомонада.png" />
+    <Content Include="Images\thema3\хлорелла.png" />
+    <Content Include="Images\thema3\эвглена зеленая.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -408,10 +485,6 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
@@ -509,6 +582,10 @@
     <Content Include="Content\bootstrap\bootstrap-reboot.scss" />
     <Content Include="Content\bootstrap\bootstrap-grid.scss" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -625,7 +702,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Menu\Main.cshtml" />
     <Content Include="Views\Menu\Map.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -638,23 +714,90 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Shared\ItemViewPartial.cshtml" />
-    <Content Include="Views\Courses\Сhemistry.cshtml" />
-    <Content Include="Views\Courses\Biologia.cshtml" />
+    <Content Include="Views\Lernen\Courses2.cshtml" />
+    <Content Include="Views\Lernen\Courses1.cshtml" />
     <Content Include="Views\Menu\UserInfo.cshtml" />
-    <Content Include="Views\Courses\Test1.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
-    <Content Include="Views\Courses\Test2.cshtml" />
-    <Content Include="Views\Courses\Test3.cshtml" />
-    <Content Include="Views\Courses\Test4.cshtml" />
-    <Content Include="Views\CoursesTest\Index.cshtml" />
-    <Content Include="Views\CoursesTest\Create.cshtml" />
+    <Content Include="Views\Test\Test2.cshtml" />
+    <Content Include="Views\Test\Test3.cshtml" />
+    <Content Include="Views\Test\Test4.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Test\Details.cshtml" />
     <Content Include="Views\Test\Create.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses1\Tema1.cshtml" />
+    <Content Include="Views\Courses1\Tema2.cshtml" />
+    <Content Include="Views\Courses1\Tema3.cshtml" />
+    <Content Include="Views\Courses1\Tema4.cshtml" />
+    <Content Include="Views\Courses1\Tema5.cshtml" />
+    <Content Include="Views\Courses1\Tema6.cshtml" />
+    <Content Include="Views\Courses1\Tema7.cshtml" />
+    <Content Include="Views\Courses1\Tema8.cshtml" />
+    <Content Include="Views\Courses1\Tema9.cshtml" />
+    <Content Include="Views\Courses1\Tema10.cshtml" />
+    <Content Include="Views\Courses1\Tema11.cshtml" />
+    <Content Include="Views\Courses1\Tema12.cshtml" />
+    <Content Include="Views\Courses1\Tema13.cshtml" />
+    <Content Include="Views\Courses1\Tema14.cshtml" />
+    <Content Include="Views\Courses1\Tema15.cshtml" />
+    <Content Include="Views\Courses1\Tema16.cshtml" />
+    <Content Include="Views\Courses1\Tema17.cshtml" />
+    <Content Include="Views\Courses1\Tema18.cshtml" />
+    <Content Include="Views\Courses1\Tema19.cshtml" />
+    <Content Include="Views\Courses1\Tema20.cshtml" />
+    <Content Include="Views\Error\ErrorDowloadPartial.cshtml" />
+    <Content Include="Views\Courses1\Tema21.cshtml" />
+    <Content Include="Views\Courses1\Tema22.cshtml" />
+    <Content Include="Views\Courses1\Tema23.cshtml" />
+    <Content Include="Views\Courses1\Tema24.cshtml" />
+    <Content Include="Views\Courses1\Tema25.cshtml" />
+    <Content Include="Views\Courses1\Tema26.cshtml" />
+    <Content Include="Views\Courses1\Tema27.cshtml" />
+    <Content Include="Views\Courses1\Tema28.cshtml" />
+    <Content Include="Views\Courses1\Tema29.cshtml" />
+    <Content Include="Views\Courses1\Tema30.cshtml" />
+    <Content Include="Views\Courses1\Tema31.cshtml" />
+    <Content Include="Views\Courses1\Tema32.cshtml" />
+    <Content Include="Views\Courses1\Tema33.cshtml" />
+    <Content Include="Views\Courses1\Tema34.cshtml" />
+    <Content Include="Views\Courses1\Tema35.cshtml" />
+    <Content Include="Views\Courses1\Tema36.cshtml" />
+    <Content Include="Views\Courses1\Tema37.cshtml" />
+    <Content Include="Views\Courses1\Tema38.cshtml" />
+    <Content Include="Views\Courses1\Tema39.cshtml" />
+    <Content Include="Views\Courses1\Tema40.cshtml" />
+    <Content Include="Views\Courses1\Tema41.cshtml" />
+    <Content Include="Views\Courses1\Tema42.cshtml" />
+    <Content Include="Views\Courses1\Tema43.cshtml" />
+    <Content Include="Views\Courses1\Tema44.cshtml" />
+    <Content Include="Views\Courses1\Tema45.cshtml" />
+    <Content Include="Views\Courses1\Tema46.cshtml" />
+    <Content Include="Views\Courses1\Tema47.cshtml" />
+    <Content Include="Views\Courses1\Tema48.cshtml" />
+    <Content Include="Views\Courses1\Tema49.cshtml" />
+    <Content Include="Views\Courses1\Tema50.cshtml" />
+    <Content Include="Views\Courses1\Tema51.cshtml" />
+    <Content Include="Views\Courses1\Tema52.cshtml" />
+    <Content Include="Views\Courses1\Tema53.cshtml" />
+    <Content Include="Views\Courses1\Tema54.cshtml" />
+    <Content Include="Views\Courses1\Tema55.cshtml" />
+    <Content Include="Views\Courses1\Tema56.cshtml" />
+    <Content Include="Views\Courses1\Tema57.cshtml" />
+    <Content Include="Views\Courses1\Tema58.cshtml" />
+    <Content Include="Views\Courses1\Tema59.cshtml" />
+    <Content Include="Views\Shared\Info.cshtml" />
+    <Content Include="Views\Courses\Catalog.cshtml" />
+    <Content Include="Views\Test\Test1.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <EmbeddedResource Include="Migrations\202104261828036_first.resx">
+      <DependentUpon>202104261828036_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104261858397_second.resx">
+      <DependentUpon>202104261858397_second.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -668,20 +811,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008212327437_1.resx">
-      <DependentUpon>202008212327437_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008212332101_2.resx">
-      <DependentUpon>202008212332101_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008212349204_3.resx">
-      <DependentUpon>202008212349204_3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008212356160_4.resx">
-      <DependentUpon>202008212356160_4.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -711,12 +841,15 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

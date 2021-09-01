@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace SBC.Controllers
 {
@@ -12,6 +8,11 @@ namespace SBC.Controllers
         public ActionResult ErrorConfirmedEmail()
         {
             return View();
+        }
+
+        public PartialViewResult ErrorDowloadPartial()
+        {
+            return PartialView();
         }
     }
 }

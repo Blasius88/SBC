@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Net.Mail;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using SBC.DAL;
-using SBC.Models;
+using SBC.Entities;
+using System;
+using System.Net.Mail;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace SBC
 {
@@ -23,7 +18,7 @@ namespace SBC
             // Подключите здесь службу электронной почты для отправки сообщения электронной почты.
             var from = "dolbik-w.by@mail.ru";
             var pass = "3803981Blas";
-           
+
             SmtpClient client = new SmtpClient("smtp.mail.ru", 25);
 
             client.DeliveryMethod = SmtpDeliveryMethod.Network;

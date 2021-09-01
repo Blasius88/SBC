@@ -1,18 +1,17 @@
-﻿using SBC.DAL;
+﻿using SBC.Entities;
 using SBC.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace SBC.Repositories
 {
-    public class EFQuestionRepository : IRepository<Question>
+    public class EFQuestionRepository : IRepository<QuestionItem>
     {
         private ApplicationDbContext context;
-        private DbSet<Question> table;
+        private DbSet<QuestionItem> table;
 
         /// <summary>
         /// Конструктор класса
@@ -24,7 +23,7 @@ namespace SBC.Repositories
             table = context.questions;
         }
 
-        public void Create(Question t)
+        public void Create(QuestionItem t)
         {
             table.Add(t);
             context.SaveChanges();
@@ -33,42 +32,42 @@ namespace SBC.Repositories
         public void Delete(int id)
         {
             context
-          .Entry(new Question { idQuestion = id })
+          .Entry(new QuestionItem { idQuestion = id })
           .State = EntityState.Deleted;
             context.SaveChanges();
         }
 
-        public IEnumerable<Question> Find(Func<Question, bool> predicate)
+        public IEnumerable<QuestionItem> Find(Func<QuestionItem, bool> predicate)
         {
             return table.Where(predicate).ToList();
         }
 
-        public Question Get(int id)
+        public QuestionItem Get(int id)
         {
             return table.Find(id);
         }
 
-        public IEnumerable<Question> GetAll()
+        public IEnumerable<QuestionItem> GetAll()
         {
             return table;
         }
 
-        public Task<Question> GetAsync(int id)
+        public Task<QuestionItem> GetAsync(int id)
         {
             return context.questions.FindAsync(id);
         }
 
-        public void Update(Test t)
+        public void Update(TestItem t)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Question t)
+        public void Update(QuestionItem t)
         {
             throw new NotImplementedException();
         }
 
-        Question IRepository<Question>.Get(int id)
+        QuestionItem IRepository<QuestionItem>.Get(int id)
         {
             throw new NotImplementedException();
         }
