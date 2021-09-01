@@ -237,7 +237,6 @@
     <Compile Include="Controllers\Courses1Controller.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\LernenController.cs" />
-    <Compile Include="Controllers\OldTestController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -342,6 +341,11 @@
     <Content Include="Images\thema12\тычинка.png" />
     <Content Include="Images\thema12\цветок без подпичей.png" />
     <Content Include="Images\thema12\щиток.png" />
+    <Content Include="Images\thema13\зарод мешок.png" />
+    <Content Include="Images\thema13\опыление.png" />
+    <Content Include="Images\thema13\семязачаток.png" />
+    <Content Include="Images\thema13\схема образования женского гемотофита и гамет.png" />
+    <Content Include="Images\thema13\схема образования мужского гемотофита и гамет.png" />
     <Content Include="Images\thema1\NB1.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />

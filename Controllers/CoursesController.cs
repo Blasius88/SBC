@@ -16,13 +16,15 @@ namespace SBC.Controllers
         {
             repository = repo;
         }
-
+        
+        // отображает каталог курсов
         [HttpGet]
         public ActionResult Catalog()
         {
             return View(repository.GetAll());
         }
 
+        //Выводит список курсо, где можно произвести редактирование описание и замены картинки
         // GET: Courses
       //  [Authorize(Roles = "admin")]
         public ActionResult Index()
@@ -30,6 +32,8 @@ namespace SBC.Controllers
             return View(repository.GetAll());
         }
 
+
+        //создания нового курса 
         [HttpGet]
         //[Authorize(Roles = "admin")]
         public ActionResult Create()
@@ -92,6 +96,8 @@ namespace SBC.Controllers
             else return View(coursesTest);
         }
 
+
+        //редактирование курса
         //[Authorize(Roles = "admin")]
         public ActionResult Edit(int id)
         {
@@ -128,6 +134,8 @@ namespace SBC.Controllers
             else return View(test);
         }
 
+
+        //удаление курса 
         // GET: Admin/Delete/5
         //[Authorize(Roles = "admin")]
         public ActionResult Delete(int id)
@@ -159,6 +167,8 @@ namespace SBC.Controllers
             }
         }
 
+
+        //получение картинки 
         public async Task<FileResult> GetImage(int id)
         {
             var dish = await repository.GetAsync(id);
