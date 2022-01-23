@@ -364,6 +364,17 @@
     <Content Include="Images\thema14\тыквина.png" />
     <Content Include="Images\thema14\яблоко.png" />
     <Content Include="Images\thema14\ягода.png" />
+    <Content Include="Images\thema16\аммиак.png" />
+    <Content Include="Images\thema16\гуанин.png" />
+    <Content Include="Images\thema16\губки.png" />
+    <Content Include="Images\thema16\мочевая кислота.png" />
+    <Content Include="Images\thema16\мочевина.png" />
+    <Content Include="Images\thema17\бесполое размножение гидры.png" />
+    <Content Include="Images\thema17\клетки гидры.png" />
+    <Content Include="Images\thema17\медуза корнерот.png" />
+    <Content Include="Images\thema17\обелия.png" />
+    <Content Include="Images\thema17\половое размножение.png" />
+    <Content Include="Images\thema17\строение гидры.png" />
     <Content Include="Images\thema1\NB1.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
