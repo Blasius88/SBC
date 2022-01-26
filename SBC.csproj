@@ -391,6 +391,12 @@
     <Content Include="Images\thema21\внешнее и внутреннее строение.png" />
     <Content Include="Images\thema21\головоногий.png" />
     <Content Include="Images\thema21\двустворчатый.png" />
+    <Content Include="Images\thema22\hfr 2.png" />
+    <Content Include="Images\thema22\насекомое.png" />
+    <Content Include="Images\thema22\паук без подписей.jpg" />
+    <Content Include="Images\thema22\паук.png" />
+    <Content Include="Images\thema22\рак.png" />
+    <Content Include="Images\thema22\речной рак без подписей.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
