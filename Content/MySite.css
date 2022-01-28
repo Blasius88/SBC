@@ -17,6 +17,14 @@
     border-color: #222222;
 }
 
+/*текст по центру и жырный */
+.text_center_bord {
+    text-align: center; /*размещение текста по центру*/
+    font-weight: bold; /*жирный текст */
+    font-style: normal; /*угол наклона текста */
+}
+
+/*рамка на тексте под фото*/
 .picture_framing {
     padding: 30px; /* Ширина паспарту */
     background: #f0f0f0; /* Цвет фона  паспарту */
@@ -42,6 +50,12 @@
 
 .centered {
     text-align: center;
+}
+
+.centered_image {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .item-name {
@@ -77,11 +91,11 @@
     margin: -150px auto, auto, auto;
 }
 
-.Images_courses {
+/*.Images_courses {
     position: relative;
     height: 250px;
     width: 250px;
-}
+}*/
 
 .navbar {
     border-radius: 0;
@@ -110,7 +124,7 @@
     font-size: 16pt;
 }
 
-.main-card, .card-header, .btn-link{
+.main-card, .card-header, .btn-link {
     font-family: 'Times New Roman';
     font-size: 16pt;
 }
@@ -121,8 +135,8 @@
 }
 
 /*тест 1*/
-.TestOne{
-    font-family:'Times New Roman';
+.TestOne {
+    font-family: 'Times New Roman';
     font-size: 16pt;
 }
 

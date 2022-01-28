@@ -399,6 +399,11 @@
     <Content Include="Images\thema22\речной рак без подписей.png" />
     <Content Include="Images\thema23\Пищеварительная система.jpg" />
     <Content Include="Images\thema23\Схема классификация животного типа.jpg" />
+    <Content Include="Images\thema24\Дыхательная система.png" />
+    <Content Include="Images\thema24\кровеносная система.png" />
+    <Content Include="Images\thema24\нервная система.png" />
+    <Content Include="Images\thema24\рыба .png" />
+    <Content Include="Images\thema24\рыба 2.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
