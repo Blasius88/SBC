@@ -48,7 +48,8 @@ namespace SBC.Entities
                     {
                         id  =2,
                         NameCourses = "Химия",
-                        Description = "Это курс по химии"
+                        Description = "Это курс по химии",
+                        //Image =  https://metanit.com/sharp/mvc5/24.8.php
                     }
                 };
                     Courses.AddRange(list);
