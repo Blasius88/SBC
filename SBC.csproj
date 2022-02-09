@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SBC</RootNamespace>
     <AssemblyName>SBC</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -472,6 +472,19 @@
     <Content Include="Images\thema24\нервная система.png" />
     <Content Include="Images\thema24\рыба .png" />
     <Content Include="Images\thema24\рыба 2.png" />
+    <Content Include="Images\thema25\аксолотль.png" />
+    <Content Include="Images\thema25\кровеносная система лягушки.png" />
+    <Content Include="Images\thema25\легушка.png" />
+    <Content Include="Images\thema25\механизм дыхательного движения ,.png" />
+    <Content Include="Images\thema25\нервная система.png" />
+    <Content Include="Images\thema25\опорно-двигательная система.png" />
+    <Content Include="Images\thema26\кровеносная система.png" />
+    <Content Include="Images\thema26\крокодил.png" />
+    <Content Include="Images\thema26\легкое.png" />
+    <Content Include="Images\thema26\нервная система.png" />
+    <Content Include="Images\thema26\половая система.png" />
+    <Content Include="Images\thema26\Сердце.png" />
+    <Content Include="Images\thema26\Скелет.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />

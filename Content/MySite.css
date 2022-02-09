@@ -51,12 +51,12 @@
 .centered {
     text-align: center;
 }
-
+/*
 .centered_image {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-}
+}*/
 
 .item-name {
     min-height: 65px;
