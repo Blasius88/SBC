@@ -42,13 +42,12 @@ namespace SBC.Entities
                         id  =1,
                         NameCourses = "Биология",
                         Description = "This is courses biolodia"
-                        
                     },
                      new CoursesItem
                     {
                         id  =2,
                         NameCourses = "Химия",
-                        Description = "Это курс по химии",
+                        Description = "Это курс по химии"
                         //Image =  https://metanit.com/sharp/mvc5/24.8.php
                     }
                 };
@@ -594,7 +593,7 @@ namespace SBC.Entities
                 //            possibleAnswerFive = "Все перечисленное неверно.",
                             Answer = "Все перечисленное верно.",
                 //            imageBool = false,
-                           Test = 1, 
+                           Test = 1,
                         },
                     };
                     questions.AddRange(questionItems);
