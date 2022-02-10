@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SBC</RootNamespace>
     <AssemblyName>SBC</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -495,6 +495,10 @@
     <Content Include="Images\thema27\нервная система.png" />
     <Content Include="Images\thema27\перо.png" />
     <Content Include="Images\thema27\скелет.png" />
+    <Content Include="Images\thema28\кровеносная система.png" />
+    <Content Include="Images\thema28\млекопит пищевая система.png" />
+    <Content Include="Images\thema28\опорно-двигательный система.png" />
+    <Content Include="Images\thema28\пищквая система.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
