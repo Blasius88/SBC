@@ -499,6 +499,13 @@
     <Content Include="Images\thema28\млекопит пищевая система.png" />
     <Content Include="Images\thema28\опорно-двигательный система.png" />
     <Content Include="Images\thema28\пищквая система.png" />
+    <Content Include="Images\thema30\Железистый эпителий.png" />
+    <Content Include="Images\thema30\Мышечная ткань, гладкая.png" />
+    <Content Include="Images\thema30\Мышечная ткань, сердечная.png" />
+    <Content Include="Images\thema30\Мышечная ткань, скелетная.png" />
+    <Content Include="Images\thema30\Нейрон.png" />
+    <Content Include="Images\thema30\Синапс.png" />
+    <Content Include="Images\thema30\Соединительная ткань.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />

@@ -17,6 +17,12 @@
     border-color: #222222;
 }
 
+/*повород изображения */
+.img-right {
+    transform: rotate(90deg);
+    width: 50%;
+    height: 50%;
+}
 /*текст по центру и жырный */
 .text_center_bord {
     text-align: center; /*размещение текста по центру*/
