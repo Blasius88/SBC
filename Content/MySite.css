@@ -17,7 +17,7 @@
     border-color: #222222;
 }
 
-/*повород изображения */
+/*поворот изображения */
 .img-right {
     transform: rotate(90deg);
     width: 50%;
@@ -123,19 +123,21 @@
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
-}
+}   
 
-.main-card {
+/*аккардион*/
+.accordion-item {
+    font-family: 'Times New Roman';
+    font-size: 16pt;
+}
+/*тема аккардиона*/ 
+.accordion-item, .accordion-header, .accordion-button {
     font-family: 'Times New Roman';
     font-size: 16pt;
 }
 
-.main-card, .card-header, .btn-link {
-    font-family: 'Times New Roman';
-    font-size: 16pt;
-}
-
-.card-body {
+/*тело аккардиона*/ 
+.accordion-body {
     font-family: 'Times New Roman';
     font-size: 16pt;
 }
