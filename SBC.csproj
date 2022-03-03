@@ -506,6 +506,13 @@
     <Content Include="Images\thema30\Нейрон.png" />
     <Content Include="Images\thema30\Синапс.png" />
     <Content Include="Images\thema30\Соединительная ткань.png" />
+    <Content Include="Images\thema31\ВНС.png" />
+    <Content Include="Images\thema31\доли ГМ %28шк уч%29.png" />
+    <Content Include="Images\thema31\НС.png" />
+    <Content Include="Images\thema31\рефлекторная дуга.png" />
+    <Content Include="Images\thema31\строение ГМ %28шк уч%29.png" />
+    <Content Include="Images\thema31\строение ГМ.png" />
+    <Content Include="Images\thema31\строение СМ.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
