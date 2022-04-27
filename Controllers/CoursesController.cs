@@ -24,7 +24,7 @@ namespace SBC.Controllers
             return View(repository.GetAll());
         }
 
-        //Выводит список курсо, где можно произвести редактирование описание и замены картинки
+        //Выводит список курсов, где можно произвести редактирование описание и замены картинки
         // GET: Courses
       //  [Authorize(Roles = "admin")]
         public ActionResult Index()
