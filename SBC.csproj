@@ -533,6 +533,12 @@
     <Content Include="Images\thema36\Строение лейкоцитов.png" />
     <Content Include="Images\thema36\Трамбоциты.png" />
     <Content Include="Images\thema36\эротроцит.png" />
+    <Content Include="Images\Thema37\Автоматия сердца.png" />
+    <Content Include="Images\Thema37\Артериальное давление.png" />
+    <Content Include="Images\Thema37\Большой круг кровообращения.png" />
+    <Content Include="Images\Thema37\Диаграмма кровяного давления.png" />
+    <Content Include="Images\Thema37\Капиляры.png" />
+    <Content Include="Images\Thema37\Сердце.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
