@@ -565,6 +565,11 @@
     <Content Include="Images\thema45\хромосомы.png" />
     <Content Include="Images\thema45\Центросома.png" />
     <Content Include="Images\thema45\Эндоплазматический ретикулум.png" />
+    <Content Include="Images\thema46\движение рибосомы.png" />
+    <Content Include="Images\thema46\мембрана.png" />
+    <Content Include="Images\thema46\Механизм транскрипции.png" />
+    <Content Include="Images\thema46\Соответствие кодов иРНК аминокислотам..png" />
+    <Content Include="Images\thema46\цикл кребса.png" />
     <Content Include="Images\thema4\анат.png" />
     <Content Include="Images\thema4\грибы.png" />
     <Content Include="Images\thema4\паразиты.png" />
