@@ -1075,6 +1075,7 @@
   <ItemGroup>
     <Folder Include="Images\Thema15\" />
     <Folder Include="Images\thema32\" />
+    <Folder Include="Images\thema53\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
