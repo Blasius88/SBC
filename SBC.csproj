@@ -611,6 +611,9 @@
     <Content Include="Images\thema52\Генеалогический метод.png" />
     <Content Include="Images\thema52\Сшивание линзы.png" />
     <Content Include="Images\thema52\Этапы генной инженерии.png" />
+    <Content Include="Images\thema54\Движ.отбор.png" />
+    <Content Include="Images\thema54\Дизруптивный %28разрывающий%29 отбор.png" />
+    <Content Include="Images\thema54\Стабилизирующий отбор.png" />
     <Content Include="Images\thema5\Безымянный.png" />
     <Content Include="Images\thema6\Thema6.1.png" />
     <Content Include="Images\thema6\Жизненный цикл моховидных.png" />
