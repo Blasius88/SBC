@@ -318,6 +318,10 @@
     <Compile Include="Migrations\202104261858397_second.Designer.cs">
       <DependentUpon>202104261858397_second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208272240256_sec.cs" />
+    <Compile Include="Migrations\202208272240256_sec.Designer.cs">
+      <DependentUpon>202208272240256_sec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
     <Compile Include="Models\Test\Test1\Test.cs" />
@@ -343,10 +347,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\SBC.mdf" />
-    <Content Include="App_Data\SBC_log.ldf">
-      <DependentUpon>SBC.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -988,9 +988,6 @@
     <Content Include="Views\Test\Test2.cshtml" />
     <Content Include="Views\Test\Test3.cshtml" />
     <Content Include="Views\Test\Test4.cshtml" />
-    <Content Include="Views\Test\Index.cshtml" />
-    <Content Include="Views\Test\Details.cshtml" />
-    <Content Include="Views\Test\Create.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
@@ -1065,6 +1062,9 @@
     <EmbeddedResource Include="Migrations\202104261858397_second.resx">
       <DependentUpon>202104261858397_second.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208272240256_sec.resx">
+      <DependentUpon>202208272240256_sec.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -1079,6 +1079,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Images\Thema15\" />
     <Folder Include="Images\thema32\" />
     <Folder Include="Images\thema53\" />

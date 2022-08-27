@@ -14,5 +14,8 @@ namespace SBC.Models
         [Required]
         public int Test { get; set; }
 
+         [Required]
+        public int NumberQustion { get; set; }
+
     }
 }
