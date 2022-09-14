@@ -1,4 +1,4 @@
-﻿@model SBC.DAL.Test4
+﻿@model SBC.Models.Test.Test1.Test4
 
 @{
     ViewBag.Title = "Контрольный тест (протисты).";
@@ -449,7 +449,124 @@
                 </ol>
                 <h3 style="color:red">@ViewBag.Answer36</h3>
             </div>
+            <div class="container">
+                37. Укажите протистов, для которых характерно наличие одного или нескольких жгутиков: а) эвглена зеленая; б) амеба обыкновенная; в) инфузория-туфелька; г) вольвокс; д) хлорелла; е) хламидомонада:
+                <ol type="1">
+                    <
+                    <li>@Html.RadioButton("question37", "1")а,г,е</li>
+                    <li>@Html.RadioButton("question37", "2")б,г,д</li>
+                    <li>@Html.RadioButton("question37", "3")а,в,г</li>
+                    <li>@Html.RadioButton("question37", "4")б,в,д</li>
+                    <li>@Html.RadioButton("question37", "5")а,б,в</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer37</h3>
+            </div>
+            <div class="container">
+                38. Среди протистов неподвижным является:
+                <ol type="1">
+                    <li>@Html.RadioButton("question38", "1") хлорелла</li>
+                    <li>@Html.RadioButton("question38", "2") хламидомонада</li>
+                    <li>@Html.RadioButton("question38", "3") амеба обыкновенная</li>
+                    <li>@Html.RadioButton("question38", "4") эвглена зеленая</li>
+                    <li>@Html.RadioButton("question38", "5") вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer38</h3>
+            </div>
+            <div class="container">
+                39. Положительным фототаксисом обладает:
+                <ol type="1">
+                    <li>@Html.RadioButton("question39", "1") хлорелла</li>
+                    <li>@Html.RadioButton("question39", "2") хламидомонада</li>
+                    <li>@Html.RadioButton("question39", "3") инфузория-туфелька</li>
+                    <li>@Html.RadioButton("question39", "4") фитофтора</li>
+                    <li>@Html.RadioButton("question39", "5") вольвокс</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer39</h3>
+            </div>
+            <div class="container">
+                40. Повышение температуры у больных малярией связано с:
+                <ol type="1">
+                    <li>@Html.RadioButton("question40", "1") заражением человека через укус комара</li>
+                    <li>@Html.RadioButton("question40", "2") шизогонией в клетках печени</li>
+                    <li>@Html.RadioButton("question40", "3") шизогонией в эритроцитах</li>
+                    <li>@Html.RadioButton("question40", "4") разрушением эритроцитов крови и выходом из них плазмодиев</li>
+                    <li>@Html.RadioButton("question40", "5") переходом плазмодиев из клеток печени в эритроциты крови человека</li>
+                </ol>
+                <h3 style="color:red">@ViewBag.Answer40</h3>
+            </div>
 
+            <h3 class="text-center"><strong>Часть В.</strong></h3>
+
+            <div class="container">
+                <ol type="1">
+                    <li>
+                        ... – это ответная реакция протистов на раздражитель.
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question41")
+                            <h3 style="color:red">@ViewBag.Answer41</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Жидкие продукты обмена у протистов выделяются наружу через ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question42")
+                            <h3 style="color:red">@ViewBag.Answer42</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Процесс образования цисты у протистов называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question43")
+                            <h3 style="color:red">@ViewBag.Answer43</h3>
+                        </div>
+                    </li>
+                    <li>
+                        … и … относятся к автотрофным протистам.
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question44")
+                            <h3 style="color:red">@ViewBag.Answer44</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Образования, в которых находятся зеленые пигменты протистов называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question45")
+                            <h3 style="color:red">@ViewBag.Answer45</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Временные цитоплазматические выросты у амебы обыкновенной, которые служат для передвижения и захвата пищи, - ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question46")
+                            <h3 style="color:red">@ViewBag.Answer46</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Временные цитоплазматические выросты у амебы обыкновенной, которые служат для передвижения и захвата пищи, - ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question47")
+                            <h3 style="color:red">@ViewBag.Answer47</h3>
+                        </div>
+                    </li>
+                    <li>
+                        Наружный слой цитоплазмы амебы обыкновенной называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question48")
+                            <h3 style="color:red">@ViewBag.Answer48</h3>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
         </div>
     </div>
 }
+

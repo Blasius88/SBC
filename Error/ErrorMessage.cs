@@ -19,7 +19,7 @@ namespace SBC.Error
             }
             catch (Exception exp)
             {
-                FileStream fileStream1 = new FileStream(@"C:\Users\User\source\repos\SBC\Error\log.txt", FileMode.Append);
+                FileStream fileStream1 = new FileStream(@"d:\SBC\Error\log.txt", FileMode.Append);
                 byte[] array = System.Text.Encoding.Default.GetBytes("\nCтрока " + i + " (" + DateTime.Now + ")" + "\n" + e + "\n");
                 // запись массива байтов в файл
                 fileStream1.Write(array, 0, array.Length);

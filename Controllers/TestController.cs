@@ -27,7 +27,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test1(Test1 test)
         {
-            double res = TestCourses.Test(test);
+            double res = TestCourses.RezTest1(test);
             double persentAnswer = Convert.ToDouble(res / 24 * 100);
             if (res != 0)
             {
@@ -145,7 +145,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test2(Test2 test)
         {
-            double res = TestCourses.Test(test);
+            double res = TestCourses.RezTest2 (test);
             double persentAnswer = Convert.ToDouble(res / 30 * 100);
             if (res != 0)
             {
@@ -287,7 +287,7 @@ namespace SBC.Controllers
         [HttpPost]
         public ActionResult Test3(Test3 test)
         {
-            double res = TestCourses.Test(test);
+            double res = TestCourses.RezTest3(test);
             double persentAnswer = Convert.ToDouble(res / 50 * 100);
             if (res != 0)
             {
