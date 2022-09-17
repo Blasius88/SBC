@@ -33,6 +33,8 @@
         public string question65 { get; set; }
         public bool answer65 { get; set; }
         public string question66 { get; set; }
+        public bool answer66 { get; set; }
+        public string question67 { get; set; }
         public bool answer67 { get; set; }
         public string question68 { get; set; }
         public bool answer68 { get; set; }
