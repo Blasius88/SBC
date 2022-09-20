@@ -13,31 +13,6 @@
     </div>
 }
 <h2>Программа подготовки к ЦТ по биологии.</h2>
-
-@*<div class="main-card" onmousedown="return false;" onclick="return true;" oncontextmenu="return false;">
-        <div class="overflow-auto">
-            <div class="accordion" id="accordionExample">
-                @foreach (var item in Model)
-                {
-                    <div class="card">
-                        <div class="card-header" id="heading_@item.idLernen">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link  btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse_@item.idLernen" aria-expanded="true" aria-controls="collapse_@item.idLernen">
-                                    @item.nameLernen
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse_@item.idLernen" class="collapse" aria-labelledby="heading_@item.idLernen" data-parent="#accordionExample">
-                            <div class="card-body">
-                                @Html.Action("Tema" + item.idLernen, "Courses1")
-                            </div>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>*@
-
 <div class="accordion accordion-flush" id="accordionFlushExample">
     @foreach (var item in Model)
     {

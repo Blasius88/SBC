@@ -47,6 +47,7 @@ namespace SBC.Controllers
         {
             if (ModelState.IsValid)
             {
+                //проверка на загрузку фото 
                 if (imageUpload != null)
                 {
                     var count = imageUpload.ContentLength;

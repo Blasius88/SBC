@@ -9,65 +9,65 @@ namespace SBC.Entities
     public class TestCourses
     {
 
-        public static int RezTest1(Test1 test1)
+        public static int RezTest1(Test1_1 test1)
         {
             int res = 0;
-            
+
             if (test1.question1 == "1")
             {
                 test1.answer1 = true;
                 res++;
             }
-            
+
             if (test1.question2 == "3")
             {
                 test1.answer2 = true;
                 res++;
             }
-            
+
             if (test1.question3 == "3")
             {
                 test1.answer3 = true;
                 res++;
             }
-            
+
             if (test1.question4 == "3")
             {
                 test1.answer4 = true;
                 res++;
             }
-            
+
             if (test1.question5 == "2")
             {
                 test1.answer5 = true;
                 res++;
 
             }
-            
+
             if (test1.question6 == "1")
             {
                 test1.answer6 = true;
                 res++;
             }
-            
+
             if (test1.question7 == "3")
             {
                 test1.answer7 = true;
                 res++;
             }
-            
+
             if (test1.question8 == "1")
             {
                 test1.answer8 = true;
                 res++;
             }
-            
+
             if (test1.question9 == "4")
             {
                 test1.answer9 = true;
                 res++;
             }
-            
+
             if (test1.question10 == "4")
             {
                 test1.answer10 = true;
@@ -87,7 +87,7 @@ namespace SBC.Entities
                     test1.answer11 = true;
                 }
             }
-            
+
             if (test1.question12 == null)
             {
                 test1.question12 = "ответа нет";
@@ -100,7 +100,7 @@ namespace SBC.Entities
                     res++;
                 }
             }
-            
+
             if (test1.question13 == null)
             {
                 test1.question13 = "ответа нет";
@@ -258,11 +258,11 @@ namespace SBC.Entities
                     res++;
                 }
             }
-           
+
             return res;
         }
 
-        internal static double RezTest2(Test2 test)
+        internal static double RezTest2(Test1_2 test)
         {
             int res = 0;
 
@@ -520,11 +520,11 @@ namespace SBC.Entities
                     res++;
                 }
             }
-            
+
             return res;
         }
 
-        internal static double RezTest3(Test3 test)
+        internal static double RezTest3(Test2 test)
         {
             int res = 0;
 
@@ -665,7 +665,7 @@ namespace SBC.Entities
                 test.answer23 = true;
                 res++;
             }
-            
+
             if (test.question24 == "2")
             {
                 test.answer24 = true;
@@ -701,7 +701,7 @@ namespace SBC.Entities
                 test.answer29 = true;
                 res++;
             }
-           
+
             if (test.question30 == "4")
             {
                 test.answer30 = true;
@@ -904,7 +904,7 @@ namespace SBC.Entities
                     res++;
                 }
             }
-            
+
             if (test.question46 == null)
             {
                 test.question46 = "ответа нет";
@@ -973,7 +973,7 @@ namespace SBC.Entities
             return res;
         }
 
-        internal static double RezTest4(Test4 test)
+        internal static double RezTest4(Test3_1 test)
         {
             int res = 0;
 
@@ -1636,8 +1636,259 @@ namespace SBC.Entities
             return res;
         }
 
-        internal static double RezTest5(Test5 test)
-        { 
+        internal static double RezTest5(Test3_2 test)
+        {
+            int res = 0;
+
+            if (test.question1 == "2")
+            {
+                test.answer1 = true;
+                res++;
+            }
+
+            if (test.question2 == "4")
+            {
+                test.answer2 = true;
+                res++;
+            }
+
+            if (test.question3 == "2")
+            {
+                test.answer3 = true;
+                res++;
+            }
+
+            if (test.question4 == "3")
+            {
+                test.answer4 = true;
+                res++;
+            }
+
+            if (test.question5 == "2")
+            {
+                test.answer5 = true;
+                res++;
+            }
+
+            if (test.question6 == "1")
+            {
+                test.answer6 = true;
+                res++;
+            }
+
+            if (test.question7 == "1")
+            {
+                test.answer7 = true;
+                res++;
+            }
+
+            if (test.question8 == "1")
+            {
+                test.answer8 = true;
+                res++;
+            }
+
+            if (test.question9 == "1")
+            {
+                test.answer9 = true;
+                res++;
+            }
+
+            if (test.question10 == "2")
+            {
+                test.answer10 = true;
+                res++;
+            }
+
+            if (test.question11 == "3")
+            {
+                test.answer11 = true;
+                res++;
+            }
+
+            if (test.question12 == "1")
+            {
+                test.answer12 = true;
+                res++;
+            }
+
+            if (test.question13 == "4")
+            {
+                test.answer13 = true;
+                res++;
+            }
+
+            if (test.question14 == "4")
+            {
+                test.answer14 = true;
+                res++;
+            }
+
+            if (test.question15 == "5")
+            {
+                test.answer15 = true;
+                res++;
+            }
+
+            if (test.question16 == "3")
+            {
+                test.answer16 = true;
+                res++;
+            }
+
+            if (test.question17 == "2")
+            {
+                test.answer17 = true;
+                res++;
+            }
+
+            if (test.question18 == "3")
+            {
+                test.answer18 = true;
+                res++;
+            }
+
+            if (test.question19 == "5")
+            {
+                test.answer19 = true;
+                res++;
+            }
+
+            if (test.question20 == "1")
+            {
+                test.answer20 = true;
+                res++;
+            }
+
+            if (test.question21 == null)
+            {
+                test.question21 = "ответа нет";
+            }
+            else
+            {
+
+                if (test.question21.ToUpper() == "Талломом".ToUpper() || test.question21.ToUpper() == "слоевищем".ToUpper())
+                {
+                    res++;
+                    test.answer21 = true;
+                }
+            }
+
+            if (test.question22 == null)
+            {
+                test.question22 = "ответа нет";
+            }
+            else
+            {
+                if (test.question22.ToUpper() == "Хлоропласты".ToUpper())
+                {
+                    test.answer22 = true;
+                    res++;
+                }
+            }
+
+            if (test.question23 == null)
+            {
+                test.question23 = "ответа нет";
+            }
+            else
+            {
+                if (test.question23.ToUpper() == "Зеленые водоросли".ToUpper())
+                {
+                    test.answer23 = true;
+                    res++;
+                }
+            }
+
+            if (test.question24 == null)
+            {
+                test.question24 = "ответа нет";
+            }
+            else
+            {
+                if (test.question24.ToUpper() == "Ульва;".ToUpper())
+                {
+                    test.answer24 = true;
+                    res++;
+                }
+            }
+
+            if (test.question25 == null)
+            {
+                test.question25 = "ответа нет";
+            }
+            else
+            {
+                if (test.question25.ToUpper() == "Бурые водоросли".ToUpper())
+                {
+                    test.answer25 = true;
+                    res++;
+                }
+            }
+
+            if (test.question26 == null)
+            {
+                test.question26 = "ответа нет";
+            }
+            else
+            {
+                if (test.question26.ToUpper() == "Красные водоросли".ToUpper())
+                {
+                    res++;
+                    test.answer26 = true;
+                }
+            }
+
+            if (test.question27 == null)
+            {
+                test.question27 = "ответа нет";
+            }
+            else
+            {
+                if (test.question27.ToUpper() == "Зооспоры".ToUpper())
+                {
+                    test.answer27 = true;
+                    res++;
+                }
+            }
+
+            if (test.question28 == null)
+            {
+                test.question28 = "ответа нет";
+            }
+            else
+            {
+                if (test.question28.ToUpper() == "Спирогира".ToUpper())
+                {
+                    test.answer28 = true;
+                    res++;
+                }
+            }
+            if (test.question29 == null)
+            {
+                test.question29 = "ответа нет";
+            }
+            else
+            {
+                if (test.question29.ToUpper() == "Незамкнутого кольца".ToUpper() || test.question29.ToUpper() == "пояска".ToUpper() || test.question29.ToUpper() == "цилиндра".ToUpper())
+                {
+                    test.answer29 = true;
+                    res++;
+                }
+            }
+            if (test.question30 == null)
+            {
+                test.question30 = "ответа нет";
+            }
+            else
+            {
+                if (test.question30.ToUpper() == "Ламинарию и порфиру".ToUpper() || test.question30.ToUpper() == "порфиру и ламинарию".ToUpper())
+                {
+                    test.answer30 = true;
+                    res++;
+                }
+            }
+            return res;
         }
     }
 }

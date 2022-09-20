@@ -1,0 +1,383 @@
+﻿@model SBC.Models.Test.Test1.Test3_2
+
+@{
+    ViewBag.Title = "Контрольный тест (Многоклеточные водоросли).";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Контрольный тест (протисты).</h2>
+<h3 style="color: red">@ViewBag.Result</h3>
+@using (Html.BeginForm("Test3_2", "Courses", FormMethod.Post))
+{
+    <div class="TestOne">
+        <div class="form-group">
+            <h3 class="text-center">Часть А.</h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        <strong>Водоросли относятся к:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question1", "1")высшим споровым растениям</li>
+                            <li>@Html.RadioButton("qurstiom1", "2")низшим растениям</li>
+                            <li>@Html.RadioButton("qurstiom1", "3")грибам</li>
+                            <li>@Html.RadioButton("qurstiom1", "4")протистам</li>
+                            <li>@Html.RadioButton("qurstiom1", "5")высшим семенным растениям</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer1</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Для обитания в приливно-отливной зоне у водорослей выработались следующие приспособления:</strong> а) слоевище прикрепляется к субстрату при помощи корней; б) некоторые водоросли имеют воздухоносные пузыри, удерживающие слоевище у поверхности воды; в) слоевище может прикрепляться к грунту при помощи ризоидов; г) выход спор и гамет совпадает с приливом; д) оболочки клеток утолщаются и защищают организм от высыхания во время отлива:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question2", "1") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom2", "2") б,в,г</li>
+                            <li>@Html.RadioButton("qurstiom2", "3") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom2", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom2", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer2</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Места обитания водорослей:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question3", "1") организм человека и животных</li>
+                            <li>@Html.RadioButton("qurstiom3", "2") пресные и соленые водоемы</li>
+                            <li>@Html.RadioButton("qurstiom3", "3") пустыни</li>
+                            <li>@Html.RadioButton("qurstiom3", "4") лесные массивы и заболоченные участки</li>
+                            <li>@Html.RadioButton("qurstiom3", "5") ледники</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer3</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Тело водорослей представлено:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question4", "1") одной клеткой</li>
+                            <li>@Html.RadioButton("qurstiom4", "2") плодовым телом</li>
+                            <li>@Html.RadioButton("qurstiom4", "3") многоклеточным талломом</li>
+                            <li>@Html.RadioButton("qurstiom4", "4") мицелием</li>
+                            <li>@Html.RadioButton("qurstiom4", "5") листостебельным растением</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer4</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Тип питания водорослей:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question5", "1") гетеротрофный</li>
+                            <li>@Html.RadioButton("qurstiom5", "2") автотрофный</li>
+                            <li>@Html.RadioButton("qurstiom5", "3") миксотрофный</li>
+                            <li>@Html.RadioButton("qurstiom5", "4") осмотический</li>
+                            <li>@Html.RadioButton("qurstiom5", "5") фотосинтез</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer5</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>По содержанию пигментов водоросли делятся на:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question6", "1") зеленые, бурые и красные</li>
+                            <li>@Html.RadioButton("qurstiom6", "2") желтые и бурые</li>
+                            <li>@Html.RadioButton("qurstiom6", "3") синие и фиолетовые</li>
+                            <li>@Html.RadioButton("qurstiom6", "4") голубые и зеленые</li>
+                            <li>@Html.RadioButton("qurstiom6", "5") голубые и харовые</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer6</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Прикрепляется к субстрату при помощи базальной бесцветной клетки:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question7", "1") улотрикс</li>
+                            <li>@Html.RadioButton("qurstiom7", "2") спирогира</li>
+                            <li>@Html.RadioButton("qurstiom7", "3") хлорелла</li>
+                            <li>@Html.RadioButton("qurstiom7", "4") хламидомонада</li>
+                            <li>@Html.RadioButton("qurstiom7", "5") амеба обыкновенная</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer7</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Какие пигменты содержат зеленые водоросли:</strong> а) хлорофилл; б) каротиноиды; в) фукоксантин; г) фикоэритрин; д) фикоцианин:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question8", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom8", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom8", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom8", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom8", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer8</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Какие пигменты содержат харовые водоросли:</strong> а) хлорофилл; б) каротиноиды; в) фукоксантин; г) фикоэритрин; д) фикоцианин:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question9", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom9", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom9", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom9", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom9", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer9</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Какие пигменты содержат бурые водоросли:</strong> а) хлорофилл; б) каротиноиды; в) фукоксантин; г) фикоэритрин; д) фикоцианин:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question10", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom10", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom10", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom10", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom10", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer10</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Какие пигменты содержат красные водоросли:</strong> а) хлорофилл; б) каротиноиды; в) фукоксантин; г) фикоэритрин; д) фикоцианин:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question11", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom11", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom11", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom11", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom11", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer11</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Агар-агар получают из …. водорослей:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question12", "1") красных</li>
+                            <li>@Html.RadioButton("qurstiom12", "2") бурых</li>
+                            <li>@Html.RadioButton("qurstiom12", "3") зеленых</li>
+                            <li>@Html.RadioButton("qurstiom12", "4") харовых</li>
+                            <li>@Html.RadioButton("qurstiom12", "5") не получают из водорослей</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer12</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Агар-агар используют в пищевой промышленности при изготовлении:</strong> а) хлебобулочных изделий; б) мармелада; в) мороженого; г) виноводочных изделий; д) пастилы:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question13", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom13", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom13", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom13", "4") б,в,д</li>
+                            <li>@Html.RadioButton("qurstiom13", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer13</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Укажите особенности строения хары:</strong>а) тело представлено пластинчатым талломом; б) тело расчленено узлами на междоузлия; в) тело разветвленное, похоже на хвощи; г) от каждого узла отходит по 4 и более ответвлений; д) имеются бесцветные нитевидные ризоиды:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question14", "1") а,б</li>
+                            <li>@Html.RadioButton("qurstiom14", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom14", "3") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom14", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom14", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer14</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Хлоропласт у спирогиры</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question15", "1") отсутствует</li>
+                            <li>@Html.RadioButton("qurstiom15", "2") чашевидный</li>
+                            <li>@Html.RadioButton("qurstiom15", "3") замкнут в кольцо</li>
+                            <li>@Html.RadioButton("qurstiom15", "4") в виде пояска</li>
+                            <li>@Html.RadioButton("qurstiom15", "5") закручен в спираль</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer15</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Вегетативное тело у спирогиры представлено:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question16", "1") неподвижной шаровидной клеткой</li>
+                            <li>@Html.RadioButton("qurstiom16", "2") подвижной клеткой со жгутиками</li>
+                            <li>@Html.RadioButton("qurstiom16", "3") многоклеточной неветвящейся нитью</li>
+                            <li>@Html.RadioButton("qurstiom16", "4") пластинчатым талломом</li>
+                            <li>@Html.RadioButton("qurstiom16", "5") кустистым талломом</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer16</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Размножение спирогиры осуществляется:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question17", "1") почкованием</li>
+                            <li>@Html.RadioButton("qurstiom17", "2") фрагментами нитчатого таллома</li>
+                            <li>@Html.RadioButton("qurstiom17", "3") апланоспорами  </li>
+                            <li>@Html.RadioButton("qurstiom17", "4") зооспорами</li>
+                            <li>@Html.RadioButton("qurstiom17", "5") конъюгацией</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer17</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Улотрикс обитает:</strong> а) на скалах и камнях; б) в почве; в) в пресных водоемах; г) на стволах деревьев; д) в морских водоемах:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question18", "1") а,в,д</li>
+                            <li>@Html.RadioButton("qurstiom18", "2") а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom18", "3") в,д</li>
+                            <li>@Html.RadioButton("qurstiom18", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom18", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer18</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Представители бурых водорослей:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question19", "1") нителла и хара</li>
+                            <li>@Html.RadioButton("qurstiom19", "2") хламидомонада и хлорелла</li>
+                            <li>@Html.RadioButton("qurstiom19", "3") улотрикс и спирогира</li>
+                            <li>@Html.RadioButton("qurstiom19", "4") алария и толипелла</li>
+                            <li>@Html.RadioButton("qurstiom19", "5") ундария и гелидиум</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer19</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Значение водорослей: </strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question20", "1") очищают стоячие водоемы</li>
+                            <li>@Html.RadioButton("qurstiom20", "2") разрушают коралловые рифы</li>
+                            <li>@Html.RadioButton("qurstiom20", "3") используются в металлургической промышленности</li>
+                            <li>@Html.RadioButton("qurstiom20", "4") являются сырьем для получения витаминов</li>
+                            <li>@Html.RadioButton("qurstiom20", "5") вызывают заболевания человека и животных</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer20</h3>
+                    </div>
+                </li>
+            </ol>
+            <h3 class="text-center">Часть В.</h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        Тело водоросли представлено многоклеточным …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question21")
+                            <h3 style="color:red">@ViewBag.Answer21</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Специальные структуры, содержащие пигменты водорослей, называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question22")
+                            <h3 style="color:red">@ViewBag.Answer22</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Улотрикс и спирогира – представители отдела …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question23")
+                            <h3 style="color:red">@ViewBag.Answer23</h3>
+                            }
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        «Морским» салатом называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question24")
+                            <h3 style="color:red">@ViewBag.Answer24</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ламинария и фукус – представители отдела …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question25")
+                            <h3 style="color:red">@ViewBag.Answer25</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Порфира и филлофора – представители отдела …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question26")
+                            <h3 style="color:red">@ViewBag.Answer26</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Подвижные споры водорослей, служащие для бесполого размножения и расселения, ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question27")
+                        </div>
+                        <h3 style="color:red">@ViewBag.Answer27</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Основную массу зеленой тины в водоемах образует ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question28")
+                            <h3 style="color:red">@ViewBag.Answer28</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Форма хлоропласта у улотрикса …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question29")
+                            <h3 style="color:red">@ViewBag.Answer29</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Человек использует в пищу … и ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question30")
+                            <h3 style="color:red">@ViewBag.Answer30</h3>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+}

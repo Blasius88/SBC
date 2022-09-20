@@ -1,6 +1,6 @@
 ﻿namespace SBC.Models.Test.Test1
 {
-    public class Test4 : Test3
+    public class Test3_1 : Test2
     {
         public string question51 { get; set; }
         public bool answer51 { get; set; }

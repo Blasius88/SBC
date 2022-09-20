@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -325,10 +326,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LernenItem.cs" />
     <Compile Include="Models\Test\Test1\Test.cs" />
-    <Compile Include="Models\Test\Test1\Test1.cs" />
+    <Compile Include="Models\Test\Test1\Test1_1.cs" />
+    <Compile Include="Models\Test\Test1\Test1_2.cs" />
     <Compile Include="Models\Test\Test1\Test2.cs" />
-    <Compile Include="Models\Test\Test1\Test3.cs" />
-    <Compile Include="Models\Test\Test1\Test4.cs" />
+    <Compile Include="Models\Test\Test1\Test3_1.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -338,6 +339,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Test\QuestionItem.cs" />
+    <Compile Include="Models\Test\Test1\Test3_2.cs" />
     <Compile Include="Models\Test\TestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EFCoursesTestRepository.cs" />
@@ -374,7 +376,7 @@
     <Content Include="Images\social\VK.png" />
     <Content Include="Images\Test4\1.png" />
     <Content Include="Images\Test4\2.png" />
-    <Content Include="Images\Test4\3.png" />
+    <Content Include="Images\Test4\евглены зеленой.jpg" />
     <Content Include="Images\thema10\ветвление.png" />
     <Content Include="Images\thema10\виды побегов.png" />
     <Content Include="Images\thema10\внутреннее строение.png" />
@@ -647,7 +649,7 @@
     <Content Include="Images\thema9\продольный срез корня.png" />
     <Content Include="Images\амеба обыкновенная.jpg" />
     <Content Include="Images\thema3\амеба.png" />
-    <Content Include="Images\биология.jpg" />
+    <Content Include="Images\Courses\биология.jpg" />
     <Content Include="Images\thema2\включение.png" />
     <Content Include="Images\thema3\вольвокс.png" />
     <Content Include="Images\Гриб.png" />
@@ -665,7 +667,7 @@
     <Content Include="Images\thema3\фитофтора.png" />
     <Content Include="Images\thema2\форма бактерий.png" />
     <Content Include="Images\thema3\хара.png" />
-    <Content Include="Images\химия.jpg" />
+    <Content Include="Images\Courses\химия.jpg" />
     <Content Include="Images\thema3\хламидомонада.png" />
     <Content Include="Images\thema3\хлорелла.png" />
     <Content Include="Images\thema3\эвглена зеленая.png" />
@@ -992,9 +994,9 @@
     <Content Include="Views\Lernen\Courses1.cshtml" />
     <Content Include="Views\Menu\UserInfo.cshtml" />
     <Content Include="Views\Error\ErrorConfirmedEmail.cshtml" />
+    <Content Include="Views\Test\Test1_2.cshtml" />
     <Content Include="Views\Test\Test2.cshtml" />
-    <Content Include="Views\Test\Test3.cshtml" />
-    <Content Include="Views\Test\Test4.cshtml" />
+    <Content Include="Views\Test\Test3_1.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Courses\Create.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
@@ -1060,7 +1062,8 @@
     <Content Include="Views\Courses1\Tema59.cshtml" />
     <Content Include="Views\Shared\Info.cshtml" />
     <Content Include="Views\Courses\Catalog.cshtml" />
-    <Content Include="Views\Test\Test1.cshtml" />
+    <Content Include="Views\Test\Test1_1.cshtml" />
+    <Content Include="Views\Test\Test3_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104261828036_first.resx">

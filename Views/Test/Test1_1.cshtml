@@ -1,11 +1,13 @@
-﻿@{
+﻿@model SBC.Models.Test.Test1.Test1_1
+
+@{
     ViewBag.Title = "Проверочный тест: Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.";
 }
 
 <h2>Многообразие органического мира, основные таксономические категории. Принципы построения названий организмов.</h2>
 <h3 class="text-center">Часть А.</h3>
 <h3 style="color: red">@ViewBag.Result</h3>
-@using (Html.BeginForm("Test1", "Test", FormMethod.Post))
+@using (Html.BeginForm("Test1_1", "Test", FormMethod.Post))
 {
     <div class="TestOne">
         <div class="container">
