@@ -1,0 +1,780 @@
+﻿@model SBC.Models.Test.Test1.Test4
+
+@{
+    ViewBag.Title = "Контрольный тест (Грибы, лишайники).";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Контрольный тест (Грибы, лишайники).</h2>
+<h3 style="color: red">@ViewBag.Result</h3>
+@using (Html.BeginForm("Test4", "Courses", FormMethod.Post))
+{
+    <div class="TestOne">
+        <div class="form-group">
+            <h3 class="text-center">Часть А.</h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        <strong>Признаки, сближающие грибы с растениями:</strong> а) наличие клеточной стенки; б) основное запасное питательное вещество крахмал; в) наличие пластид; г) размножение спорами; д) гетеротрофный тип питания:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question1", "1") а,г</li>
+                            <li>@Html.RadioButton("question1", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom1", "3") б,д</li>
+                            <li>@Html.RadioButton("qurstiom1", "4") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom1", "5") г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer1</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Признаки, сближающие грибы с животными:</strong> а) продукт обмена мочевина; б) основное запасное питательное вещество гликоген; в) отсутствие пластид; г) подвижный образ жизни; д) гетеротрофный тип питания:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question2", "1") а,г</li>
+                            <li>@Html.RadioButton("question2", "2") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom2", "3") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom2", "4") а,б,в,д</li>
+                            <li>@Html.RadioButton("qurstiom2", "5") г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer2</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Основным запасным питательным веществом грибов является:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question3", "1") гликоген</li>
+                            <li>@Html.RadioButton("question3", "2") крахмал</li>
+                            <li>@Html.RadioButton("qurstiom3", "3") глюкоза</li>
+                            <li>@Html.RadioButton("qurstiom3", "4") целлюлоза</li>
+                            <li>@Html.RadioButton("qurstiom3", "5") волютин</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer3</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Основным структурным компонентом клеточной стенки грибов является:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question4", "1") муреин</li>
+                            <li>@Html.RadioButton("question4", "2") пектин</li>
+                            <li>@Html.RadioButton("qurstiom4", "3") целлюлоза</li>
+                            <li>@Html.RadioButton("qurstiom4", "4") крахмал</li>
+                            <li>@Html.RadioButton("qurstiom4", "5") хитин</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer4</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>По типу питания грибы:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question5", "1") автотрофы</li>
+                            <li>@Html.RadioButton("question5", "2") гетеротрофы</li>
+                            <li>@Html.RadioButton("qurstiom5", "3") миксотрофы</li>
+                            <li>@Html.RadioButton("qurstiom5", "4") сапротрофы</li>
+                            <li>@Html.RadioButton("qurstiom5", "5") паразиты</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer5</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Микориза представляет собой:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question6", "1") грибковое поражение кожи человека</li>
+                            <li>@Html.RadioButton("question6", "2") грибковое заболевание ржи</li>
+                            <li>@Html.RadioButton("qurstiom6", "3") симбиоз гриба и водоросли</li>
+                            <li>@Html.RadioButton("qurstiom6", "4") симбиоз гриба и корня дерева</li>
+                            <li>@Html.RadioButton("qurstiom6", "5") симбиоз гриба и бактерии</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer6</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К грибам, образующим микоризу относятся:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question7", "1") пеницилл и мукор</li>
+                            <li>@Html.RadioButton("question7", "2") спорынья и головня</li>
+                            <li>@Html.RadioButton("qurstiom7", "3") трутовый гриб и рыжик</li>
+                            <li>@Html.RadioButton("qurstiom7", "4") дрожжи и бледная поганка</li>
+                            <li>@Html.RadioButton("qurstiom7", "5") сыроежка и подосиновик</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer7</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К грибам-паразитам относятся:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question8", "1") пеницилл и мукор</li>
+                            <li>@Html.RadioButton("question8", "2") спорынья и головня</li>
+                            <li>@Html.RadioButton("qurstiom8", "3") трутовый гриб и рыжик</li>
+                            <li>@Html.RadioButton("qurstiom8", "4") дрожжи и бледная поганка</li>
+                            <li>@Html.RadioButton("qurstiom8", "5") сыроежка и подосиновик</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer8</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К плесневым грибам относятся:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question9", "1") пеницилл и мукор</li>
+                            <li>@Html.RadioButton("question9", "2") спорынья и головня</li>
+                            <li>@Html.RadioButton("qurstiom9", "3") трутовый гриб и рыжик</li>
+                            <li>@Html.RadioButton("qurstiom9", "4") дрожжи и бледная поганка</li>
+                            <li>@Html.RadioButton("qurstiom9", "5") сыроежка и подосиновик</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer9</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Грибы из корней дерева получают:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question10", "1") органические вещества</li>
+                            <li>@Html.RadioButton("question10", "2") минеральные соли</li>
+                            <li>@Html.RadioButton("qurstiom10", "3") витамины и минеральные соли</li>
+                            <li>@Html.RadioButton("qurstiom10", "4") воду и минеральные соли</li>
+                            <li>@Html.RadioButton("qurstiom10", "5") воду и органические вещества</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer10</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Грибы снабжают дерево:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question11", "1") органические вещества</li>
+                            <li>@Html.RadioButton("question11", "2") витаминами</li>
+                            <li>@Html.RadioButton("qurstiom11", "3") витамины и минеральные соли</li>
+                            <li>@Html.RadioButton("qurstiom11", "4") воду и минеральные соли</li>
+                            <li>@Html.RadioButton("qurstiom11", "5") воду и органические вещества</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer11</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Размножение грибов осуществляется:</strong> а) шизогонией; б) почкованием; в) конидиями; г) обрывками мицелия; д) спорангиями:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question12", "1") б,в,д</li>
+                            <li>@Html.RadioButton("question12", "2") а,в,д</li>
+                            <li>@Html.RadioButton("qurstiom12", "3") б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom12", "4") б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom12", "5") б,в,г</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer12</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Вегетативное тело мукора представлено:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question13", "1") неподвижной шаровидной клеткой</li>
+                            <li>@Html.RadioButton("question13", "2") подвижной клеткой со жгутиками</li>
+                            <li>@Html.RadioButton("qurstiom13", "3") многоклеточным мицелием</li>
+                            <li>@Html.RadioButton("qurstiom13", "4") пластинчатым талломом</li>
+                            <li>@Html.RadioButton("qurstiom13", "5") одноклеточным мицелием</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer13</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Мукор может размножаться:</strong> а) экзогенными спорами; б) эндогенными спорами; в) обрывками мицелия; г) почкованием; д) слиянием гамет.
+                        <ol type="1">
+                            <li>@Html.RadioButton("question14", "1") а,в</li>
+                            <li>@Html.RadioButton("question14", "2") а,б</li>
+                            <li>@Html.RadioButton("qurstiom14", "3") только г</li>
+                            <li>@Html.RadioButton("qurstiom14", "4") б,в</li>
+                            <li>@Html.RadioButton("qurstiom14", "5") г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer14</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Вегетативное тело пеницилла представлено:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question15", "1") неподвижной шаровидной клеткой</li>
+                            <li>@Html.RadioButton("question15", "2") подвижной клеткой со жгутиками</li>
+                            <li>@Html.RadioButton("qurstiom15", "3") многоклеточным мицелием</li>
+                            <li>@Html.RadioButton("qurstiom15", "4") пластинчатым талломом</li>
+                            <li>@Html.RadioButton("qurstiom15", "5") одноклеточным мицелием</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer15</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Пеницилл может размножаться:</strong> а) экзогенными спорами; б) эндогенными спорами; в) обрывками мицелия; г) почкованием; д) слиянием гамет.
+                        <ol type="1">
+                            <li>@Html.RadioButton("question16", "1") а,в</li>
+                            <li>@Html.RadioButton("question16", "2") а,б</li>
+                            <li>@Html.RadioButton("qurstiom16", "3") только г</li>
+                            <li>@Html.RadioButton("qurstiom16", "4") б,в</li>
+                            <li>@Html.RadioButton("qurstiom16", "5") г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer16</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Выберите трубчатый гриб:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question17", "1") рыжик</li>
+                            <li>@Html.RadioButton("question17", "2") бледная поганка</li>
+                            <li>@Html.RadioButton("qurstiom17", "3") шампиньон</li>
+                            <li>@Html.RadioButton("qurstiom17", "4") белый гриб</li>
+                            <li>@Html.RadioButton("qurstiom17", "5") трутовик</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer17</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Выберите съедобный пластинчатый гриб:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question18", "1") лисички</li>
+                            <li>@Html.RadioButton("question18", "2") мухомор</li>
+                            <li>@Html.RadioButton("qurstiom18", "3") спорынья</li>
+                            <li>@Html.RadioButton("qurstiom18", "4") масленок</li>
+                            <li>@Html.RadioButton("qurstiom18", "5") желчный гриб</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer18</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Для дрожжей характерно:</strong> а) тело представлено одноклеточным мицелием; б) обладают способностью вызывать спиртовое брожение; в) вызывают порчу продуктов, кожи, бумаги; г) тело представлено одиночными клетками шаровидной формы; д) размножаются почкованием:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question19", "1") а,в,д</li>
+                            <li>@Html.RadioButton("question19", "2") а,б</li>
+                            <li>@Html.RadioButton("qurstiom19", "3") только г</li>
+                            <li>@Html.RadioButton("qurstiom19", "4") г,д</li>
+                            <li>@Html.RadioButton("qurstiom19", "5") б,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer19</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Спорыньевые грибы паразитируют на:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question20", "1") ели и сосне</li>
+                            <li>@Html.RadioButton("question20", "2") плодовых деревьях</li>
+                            <li>@Html.RadioButton("qurstiom20", "3") злаковых растениях</li>
+                            <li>@Html.RadioButton("qurstiom20", "4") картофеле и томатах</li>
+                            <li>@Html.RadioButton("qurstiom20", "5") не являются паразитами</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer20</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Распределите шляпочные грибы на группы – пластинчатые (I) и трубчатые (II):</strong> а) груздь; б) белый гриб; в) подберезовик; г) подосиновик; д) шампиньон; е) сыроежка:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question21", "1") I – а,в,е; II – б,г,д</li>
+                            <li>@Html.RadioButton("question21", "2") I – а,д,е; II – б,в,г</li>
+                            <li>@Html.RadioButton("qurstiom21", "3") I – а,в,г; II – б,д,е</li>
+                            <li>@Html.RadioButton("qurstiom21", "4") I – б,г,д; II – а,в,е</li>
+                            <li>@Html.RadioButton("qurstiom21", "5") I – а,в,д; II – б,г,е</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer21</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Распределите шляпочные грибы на группы – пластинчатые съедобные (I) и пластинчатые ядовитые (II):</strong> а) бледная поганка; б) масленок; в) ложный опенок; г) лисичка; д) рыжик:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question22", "1") I – а,в; II – б,г,д</li>
+                            <li>@Html.RadioButton("question22", "2") I – а,д; II – б,в,г</li>
+                            <li>@Html.RadioButton("qurstiom22", "3") I – г,д; II – а,б,в</li>
+                            <li>@Html.RadioButton("qurstiom22", "4") I – г,д; II – а,в</li>
+                            <li>@Html.RadioButton("qurstiom22", "5") I – в,д; II – б,г</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer22</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Распределите грибы на группы – сапротрофы (I) и паразиты (II):</strong> а) спорынья; б) пеницилл; в) подосиновик; г) лисичка; д) ржавчинные грибы:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question23", "1") I – а,в; II – б,г,д</li>
+                            <li>@Html.RadioButton("question23", "2") I – в,г; II – а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom23", "3") I – а,д; II – б,в,г</li>
+                            <li>@Html.RadioButton("qurstiom23", "4") I – г,д; II – а,в</li>
+                            <li>@Html.RadioButton("qurstiom23", "5") I – б,в,г; II – а,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer23</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Выберите заболевания, вызываемые грибами:</strong> а) молочница; б) туберкулез; в) грипп; г) микроспория; д) малярия:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question24", "1") а,б</li>
+                            <li>@Html.RadioButton("question24", "2") а,г</li>
+                            <li>@Html.RadioButton("qurstiom24", "3") г,д</li>
+                            <li>@Html.RadioButton("qurstiom24", "4") в,д</li>
+                            <li>@Html.RadioButton("qurstiom24", "5") а,в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer24</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Положительное значение грибов:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question25", "1") связывают атмосферный азот</li>
+                            <li>@Html.RadioButton("question25", "2") участвуют в почвообразовании</li>
+                            <li>@Html.RadioButton("qurstiom25", "3") разрушают древесину</li>
+                            <li>@Html.RadioButton("qurstiom25", "4") вызывают болезни человека</li>
+                            <li>@Html.RadioButton("qurstiom25", "5") являются продуктами питания для человека</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer25</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Лишайники представляют собой симбиоз:</strong> а) гриба и зеленой водоросли; б) гриба и корня дерева; в) гриба и автотрофного протиста: г) грибы и цианобактерии; д) гриба и мха:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question26", "1") только б</li>
+                            <li>@Html.RadioButton("question26", "2") а,в</li>
+                            <li>@Html.RadioButton("qurstiom26", "3") а,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom26", "4") а,в,г</li>
+                            <li>@Html.RadioButton("qurstiom26", "5") а,в,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer26</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Тело лишайника представляет собой:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question27", "1") колонию клеток</li>
+                            <li>@Html.RadioButton("question27", "2") мицелий</li>
+                            <li>@Html.RadioButton("qurstiom27", "3") одну клетку</li>
+                            <li>@Html.RadioButton("qurstiom27", "4") многоклеточное слоевище</li>
+                            <li>@Html.RadioButton("qurstiom27", "5") одноклеточное слоевище</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer27</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>По форме слоевища все лишайники делятся на:</strong> а) кустистые; б) кустарничковые; в) листоватые; г) накипные; д) гетеромерные:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question28", "1") а,в,г</li>
+                            <li>@Html.RadioButton("question28", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom28", "3") а,б</li>
+                            <li>@Html.RadioButton("qurstiom28", "4") б,в,г</li>
+                            <li>@Html.RadioButton("qurstiom28", "5") только д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer28</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>По анатомическому строению все лишайники делятся на:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question29", "1") умеренные и вирулентные</li>
+                            <li>@Html.RadioButton("question29", "2") гомео- и гетеромерные</li>
+                            <li>@Html.RadioButton("qurstiom29", "3") микобионты и фикобионты</li>
+                            <li>@Html.RadioButton("qurstiom29", "4") соредии и изидии</li>
+                            <li>@Html.RadioButton("qurstiom29", "5") накипные и листоватые</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer29</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Размножение лишайников осуществляется:</strong> а) спорами; б) соредиями; в) изидиями; г) половым путем; д) обрывками слоевища:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question30", "1") а,в,г</li>
+                            <li>@Html.RadioButton("question30", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom30", "3") б,в</li>
+                            <li>@Html.RadioButton("qurstiom30", "4") б,в,д</li>
+                            <li>@Html.RadioButton("qurstiom30", "5") только д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer30</h3>
+                    </div>
+                </li>
+            </ol>
+            <h3 class="text-center">Часть В.</h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        Наука, изучающая грибы, называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question31")
+                            <h3 style="color:red">@ViewBag.Answer31</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Тело гриба называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question32")
+                            <h3 style="color:red">@ViewBag.Answer32</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Нити, составляющие тело гриба, называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question33")
+                            <h3 style="color:red">@ViewBag.Answer33</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Среди грибов не имеют мицелия …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question34")
+                            <h3 style="color:red">@ViewBag.Answer34</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Полисахарид, являющийся составным компонентом клеточной стенки грибов, …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question35")
+                            <h3 style="color:red">@ViewBag.Answer35</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Гифы паразитического гриба, находящиеся внутри живой клетки организма-хозяина, через которые питательные вещества растения поступают в таллом гриба, - это …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question36")
+                            <h3 style="color:red">@ViewBag.Answer36</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Плесневые и шляпочные грибы по способу питания являются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question37")
+                            <h3 style="color:red">@ViewBag.Answer37</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ржавчинные и головневые грибы по типу питания являются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question38")
+                            <h3 style="color:red">@ViewBag.Answer38</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Трутовые грибы паразитируют преимущественно на …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question39")
+                            <h3 style="color:red">@ViewBag.Answer39</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        … вызывает отравление, которое может протекать в виде конвульсий («злые корчи»).
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question40")
+                            <h3 style="color:red">@ViewBag.Answer40</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Образования, в которых созревают споры плесневых грибов, называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question41")
+                            <h3 style="color:red">@ViewBag.Answer41</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Споры наружного происхождения у плесневых грибов называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question42")
+                            <h3 style="color:red">@ViewBag.Answer42</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Почкованием могут размножаться …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question43")
+                            <h3 style="color:red">@ViewBag.Answer43</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Шляпка и ножка шляпочного гриба – это …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question44")
+                            <h3 style="color:red">@ViewBag.Answer44</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Симбиоз гриба с корнем дерева называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question45")
+                            <h3 style="color:red">@ViewBag.Answer45</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Распределите грибы на группы: сапротрофы (1) и паразиты (2):
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Представители</th>
+                                    <th>Особенности питания</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="A">
+                                            <li>сморчок</li>
+                                            <li>головня</li>
+                                            <li>бледная поганка</li>
+                                            <li>спорынья</li>
+                                            <li>дрожжи</li>
+                                            <li>аспергилл</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>сапротрофы</li>
+                                            <li>паразиты</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question46")
+                            <h3 style="color:red">@ViewBag.Answer46</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Распределите шляпочные грибы на группы: пластинчатые (1) и трубчатые (2):
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Представители</th>
+                                    <th>Группы</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="A">
+                                            <li>волнушка</li>
+                                            <li>масленок</li>
+                                            <li>сыроежка</li>
+                                            <li>трутовик</li>
+                                            <li>моховик</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>пластинчатые</li>
+                                            <li>трубчатые</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question47")
+                            <h3 style="color:red">@ViewBag.Answer47</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Распределите шляпочные грибы на группы: пластинчатые съедобные (1) и пластинчатые ядовитые (2):
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Представители</th>
+                                    <th>Особенности питания</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="A">
+                                            <li>груздь</li>
+                                            <li>ложный опенок</li>
+                                            <li>шампиньон</li>
+                                            <li>ложная лисичка</li>
+                                            <li>подосиновик</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>пластинчатые съедобные</li>
+                                            <li>пластинчатые ядовитые</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question48")
+                            <h3 style="color:red">@ViewBag.Answer48</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Установите соответствие между характеристикой гриба и соответствующим примером, выбрав необходимые элементы из предложенных:
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Характеристика гриба</th>
+                                    <th>Примеры</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="1">
+                                            <li>Ядовитый пластинчатый гриб</li>
+                                            <li>Несъедобный трубчатый гриб</li>
+                                            <li>Съедобный трубчатый гриб</li>
+                                            <li>Съедобный пластинчатый гриб</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol type="A">
+                                            <li>желчный гриб</li>
+                                            <li>рыжик</li>
+                                            <li>трутовик</li>
+                                            <li>масленок</li>
+                                            <li>мухомор</li>
+                                            <li>мукор</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question49")
+                            <h3 style="color:red">@ViewBag.Answer49</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Тело лишайника называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question50")
+                            <h3 style="color:red">@ViewBag.Answer50</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Раздел науки, изучающий лишайники, называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question51")
+                            <h3 style="color:red">@ViewBag.Answer51</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Органы прикрепления листоватых лишайников к субстрату, образованный гифами гриба, называются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question52")
+                            <h3 style="color:red">@ViewBag.Answer52</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Гриб в составе лишайника называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question53")
+                            <h3 style="color:red">@ViewBag.Answer53</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Зеленая водоросль в составе лишайника называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question54")
+                            <h3 style="color:red">@ViewBag.Answer54</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Лишайник, слоевище которого представляет собой рыхлое сплетение гиф гриба, среди которых равномерно расположены клетки фикобионта, называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question55")
+                            <h3 style="color:red">@ViewBag.Answer55</h3>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+
+        </div>
+    </div>
+}

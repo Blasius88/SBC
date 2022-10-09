@@ -309,7 +309,13 @@
     <Compile Include="Entities\ApplicationDbContext.cs" />
     <Compile Include="Entities\DriveApiService.cs" />
     <Compile Include="Entities\IdentityModels.cs" />
-    <Compile Include="Entities\TestCourses.cs" />
+    <Compile Include="Entities\RezTest1_1.cs" />
+    <Compile Include="Entities\RezTest1_2.cs" />
+    <Compile Include="Entities\RezTest2.cs" />
+    <Compile Include="Entities\RezTest3_1.cs" />
+    <Compile Include="Entities\RezTest3_2.cs" />
+    <Compile Include="Entities\RezTest4.cs" />
+    <Compile Include="Models\Test\Test1\Test4.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
     <Compile Include="Migrations\202104261828036_first.cs" />
     <Compile Include="Migrations\202104261828036_first.Designer.cs">
@@ -1064,6 +1070,7 @@
     <Content Include="Views\Courses\Catalog.cshtml" />
     <Content Include="Views\Test\Test1_1.cshtml" />
     <Content Include="Views\Test\Test3_2.cshtml" />
+    <Content Include="Views\Test\Test4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104261828036_first.resx">
