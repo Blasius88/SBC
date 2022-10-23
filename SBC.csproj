@@ -315,6 +315,7 @@
     <Compile Include="Entities\RezTest3_1.cs" />
     <Compile Include="Entities\RezTest3_2.cs" />
     <Compile Include="Entities\RezTest4.cs" />
+    <Compile Include="Entities\RezTest5.cs" />
     <Compile Include="Models\Test\Test1\Test4.cs" />
     <Compile Include="Error\ErrorMessage.cs" />
     <Compile Include="Migrations\202104261828036_first.cs" />
@@ -346,6 +347,7 @@
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Test\QuestionItem.cs" />
     <Compile Include="Models\Test\Test1\Test3_2.cs" />
+    <Compile Include="Models\Test\Test1\Test5.cs" />
     <Compile Include="Models\Test\TestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EFCoursesTestRepository.cs" />
@@ -1071,6 +1073,7 @@
     <Content Include="Views\Test\Test1_1.cshtml" />
     <Content Include="Views\Test\Test3_2.cshtml" />
     <Content Include="Views\Test\Test4.cshtml" />
+    <Content Include="Views\Test\Test5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104261828036_first.resx">

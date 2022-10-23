@@ -6,62 +6,60 @@ using System.Web;
 
 namespace SBC.Entities
 {
-    public class RezTest4
+    public class RezTest5
     {
-
-
-        internal static double Rezultat_Test4(Test4 test)
+        internal static double Rezultat_Test5(Test5 test)
         {
             int res = 0;
-            if (test.question1 == "1")
+            if (test.question1 == "4")
             {
                 test.answer1 = true;
                 res++;
             }
 
-            if (test.question2 == "4")
+            if (test.question2 == "1")
             {
                 test.answer2 = true;
                 res++;
             }
 
-            if (test.question3 == "1")
+            if (test.question3 == "2")
             {
                 test.answer3 = true;
                 res++;
             }
 
-            if (test.question4 == "5")
+            if (test.question4 == "4")
             {
                 test.answer4 = true;
                 res++;
             }
 
-            if (test.question5 == "2")
+            if (test.question5 == "4")
             {
                 test.answer5 = true;
                 res++;
             }
 
-            if (test.question6 == "4")
+            if (test.question6 == "2")
             {
                 test.answer6 = true;
                 res++;
             }
 
-            if (test.question7 == "5")
+            if (test.question7 == "2")
             {
                 test.answer7 = true;
                 res++;
             }
 
-            if (test.question8 == "2")
+            if (test.question8 == "1")
             {
                 test.answer8 = true;
                 res++;
             }
 
-            if (test.question9 == "1")
+            if (test.question9 == "2")
             {
                 test.answer9 = true;
                 res++;
@@ -73,19 +71,19 @@ namespace SBC.Entities
                 res++;
             }
 
-            if (test.question11 == "4")
+            if (test.question11 == "5")
             {
                 test.answer11 = true;
                 res++;
             }
 
-            if (test.question12 == "5")
+            if (test.question12 == "2")
             {
                 test.answer12 = true;
                 res++;
             }
 
-            if (test.question13 == "5")
+            if (test.question13 == "1")
             {
                 test.answer13 = true;
                 res++;
@@ -97,13 +95,13 @@ namespace SBC.Entities
                 res++;
             }
 
-            if (test.question15 == "3")
+            if (test.question15 == "1")
             {
                 test.answer15 = true;
                 res++;
             }
 
-            if (test.question16 == "1")
+            if (test.question16 == "5")
             {
                 test.answer16 = true;
                 res++;
@@ -115,29 +113,29 @@ namespace SBC.Entities
                 res++;
             }
 
-            if (test.question18 == "1")
+            if (test.question18 == "2")
             {
                 test.answer18 = true;
                 res++;
             }
 
-            if (test.question19 == "5")
+            if (test.question19 == "2")
             {
                 test.answer19 = true;
                 res++;
             }
 
-            if (test.question20 == "3")
+            if (test.question20 == "5")
             {
                 test.answer20 = true;
                 res++;
             }
-            if (test.question21 == "2")
+            if (test.question21 == "3")
             {
                 test.answer21 = true;
                 res++;
             }
-            if (test.question22 == "4")
+            if (test.question22 == "3")
             {
                 test.answer22 = true;
                 res++;
@@ -152,7 +150,7 @@ namespace SBC.Entities
                 test.answer24 = true;
                 res++;
             }
-            if (test.question25 == "5")
+            if (test.question25 == "2")
             {
                 test.answer25 = true;
                 res++;
@@ -162,22 +160,22 @@ namespace SBC.Entities
                 test.answer26 = true;
                 res++;
             }
-            if (test.question27 == "4")
+            if (test.question27 == "5")
             {
                 test.answer27 = true;
                 res++;
             }
-            if (test.question28 == "1")
+            if (test.question28 == "2")
             {
                 test.answer28 = true;
                 res++;
             }
-            if (test.question29 == "2")
+            if (test.question29 == "5")
             {
                 test.answer29 = true;
                 res++;
             }
-            if (test.question30 == "4")
+            if (test.question30 == "2")
             {
                 test.answer30 = true;
                 res++;
@@ -189,7 +187,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question31.ToUpper() == "Микология".ToUpper())
+                if (test.question31.ToUpper() == "Экология".ToUpper())
                 {
                     res++;
                     test.answer31 = true;
@@ -202,7 +200,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question32.ToUpper() == "Мицелий".ToUpper())
+                if (test.question32.ToUpper() == "А1Б1В2Г2Д3".ToUpper())
                 {
                     res++;
                     test.answer32 = true;
@@ -215,7 +213,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question33.ToUpper() == "Гифы".ToUpper())
+                if (test.question33.ToUpper() == "А2Б1В1Г3Д2".ToUpper())
                 {
                     res++;
                     test.answer33 = true;
@@ -228,7 +226,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question34.ToUpper() == "Дрожжи".ToUpper())
+                if (test.question34.ToUpper() == "А3Б1В2Г4Д1".ToUpper())
                 {
                     res++;
                     test.answer34 = true;
@@ -241,7 +239,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question35.ToUpper() == "Хитин".ToUpper())
+                if (test.question35.ToUpper() == "Образовательные".ToUpper())
                 {
                     res++;
                     test.answer35 = true;
@@ -254,7 +252,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question36.ToUpper() == "Гаустории".ToUpper())
+                if (test.question36.ToUpper() == "Камбий".ToUpper())
                 {
                     res++;
                     test.answer36 = true;
@@ -267,7 +265,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question37.ToUpper() == "Сапротрофы".ToUpper())
+                if (test.question37.ToUpper() == "Покровные".ToUpper())
                 {
                     res++;
                     test.answer37 = true;
@@ -280,7 +278,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question38.ToUpper() == "Гетеротрофы".ToUpper())
+                if (test.question38.ToUpper() == "Эпидермис".ToUpper() || test.question38.ToUpper () == "эпидерма".ToUpper())
                 {
                     res++;
                     test.answer38 = true;
@@ -293,7 +291,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question39.ToUpper() == "Деревьях".ToUpper())
+                if (test.question39.ToUpper() == "Пробка".ToUpper() || test.question39.ToUpper () == "перидерма".ToUpper ())
                 {
                     res++;
                     test.answer39 = true;
@@ -306,7 +304,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question40.ToUpper() == "Спорыньевые".ToUpper())
+                if (test.question40.ToUpper() == "Корка".ToUpper() || test.question40.ToUpper() == "ритидом".ToUpper())
                 {
                     res++;
                     test.answer40 = true;
@@ -319,7 +317,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question41.ToUpper() == "Спорангии".ToUpper())
+                if (test.question41.ToUpper() == "Чечевички".ToUpper())
                 {
                     res++;
                     test.answer41 = true;
@@ -332,7 +330,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question42.ToUpper() == "Конидии".ToUpper())
+                if (test.question42.ToUpper() == "Трещинки".ToUpper())
                 {
                     res++;
                     test.answer42 = true;
@@ -345,7 +343,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question43.ToUpper() == "Дрожжи".ToUpper())
+                if (test.question43.ToUpper() == "Пробка".ToUpper())
                 {
                     res++;
                     test.answer43 = true;
@@ -358,7 +356,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question44.ToUpper() == "Плодовое тело".ToUpper())
+                if (test.question44.ToUpper() == "Пробка".ToUpper() || test.question44.ToUpper() == "феллема".ToUpper())
                 {
                     res++;
                     test.answer44 = true;
@@ -371,7 +369,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question45.ToUpper() == "Микориза".ToUpper())
+                if (test.question45.ToUpper() == "Феллодерма".ToUpper())
                 {
                     res++;
                     test.answer45 = true;
@@ -384,7 +382,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question46.ToUpper() == "А1Б2В1Г2Д1Е1".ToUpper())
+                if (test.question46.ToUpper() == "Ассимиляционная".ToUpper())
                 {
                     res++;
                     test.answer46 = true;
@@ -397,7 +395,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question47.ToUpper() == "А1Б2В1Д2".ToUpper())
+                if (test.question47.ToUpper() == "Водоносная".ToUpper())
                 {
                     res++;
                     test.answer47 = true;
@@ -410,7 +408,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question48.ToUpper() == "А1Б2В1Г2".ToUpper())
+                if (test.question48.ToUpper() == "Запасающая".ToUpper())
                 {
                     res++;
                     test.answer48 = true;
@@ -423,7 +421,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question49.ToUpper() == "1Д2А3Г4Б".ToUpper())
+                if (test.question49.ToUpper() == "Колленхима".ToUpper())
                 {
                     res++;
                     test.answer49 = true;
@@ -436,7 +434,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question50.ToUpper() == "слоевище".ToUpper() || test.question50.ToUpper() == "Таллом".ToUpper())
+                if (test.question50.ToUpper() == "Склеренхима".ToUpper())
                 {
                     res++;
                     test.answer50 = true;
@@ -449,7 +447,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question51.ToUpper() == "Лихенология".ToUpper())
+                if (test.question51.ToUpper() == "Проводящие;".ToUpper())
                 {
                     res++;
                     test.answer51 = true;
@@ -462,7 +460,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question52.ToUpper() == "Ризины".ToUpper())
+                if (test.question52.ToUpper() == "Ситовидные трубки".ToUpper())
                 {
                     res++;
                     test.answer52 = true;
@@ -475,7 +473,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question53.ToUpper() == "Микобионт".ToUpper())
+                if (test.question53.ToUpper() == "Ксилема".ToUpper())
                 {
                     res++;
                     test.answer53 = true;
@@ -488,7 +486,7 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question54.ToUpper() == "Фикобионт".ToUpper())
+                if (test.question54.ToUpper() == "Трахеи".ToUpper() || test.question54.ToUpper() == "сосуды".ToUpper())
                 {
                     res++;
                     test.answer54 = true;
@@ -501,10 +499,50 @@ namespace SBC.Entities
             else
             {
 
-                if (test.question55.ToUpper() == "Гомеомерный".ToUpper())
+                if (test.question55.ToUpper() == "А1Б1В2Г1Д3".ToUpper())
                 {
                     res++;
                     test.answer55 = true;
+                }
+            }
+
+            if (test.question56 == null)
+            {
+                test.question56 = "ответа нет";
+            }
+            else
+            {
+
+                if (test.question56.ToUpper() == "Тропизмы".ToUpper())
+                {
+                    res++;
+                    test.answer56 = true;
+                }
+            }
+            if (test.question57 == null)
+            {
+                test.question57 = "ответа нет";
+            }
+            else
+            {
+
+                if (test.question57.ToUpper() == "Фототропизм".ToUpper() || test.question57.ToUpper() == "гелиотропизм".ToUpper())
+                {
+                    res++;
+                    test.answer57 = true;
+                }
+            }
+            if (test.question58 == null)
+            {
+                test.question58 = "ответа нет";
+            }
+            else
+            {
+
+                if (test.question58.ToUpper() == "Настия".ToUpper())
+                {
+                    res++;
+                    test.answer58 = true;
                 }
             }
 

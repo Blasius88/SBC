@@ -1,0 +1,881 @@
+﻿@model SBC.Models.Test.Test1.Test5
+
+@{
+    ViewBag.Title = "Контрольный тест (Введение в ботанику, ткани).";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Контрольный тест (Введение в ботанику, ткани).</h2>
+<h3 style="color: red">@ViewBag.Result</h3>
+@using (Html.BeginForm("Test5", "Courses", FormMethod.Post))
+{
+    <div class="TestOne">
+        <div class="form-group">
+            <h3 class="text-center">Часть А.</h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        <strong>Ботаника изучает строение и жизнедеятельность:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question1", "1") вирусов</li>
+                            <li>@Html.RadioButton("question1", "2") бактерий</li>
+                            <li>@Html.RadioButton("qurstiom1", "3") грибов</li>
+                            <li>@Html.RadioButton("qurstiom1", "4") растений</li>
+                            <li>@Html.RadioButton("qurstiom1", "5") животных</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer1</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Физиология растений изучает:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question2", "1") процессы жизнедеятельности растений</li>
+                            <li>@Html.RadioButton("question2", "2") распространение растений на Земле</li>
+                            <li>@Html.RadioButton("qurstiom2", "3") классификацию растений</li>
+                            <li>@Html.RadioButton("qurstiom2", "4") структуру растительных сообществ</li>
+                            <li>@Html.RadioButton("qurstiom2", "5") внешнее и внутреннее строение растительного организма</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer2</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Геоботаника растений изучает:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question3", "1") процессы жизнедеятельности растений</li>
+                            <li>@Html.RadioButton("question3", "2") распространение растений на Земле</li>
+                            <li>@Html.RadioButton("qurstiom3", "3") классификацию растений</li>
+                            <li>@Html.RadioButton("qurstiom3", "4") структуру растительных сообществ</li>
+                            <li>@Html.RadioButton("qurstiom3", "5") внешнее и внутреннее строение растительного организма</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer3</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Фитоценология растений изучает:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question4", "1") процессы жизнедеятельности растений</li>
+                            <li>@Html.RadioButton("question4", "2") распространение растений на Земле</li>
+                            <li>@Html.RadioButton("qurstiom4", "3") классификацию растений</li>
+                            <li>@Html.RadioButton("qurstiom4", "4") структуру растительных сообществ</li>
+                            <li>@Html.RadioButton("qurstiom4", "5") внешнее и внутреннее строение растительного организма</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer4</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К растениям относятся организмы:</strong> а) способные к фотосинтезу; б) активно передвигающиеся; в) не способные к активному передвижению во взрослом состоянии; г) всасывающие питательные вещества; д) заглатывающие питательные вещества:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question5", "1") в,г,д</li>
+                            <li>@Html.RadioButton("question5", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom5", "3") б,в,д</li>
+                            <li>@Html.RadioButton("qurstiom5", "4") а,в,г</li>
+                            <li>@Html.RadioButton("qurstiom5", "5") а,в,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer5</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Растения обладают способностью к росту:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question6", "1") до определенного возраста</li>
+                            <li>@Html.RadioButton("question6", "2") в течение всей жизни</li>
+                            <li>@Html.RadioButton("qurstiom6", "3") до достижения репродуктивного возраста</li>
+                            <li>@Html.RadioButton("qurstiom6", "4") до достижения определенных размеров</li>
+                            <li>@Html.RadioButton("qurstiom6", "5") до достижения определенной биомассы</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer6</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Основным запасным питательным веществом у растений является:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question7", "1") гликоген</li>
+                            <li>@Html.RadioButton("question7", "2") крахмал</li>
+                            <li>@Html.RadioButton("qurstiom7", "3") ламинарин</li>
+                            <li>@Html.RadioButton("qurstiom7", "4") целлюлоза</li>
+                            <li>@Html.RadioButton("qurstiom7", "5") волютин</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer7</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Растения из окружающей среды поглощают:</strong> а) минеральные вещества; б) воду; в) органические вещества; г) кислород; д) углекислый газ:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question8", "1") а,б,г,д</li>
+                            <li>@Html.RadioButton("question8", "2") б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom8", "3") а,б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom8", "4") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom8", "5") только в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer8</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Растения в окружающую среду выделяют:</strong> а) минеральные вещества; б) воду; в) органические вещества; г) кислород; д) углекислый газ:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question9", "1") а,б,г,д</li>
+                            <li>@Html.RadioButton("question9", "2") б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom9", "3") а,б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom9", "4") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom9", "5") только в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer9</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Растения как поглощают из окружающей среды, так и выделяют в окружающую среду:</strong> а) минеральные вещества; б) воду; в) органические вещества; г) кислород; д) углекислый газ:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question10", "1") а,б,г,д</li>
+                            <li>@Html.RadioButton("question10", "2") б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom10", "3") а,б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom10", "4") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom10", "5") только в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer10</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Биосферное значение растений:</strong> а) участвуют в формировании климата; б) участвуют в формировании газового состава атмосферы; в) служат источником сырья для человека; г) участвуют в круговороте воды; д) поглощают солнечную энергию и превращают ее в энергию химических связей:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question11", "1") только в</li>
+                            <li>@Html.RadioButton("question11", "2") б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom11", "3") а,б,в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom11", "4") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom11", "5") а,б,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer11</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Укажите, какие жизненные формы характерны для следующих растений:</strong>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Жизненные формы</td>
+                                    <td>Растения</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="1">
+                                            <li>Деревья</li>
+                                            <li>Кустарники</li>
+                                            <li>Кустарнички</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        а. жимолость <br />
+                                        б. бересклет <br />
+                                        в. тополь <br />
+                                        г. липа <br />
+                                        д. вереск <br />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question12", "1") 1 аб, 2 вг, 3 д</li>
+                            <li>@Html.RadioButton("question12", "2") 1 вг, 2 аб, 3 д</li>
+                            <li>@Html.RadioButton("qurstiom12", "3") 1 бв, 2 ад, 3 г</li>
+                            <li>@Html.RadioButton("qurstiom12", "4") 1 вг, 2 ад, 3 б</li>
+                            <li>@Html.RadioButton("qurstiom12", "5") 1 аг, 2 бд, 3 в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer12</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Установите соответствие:</strong>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Жизненные формы</td>
+                                    <td>Растения</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="1">
+                                            <li>Деревья</li>
+                                            <li>Кустарнички</li>
+                                            <li>Травы</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        а. яблоня <br />
+                                        б. осина <br />
+                                        в. клюква <br />
+                                        г. багульник <br />
+                                        д. цикорий <br />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question13", "1") 1 аб, 2 вг, 3 д</li>
+                            <li>@Html.RadioButton("question13", "2") 1 вг, 2 аб, 3 д</li>
+                            <li>@Html.RadioButton("qurstiom13", "3") 1 бв, 2 ад, 3 г</li>
+                            <li>@Html.RadioButton("qurstiom13", "4") 1 вг, 2 ад, 3 б</li>
+                            <li>@Html.RadioButton("qurstiom13", "5") 1 аг, 2 бд, 3 в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer13</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Укажите, какие жизненные формы характерны для следующих растений:</strong>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Жизненные формы</td>
+                                    <td>Растения</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ol type="1">
+                                            <li>Кустарники</li>
+                                            <li>Кустарнички</li>
+                                            <li>Травы</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        а. голубика <br />
+                                        б. одуванчик <br />
+                                        в. бузина <br />
+                                        г. волчье лыко <br />
+                                        д. тимофеевка <br />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question14", "1") 1 аб, 2 вг, 3 д</li>
+                            <li>@Html.RadioButton("question14", "2") 1 вг, 2 аб, 3 д</li>
+                            <li>@Html.RadioButton("qurstiom14", "3") 1 бв, 2 ад, 3 г</li>
+                            <li>@Html.RadioButton("qurstiom14", "4") 1 вг, 2 а, 3 бд</li>
+                            <li>@Html.RadioButton("qurstiom14", "5") 1 аг, 2 бд, 3 в</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer14</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Укажите признаки высших растений, характерные только для цветковых: </strong>а) наличие цветка; б) образование плодов; в) присутствуют все жизненные формы растений; г) двойное оплодотворение; д) наличие корней:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question15", "1") а,б,в,г</li>
+                            <li>@Html.RadioButton("question15", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom15", "3") в,д</li>
+                            <li>@Html.RadioButton("qurstiom15", "4") а,б,г,д</li>
+                            <li>@Html.RadioButton("qurstiom15", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer15</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Типы тканей покрытосеменных растений:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question16", "1") промежуточная и соединительная</li>
+                            <li>@Html.RadioButton("question16", "2") ассимилирующая и эпидермис</li>
+                            <li>@Html.RadioButton("qurstiom16", "3") корковая и основная</li>
+                            <li>@Html.RadioButton("qurstiom16", "4") колленхима и эпителиальная</li>
+                            <li>@Html.RadioButton("qurstiom16", "5") основная и проводящая</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer16</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Разновидности покровной ткани покрытосеменных:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question17", "1") склеренхима и водоносная паренхима</li>
+                            <li>@Html.RadioButton("question17", "2") хлоренхима и трахеиды</li>
+                            <li>@Html.RadioButton("qurstiom17", "3") пробка и ситовидные трубки</li>
+                            <li>@Html.RadioButton("qurstiom17", "4") корка и пробка</li>
+                            <li>@Html.RadioButton("qurstiom17", "5") колленхима и смоляные ходы</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer17</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Разновидности проводящей ткани:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question18", "1") эпидермис и пробка</li>
+                            <li>@Html.RadioButton("question18", "2") трахеи и трахеиды</li>
+                            <li>@Html.RadioButton("qurstiom18", "3") клетки-спутницы и корка</li>
+                            <li>@Html.RadioButton("qurstiom18", "4") лубяные волокна и ситовидные трубки</li>
+                            <li>@Html.RadioButton("qurstiom18", "5") ситовидные клетки и колленхима</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer18</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Разновидности основной ткани покрытосеменных:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question19", "1") эпидермис и дерма</li>
+                            <li>@Html.RadioButton("question19", "2") хлоренхима и водоносная паренхима</li>
+                            <li>@Html.RadioButton("qurstiom19", "3") склеренхима и лубяные волокна</li>
+                            <li>@Html.RadioButton("qurstiom19", "4") ксилема и флоэма</li>
+                            <li>@Html.RadioButton("qurstiom19", "5") ситовидные клетки и колленхима</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer19</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К верхушечной меристеме относятся:</strong> а) зона деления корня; б) камбий: в) меристема в узлах стебля злаковых растений; г) конус нарастания стебля; д) меристема в основании листа:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question20", "1") в,д</li>
+                            <li>@Html.RadioButton("question20", "2") только б</li>
+                            <li>@Html.RadioButton("qurstiom20", "3") б,в,д</li>
+                            <li>@Html.RadioButton("qurstiom20", "4") только а</li>
+                            <li>@Html.RadioButton("qurstiom20", "5") а,г</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer20</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К механической ткани относятся:</strong> а) трахеи; б) склереиды; в) ситовидные трубки; г) лубяные волокна; д) древесинная паренхима:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question21", "1") б,д</li>
+                            <li>@Html.RadioButton("question21", "2") только г</li>
+                            <li>@Html.RadioButton("qurstiom21", "3") б,г</li>
+                            <li>@Html.RadioButton("qurstiom21", "4") только б</li>
+                            <li>@Html.RadioButton("qurstiom21", "5") а,г</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer21</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Перицикл – это пример:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question22", "1") запасающей паренхимы</li>
+                            <li>@Html.RadioButton("question22", "2") верхушечной меристемы</li>
+                            <li>@Html.RadioButton("qurstiom22", "3") боковой меристемы</li>
+                            <li>@Html.RadioButton("qurstiom22", "4") вставочной меристемы</li>
+                            <li>@Html.RadioButton("qurstiom22", "5") зародышевой меристемы</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer22</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К одревеснению клетки приводит отложение:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question23", "1") хитина</li>
+                            <li>@Html.RadioButton("question23", "2") суберина</li>
+                            <li>@Html.RadioButton("qurstiom23", "3") бетулина</li>
+                            <li>@Html.RadioButton("qurstiom23", "4") муреина</li>
+                            <li>@Html.RadioButton("qurstiom23", "5") лигнина</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer23</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>К опробковению клеточной стенки приводит отложение на ее внутренней поверхности на внешней поверхности:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question24", "1") хитина</li>
+                            <li>@Html.RadioButton("question24", "2") суберина</li>
+                            <li>@Html.RadioButton("qurstiom24", "3") целлюлозы</li>
+                            <li>@Html.RadioButton("qurstiom24", "4") муреина</li>
+                            <li>@Html.RadioButton("qurstiom24", "5") лигнина</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer24</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Склеренхима может быть представлена:</strong>
+                        <ol type="1">
+                            <li>@Html.RadioButton("question25", "1") ризодермой и эпидермисом</li>
+                            <li>@Html.RadioButton("question25", "2") волокнами и склереидами</li>
+                            <li>@Html.RadioButton("qurstiom25", "3") ассимиляционной и запасающей паренхимами</li>
+                            <li>@Html.RadioButton("qurstiom25", "4") трахеями и трахеидами</li>
+                            <li>@Html.RadioButton("qurstiom25", "5") ситовидными клетками и ситовидными трубками</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer25</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Основная ткань у растений может выполнять следующие функции: </strong> а) запасания воды; б) фотосинтеза; в) проведения органических веществ; г) проведения воды; д) запасания воздуха:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question26", "1") а,б,в,д</li>
+                            <li>@Html.RadioButton("question26", "2") а,б,г</li>
+                            <li>@Html.RadioButton("qurstiom26", "3") в,д</li>
+                            <li>@Html.RadioButton("qurstiom26", "4") а,б,д</li>
+                            <li>@Html.RadioButton("qurstiom26", "5") а,б,в,г,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer26</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Ксилема представляет собой сложную проводящую ткань, в состав которой входят: </strong> а) древесинные волокна; б) трахеиды или трахеи; в) лубяные волокна; г) ситовидные трубки; д) древесинная паренхима; е) лубяная паренхима:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question27", "1") а,б,в</li>
+                            <li>@Html.RadioButton("question27", "2") в,г,е</li>
+                            <li>@Html.RadioButton("qurstiom27", "3") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom27", "4") а,б,е</li>
+                            <li>@Html.RadioButton("qurstiom27", "5") а,б,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer27</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Флоэма представляет собой сложную проводящую ткань, в состав которой входят: </strong> а) древесинные волокна; б) трахеиды или трахеи; в) лубяные волокна; г) ситовидные трубки; д) древесинная паренхима; е) лубяная паренхима:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question28", "1") а,б,в</li>
+                            <li>@Html.RadioButton("question28", "2") в,г,е</li>
+                            <li>@Html.RadioButton("qurstiom28", "3") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom28", "4") а,б,е</li>
+                            <li>@Html.RadioButton("qurstiom28", "5") а,б,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer28</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Вегетативные органы высших растений:</strong> а) корень; б) лист; в) цветок; г) семя; д) стебель; е) плод:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question29", "1") а,б,в</li>
+                            <li>@Html.RadioButton("question29", "2") в,г,е</li>
+                            <li>@Html.RadioButton("qurstiom29", "3") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom29", "4") а,б,е</li>
+                            <li>@Html.RadioButton("qurstiom29", "5") а,б,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer29</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <strong>Генеративные органы высших растений: </strong> а) корень; б) лист; в) цветок; г) семя; д) стебель; е) плод:
+                        <ol type="1">
+                            <li>@Html.RadioButton("question30", "1") а,б,в</li>
+                            <li>@Html.RadioButton("question30", "2") в,г,е</li>
+                            <li>@Html.RadioButton("qurstiom30", "3") в,г,д</li>
+                            <li>@Html.RadioButton("qurstiom30", "4") а,б,е</li>
+                            <li>@Html.RadioButton("qurstiom30", "5") а,б,д</li>
+                        </ol>
+                        <h3 style="color:red">@ViewBag.Answer30</h3>
+                    </div>
+                </li>
+            </ol>
+            <h3 class="text-center"> <strong>Часть В.</strong></h3>
+            <ol type="1">
+                <li>
+                    <div class="container">
+                        Взаимосвязь растений с окружающей средой изучает
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question31")
+                            <h3 style="color:red">@ViewBag.Answer31</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Установите соответствие между представителями цветковых растений (буквы А-Д) и характерными им жизненными формами (цифры 1-3):
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Представители</td>
+                                    <td>Жизненные формы</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        А. черника <br />
+                                        Б. брусника <br />
+                                        В. морковь <br />
+                                        Г. капуста <br />
+                                        Д. любка
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>кустарнички</li>
+                                            <li>двулетние травы</li>
+                                            <li>многолетние травы</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1</p>
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question32")
+                            <h3 style="color:red">@ViewBag.Answer32</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Установите соответствие между представителями цветковых растений (буквы А-Д) и характерными им жизненными формами (цифры 1-3):
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Представители</td>
+                                    <td>Жизненные формы</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        А. сурепка <br />
+                                        Б. клюква <br />
+                                        В. роза <br />
+                                        Г. банан <br />
+                                        Д. пастушья сумка
+
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>кустарнички</li>
+                                            <li>двулетние травы</li>
+                                            <li>многолетние травы</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1</p>
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question33")
+                            <h3 style="color:red">@ViewBag.Answer33</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Установите соответствие между представителями цветковых растений и характерными им жизненными формами:
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Представители</td>
+                                    <td>Жизненные формы</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        А. рябинник <br />
+                                        Б. ананас <br />
+                                        В. багульник <br />
+                                        Г. граб <br />
+                                        Д. тыква
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>травы</li>
+                                            <li>кустарнички</li>
+                                            <li>кустарники</li>
+                                            <li>деревья</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1</p>
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question34")
+                            <h3 style="color:red">@ViewBag.Answer34</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткани, обеспечивающие рост растения, называются ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question35")
+                            <h3 style="color:red">@ViewBag.Answer35</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Образовательная ткань, за счет которой происходит рост стебля и корня в толщину у древесных растений, называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question36")
+                            <h3 style="color:red">@ViewBag.Answer36</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткани, защищающие органы растений от потери влаги, называются ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question37")
+                            <h3 style="color:red">@ViewBag.Answer37</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткань, покрывающая молодые части растений, называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question38")
+                            <h3 style="color:red">@ViewBag.Answer38</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткань, покрывающая стебель и корень многолетних растений на протяжении большей части жизни, называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question39")
+                            <h3 style="color:red">@ViewBag.Answer39</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткань, покрывающая стебель старых многолетних растений, называется …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question40")
+                            <h3 style="color:red">@ViewBag.Answer40</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Газообмен в тканях стебля, покрытого пробкой, происходит через ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question41")
+                            <h3 style="color:red">@ViewBag.Answer41</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Газообмен в тканях стебля, покрытого коркой, происходит через ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question42")
+                            <h3 style="color:red">@ViewBag.Answer42</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Наружная часть коры, ежедневно наращиваемая за счет омертвления поверхностных слоев перидермы, называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question43")
+                            <h3 style="color:red">@ViewBag.Answer43</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Наружная часть перидермы называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question44")
+                            <h3 style="color:red">@ViewBag.Answer44</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Внутренняя часть перидермы называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question45")
+                            <h3 style="color:red">@ViewBag.Answer45</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Фотосинтез у покрытосеменных осуществляет разновидность основной ткани - ….. паренхима.
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question46")
+                            <h3 style="color:red">@ViewBag.Answer46</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Разновидность основной ткани покрытосеменных - …. паренхима накапливает в клетках влагу.
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question47")
+                            <h3 style="color:red">@ViewBag.Answer47</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Питательные вещества у покрытосеменных накапливает разновидность основной ткани - …. паренхима.
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question48")
+                            <h3 style="color:red">@ViewBag.Answer48</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Механическая ткань растений, состоящая из живых клеток, - ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question49")
+                            <h3 style="color:red">@ViewBag.Answer49</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Механическая ткань растений, состоящая из мертвых клеток, - ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question50")
+                            <h3 style="color:red">@ViewBag.Answer50</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ткани растений, по которым передвигаются вода, неорганические и органические вещества, носят название ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question51")
+                            <h3 style="color:red">@ViewBag.Answer51</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Проводящие элементы флоэмы цветковых растений – это ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question52")
+                            <h3 style="color:red">@ViewBag.Answer52</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Сложная проводящая ткань, по которой у высших растений передвигается вода и минеральные соли, называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question53")
+                            <h3 style="color:red">@ViewBag.Answer53</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Проводящими элементами ксилемы в покрытосеменных растениях являются …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question54")
+                            <h3 style="color:red">@ViewBag.Answer54</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Установите соответствие между представителями отделов растений и их проводящей системой.
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Отдел растения</td>
+                                    <td>Проводящая система</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        А. Моховидные <br />
+                                        Б. Папоротниковидные <br />
+                                        В. Зеленые водоросли<br />
+                                        Г. Голосеменные <br />
+                                        Д. Покрытосеменные <br />
+
+                                    </td>
+                                    <td>
+                                        <ol type="1">
+                                            <li>трахеиды и ситовидные клетки</li>
+                                            <li>отсутствует</li>
+                                            <li>сосуды и ситовидные трубки</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Ответ запишите в виде сочетания букв и цифр, располагая буквы в алфавитном порядке, например: А2Б1В1Г2Д2Е1</p>
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question55")
+                            <h3 style="color:red">@ViewBag.Answer55</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Направленные ростовые движения (изгибы) органов растений, вызванные односторонним воздействием факторов среды, называются ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question56")
+                            <h3 style="color:red">@ViewBag.Answer56</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Ответная реакция на раздражение у растений, заключающаяся в повороте растений к источнику света, называют …
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question57")
+                            <h3 style="color:red">@ViewBag.Answer57</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        Закрытие цветков тюльпана ночью и открытие их днем – это пример ответной реакции растения на раздражение, которая называется ….
+                        <div class="container">
+                            Ответ:
+                            @Html.TextBox("question58")
+                            <h3 style="color:red">@ViewBag.Answer58</h3>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+}
